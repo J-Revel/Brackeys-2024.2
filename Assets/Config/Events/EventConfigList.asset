@@ -13,21 +13,30 @@ MonoBehaviour:
   m_Name: EventConfigList
   m_EditorClassIdentifier: 
   event_config:
-  - description: This is a test.
+  - description: "Un poisson lumi\xE8re sors de l\u2019eau. Il semble vouloir nous
+      montr\xE9 quelques choses.  "
     options:
-    - description: Option 1
+    - description: Suivre le poisson
       results:
-      - resource: 0
-        delta: 2
+      - resource: 1
+        delta: 5
+    - description: Ne pas suivre le poisson
+      results: []
+  - description: "Un crabe semble nous accoster \u201C Eh Petit ! t'aurais pas un
+      truc \xE0 manger ? \u201C"
+    options:
+    - description: "Donner \xE0 manger au crabe"
+      results:
       - resource: 1
         delta: -1
-    - description: Option 2
+    - description: "S\u2019enfuir"
       results:
       - resource: 0
-        delta: -1
-      - resource: 1
-        delta: 3
-    - description: Option 3
+        delta: -2
+  - description: Une grosse bourrasque nous pousse sur les massifs rocheux.
+    options:
+    - description: " Le bateau a pris quelque d\xE9gat que l\u2019on doit r\xE9par\xE9
+        d\u2019urgence !"
       results:
-      - resource: 1
-        delta: 1
+      - resource: 0
+        delta: -2

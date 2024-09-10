@@ -5,7 +5,7 @@ using UnityEngine;
 
 public enum PlayerResource
 {
-    Shelter, Food, 
+    Wood, Food, Rope, 
 }
 
 [System.Serializable]

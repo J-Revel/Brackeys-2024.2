@@ -6,6 +6,7 @@ using UnityEngine;
 public class CellContent
 {
     public bool accessible;
+    public bool safe;
     public List<IEnumerator> cross_coroutines = new List<IEnumerator>();
     public List<IEnumerator> enter_coroutines = new List<IEnumerator>();
     public List<IEnumerator> leave_coroutines = new List<IEnumerator>();
@@ -27,6 +28,13 @@ public class GridInstance : MonoBehaviour
     {
         if (cells.TryGetValue(cell, out CellContent content))
             return content.accessible;
+        return true;
+    }
+
+    public bool IsSafe(int2 cell)
+    {
+        if (cells.TryGetValue(cell, out CellContent content))
+            return content.safe;
         return true;
     }
 

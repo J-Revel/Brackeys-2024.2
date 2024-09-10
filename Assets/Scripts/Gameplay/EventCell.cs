@@ -13,7 +13,6 @@ public class EventCell : MonoBehaviour
     public void Start()
     {
         cell_entity = GetComponent<CellEntity>();
-        CellContent cell_content = GridInstance.instance.GetCellContent(cell_entity.cell);
         show_event_coroutine = ShowEventCoroutine();
         cell_entity.RegisterEnterCoroutine(show_event_coroutine);
     }

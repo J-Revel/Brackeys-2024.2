@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: Main Loc Table Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: Main Loc Table
+  m_TableCollectionNameGuidString: 52f63490201a54b459bf91fa1737e885
+  m_Entries:
+  - m_Id: 676523814912
+    m_Key: evt01_description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1108474212352
+    m_Key: evt01_answer01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1426037551104
+    m_Key: evt01_answer02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2075068346368
+    m_Key: evt02_description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2515411546112
+    m_Key: evt02_answer01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30435911806976
+    m_Key: evt02_answer01_outcome
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2747616604160
+    m_Key: evt02_answer02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3231253409792
+    m_Key: evt10_description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22349029453824
+    m_Key: evt10_answer02
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 4631414800933715992
+  references:
+    version: 2
+    RefIds:
+    - rid: 4631414800933715992
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables,
+        asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1725998506816

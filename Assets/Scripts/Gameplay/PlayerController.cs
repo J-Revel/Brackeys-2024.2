@@ -20,6 +20,8 @@ public class PlayerController : MonoBehaviour
     public int2 current_cell;
     private bool skip;
 
+    public int2 checkpoint;
+
     public void Awake()
     {
         instance = this;
@@ -35,8 +37,8 @@ public class PlayerController : MonoBehaviour
             plane.Raycast(ray, out float enter);
             float3 pos = ray.GetPoint(enter);
             int2 target_cell = new int2((int)math.round(pos.x), (int)math.round(pos.y));
-            var dijkstra= player.GenerateDijkstra(movement_actions, false, Allocator.Temp);
-            var targetable_cells = dijkstra.ListCells();
+            CellEntity.DijkstraMap dijkstra= player.GenerateDijkstra(movement_actions, false, Allocator.Temp);
+            int2[] targetable_cells = dijkstra.ListCells();
             
             for (int i = target_cells.Count; i < targetable_cells.Length; i++)
             {
@@ -66,8 +68,6 @@ public class PlayerController : MonoBehaviour
                 yield return player.FollowPathCoroutine(dijkstra.PathFind(target_cell, out float length), movement_speed, true);
                 current_cell = GridInstance.instance.PosToCell(transform.position);
                 movement_actions -= length;
-                /*
-                    */
                 if (movement_actions <= 0)
                 {
                     int2 start_cell = current_cell;

@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Main Loc Table_fr
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: fr
+  m_SharedData: {fileID: 11400000, guid: 52f63490201a54b459bf91fa1737e885, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 676523814912
+    m_Localized: "Un poisson lumi\xE8re sors de l\u2019eau. Il semble vouloir nous
+      montrer quelque-chose.  "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1108474212352
+    m_Localized: Suivre le poisson
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1426037551104
+    m_Localized: Ne pas suivre le poisson
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2075068346368
+    m_Localized: "Un crabe semble nous accoste \u201CEh Petit ! t'aurais pas un truc
+      \xE0 manger ? \u201C"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2515411546112
+    m_Localized: "Lui donner \xE0 manger"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2747616604160
+    m_Localized: S'enfuir
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3231253409792
+    m_Localized: Une grosse bourrasque nous pousse sur les massifs rocheux.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22349029453824
+    m_Localized: "Le bateau a pris quelque d\xE9gat que l\u2019on doit r\xE9parer
+      d\u2019urgence !"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30435911806976
+    m_Localized: "Il te revaudra \xE7a !"
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

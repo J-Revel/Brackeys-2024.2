@@ -15,17 +15,19 @@ public class GridConfig : ScriptableObject
     public int2 max_cell;
     public float cell_size = 1;
     
+    #if UNITY_EDITOR
     internal static GridConfig GetOrCreateSettings()
+    {
+        GridConfig settings = AssetDatabase.LoadAssetAtPath<GridConfig>(asset_path);
+        if (settings == null)
         {
-            GridConfig settings = AssetDatabase.LoadAssetAtPath<GridConfig>(asset_path);
-            if (settings == null)
-            {
-                settings = ScriptableObject.CreateInstance<GridConfig>();
-                AssetDatabase.CreateAsset(settings, asset_path);
-                AssetDatabase.SaveAssets();
-            }
-            return settings;
+            settings = ScriptableObject.CreateInstance<GridConfig>();
+            AssetDatabase.CreateAsset(settings, asset_path);
+            AssetDatabase.SaveAssets();
         }
+        return settings;
+    }
+    #endif
 }
 
 #if UNITY_EDITOR

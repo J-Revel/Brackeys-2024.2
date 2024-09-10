@@ -59,29 +59,47 @@ public class PlayerController : MonoBehaviour
                 yield return ApplyWind(wind_direction, wind_strength);
                 movement_actions = range;
                 skip = false;
+                yield return ActivateCell();
             }
             if (Input.GetMouseButtonDown(0) && MenuSystem.instance.active_menu == null)
             {
-                yield return player.FollowPathCoroutine(dijkstra.PathFind(target_cell, out float length), movement_speed);
+                yield return player.FollowPathCoroutine(dijkstra.PathFind(target_cell, out float length), movement_speed, true);
                 current_cell = GridInstance.instance.PosToCell(transform.position);
                 movement_actions -= length;
-                List<Coroutine> coroutines = new List<Coroutine>();
-                foreach(IEnumerator enumerator in GridInstance.instance.GetCellContent(current_cell).enter_coroutines)
-                {
-                    coroutines.Add(StartCoroutine(enumerator));
-                }
-
-                foreach (Coroutine coroutine in coroutines)
-                    yield return coroutine;
+                /*
+                    */
                 if (movement_actions <= 0)
                 {
-                    yield return ApplyWind(wind_direction, wind_strength);
+                    int2 start_cell = current_cell;
+                    if (wind_strength > 0)
+                    {
+                        yield return ApplyWind(wind_direction, wind_strength);
+                    }
+
+                    current_cell = GridInstance.instance.PosToCell(transform.position);
+                    if (math.any(start_cell != current_cell))
+                    {
+                        yield return ActivateCell();
+                    }
                     movement_actions = range;
                 }
             }
 
             yield return null;
         }
+    }
+
+    public IEnumerator ActivateCell()
+    {
+        List<Coroutine> coroutines = new List<Coroutine>();
+        foreach(IEnumerator enumerator in GridInstance.instance.GetCellContent(current_cell).enter_coroutines)
+        {
+            coroutines.Add(StartCoroutine(enumerator));
+        }
+
+        foreach (Coroutine coroutine in coroutines)
+            yield return coroutine;
+        
     }
 
     public void SkipTurn()

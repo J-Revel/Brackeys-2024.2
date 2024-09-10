@@ -61,6 +61,6 @@ public class WindTarget : MonoBehaviour
             }
             else break;
         }
-        yield return cell_entity.FollowPathCoroutine(path.ToArray(), wind_speed);
+        yield return cell_entity.FollowPathCoroutine(path.ToArray(), wind_speed, false);
     }
 }

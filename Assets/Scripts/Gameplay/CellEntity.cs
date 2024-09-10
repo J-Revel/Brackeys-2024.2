@@ -34,25 +34,25 @@ public class CellEntity : MonoBehaviour
     }
     #endif
 
-    public void MoveTo(int2 target_cell, float speed)
+    public void MoveTo(int2 target_cell, float speed, bool activate_cells)
     {
-        StartCoroutine(MoveToCoroutine(target_cell, speed));
+        StartCoroutine(MoveToCoroutine(target_cell, speed, activate_cells));
     }
     
-    public void FollowPath(int2[] path, float speed)
+    public void FollowPath(int2[] path, float speed, bool activate_cells)
     {
-        StartCoroutine(FollowPathCoroutine(path, speed));
+        StartCoroutine(FollowPathCoroutine(path, speed, activate_cells));
     }
     
-    public IEnumerator FollowPathCoroutine(int2[] path, float speed)
+    public IEnumerator FollowPathCoroutine(int2[] path, float speed, bool activate_cells)
     {
         for (int i = 0; i < path.Length; i++)
         {
-            yield return MoveToCoroutine(path[i], speed);
+            yield return MoveToCoroutine(path[i], speed, activate_cells);
         }
     }
     
-    public IEnumerator MoveToCoroutine(int2 target_cell, float speed)
+    public IEnumerator MoveToCoroutine(int2 target_cell, float speed, bool activate_cells)
     {
         CellContent start_cell_content = GridInstance.instance.GetCellContent(cell);
         foreach (IEnumerator coroutine in enter_coroutines)
@@ -69,6 +69,18 @@ public class CellEntity : MonoBehaviour
             float2 display_pos = math.lerp(start_pos, target_pos, time / duration);
             transform.position = new float3(display_pos.x, display_pos.y, 0);
             yield return null;
+        }
+
+        if (activate_cells)
+        {
+            List<Coroutine> coroutines = new List<Coroutine>();
+            foreach(IEnumerator enumerator in GridInstance.instance.GetCellContent(target_cell).enter_coroutines)
+            {
+                coroutines.Add(StartCoroutine(enumerator));
+            }
+
+            foreach (Coroutine coroutine in coroutines)
+                yield return coroutine;
         }
         CellContent target_cell_content = GridInstance.instance.GetCellContent(target_cell);
         foreach (IEnumerator coroutine in enter_coroutines)

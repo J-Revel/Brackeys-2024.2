@@ -8,6 +8,7 @@ namespace UI
     {
         public static MenuSystem instance;
         public GameObject active_menu;
+        public Transform menu_container;
 
         private void Awake()
         {
@@ -21,7 +22,7 @@ namespace UI
                 Destroy(active_menu);
             }
 
-            T new_menu = Instantiate(menu_prefab, transform);
+            T new_menu = Instantiate(menu_prefab, menu_container);
             active_menu = new_menu.gameObject;
             return new_menu;
         }

@@ -4,6 +4,10 @@ using Unity.Collections;
 using Unity.Collections.LowLevel.Unsafe;
 using Unity.Mathematics;
 using Unity.VisualScripting;
+#if UNITY_EDITOR
+using UnityEditor;
+using UnityEditor.Localization.Plugins.XLIFF.V12;
+#endif
 using UnityEngine;
 
 [ExecuteAlways]
@@ -22,15 +26,21 @@ public class CellEntity : MonoBehaviour
     #if UNITY_EDITOR
     public void Update()
     {
+        #if UNITY_EDITOR
         if (!Application.IsPlaying(this))
         {
             if (grid_config == null)
             {
                 grid_config = (GridConfig)Resources.Load("GridSettings");
             }
-            cell = new int2((int)(transform.position.x / grid_config.cell_size),
-                (int)(transform.position.y / grid_config.cell_size));
+
+            SerializedObject serialized_object = new SerializedObject(this);
+            serialized_object.FindProperty("cell").FindPropertyRelative("x").intValue = (int)(transform.position.x / grid_config.cell_size);
+            serialized_object.FindProperty("cell").FindPropertyRelative("y").intValue = (int)(transform.position.y / grid_config.cell_size);
+            serialized_object.ApplyModifiedPropertiesWithoutUndo();
+
         }
+        #endif
     }
     #endif
 

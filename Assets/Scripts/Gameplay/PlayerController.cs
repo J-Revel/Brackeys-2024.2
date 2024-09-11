@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour
     public List<WindTarget> wind_targets = new List<WindTarget>();
     public int2 current_cell;
     private bool skip;
+    public PathDisplay path_display;
 
     public int2 checkpoint;
 
@@ -37,7 +38,7 @@ public class PlayerController : MonoBehaviour
             plane.Raycast(ray, out float enter);
             float3 pos = ray.GetPoint(enter);
             int2 target_cell = new int2((int)math.round(pos.x), (int)math.round(pos.y));
-            CellEntity.DijkstraMap dijkstra= player.GenerateDijkstra(movement_actions, false, Allocator.Temp);
+            CellEntity.DijkstraMap dijkstra = player.GenerateDijkstra(movement_actions, false, Allocator.Persistent);
             int2[] targetable_cells = dijkstra.ListCells();
             
             for (int i = target_cells.Count; i < targetable_cells.Length; i++)
@@ -62,28 +63,44 @@ public class PlayerController : MonoBehaviour
                 movement_actions = range;
                 skip = false;
                 yield return ActivateCell();
+                yield return GameState.instance.FinishTurnCoroutine();
             }
-            if (Input.GetMouseButtonDown(0) && MenuSystem.instance.active_menu == null)
-            {
-                yield return player.FollowPathCoroutine(dijkstra.PathFind(target_cell, out float length), movement_speed, true);
-                current_cell = GridInstance.instance.PosToCell(transform.position);
-                movement_actions -= length;
-                if (movement_actions <= 0)
-                {
-                    int2 start_cell = current_cell;
-                    if (wind_strength > 0)
-                    {
-                        yield return ApplyWind(wind_direction, wind_strength);
-                    }
 
-                    current_cell = GridInstance.instance.PosToCell(transform.position);
-                    if (math.any(start_cell != current_cell))
+            if (MenuSystem.instance.active_menu == null)
+            {
+                int2[] path = dijkstra.PathFind(target_cell, out float length);
+                path_display.start_cell = dijkstra.start_cell;
+                path_display.SetPath(dijkstra.start_cell, path);
+                if (Input.GetMouseButtonDown(0))
+                {
+                    foreach (var cell in target_cells)
                     {
-                        yield return ActivateCell();
+                        cell.SetActive(false);
                     }
-                    movement_actions = range;
+                    yield return player.FollowPathCoroutine(path, movement_speed, true);
+                    current_cell = GridInstance.instance.PosToCell(transform.position);
+                    movement_actions -= length;
+                    if (movement_actions <= 0)
+                    {
+                        int2 start_cell = current_cell;
+                        if (wind_strength > 0)
+                        {
+                            yield return ApplyWind(wind_direction, wind_strength);
+                        }
+
+                        current_cell = GridInstance.instance.PosToCell(transform.position);
+                        if (math.any(start_cell != current_cell))
+                        {
+                            yield return ActivateCell();
+                        }
+
+                        yield return GameState.instance.FinishTurnCoroutine();
+                        movement_actions = range;
+                    }
                 }
             }
+
+            dijkstra.data.Dispose();
 
             yield return null;
         }
@@ -123,5 +140,12 @@ public class PlayerController : MonoBehaviour
         {
             yield return c;
         }
+    }
+
+    public void TeleportToCheckpoint()
+    {
+        transform.position = GridInstance.instance.CellToPos(checkpoint);
+        current_cell = checkpoint;
+        player.cell = checkpoint;
     }
 }

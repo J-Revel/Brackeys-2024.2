@@ -5,7 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(CellEntity))]
 public class ResourceGainCell : MonoBehaviour
 {
-    public PlayerResource resource;
+    public ResourceType resource;
     public int quantity = 1;
     private CellEntity cell_entity;
     private IEnumerator enter_cell_coroutine;

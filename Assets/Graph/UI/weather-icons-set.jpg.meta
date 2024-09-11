@@ -1,0 +1,787 @@
+fileFormatVersion: 2
+guid: 4f93a9549aca3b44596910b143be0f39
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 2
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: weather-icons-set_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 380
+        width: 70.2
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bf830bf8f2663f4a8e0da593e24cb56
+      internalID: -1833239655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weather-icons-set_1
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 380
+        width: 70.2
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f18e92000f398243bc68c0d7b5bf87c
+      internalID: -918322155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weather-icons-set_2
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 380
+        width: 70.2
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b52fed923735ed4c8f3d261aae52125
+      internalID: 122100718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weather-icons-set_3
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 380
+        width: 70.2
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da1b8296372d7bd439631f286f6a3880
+      internalID: -1890440549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weather-icons-set_4
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 380
+        width: 70.2
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a589604fd8d00af4eb7c801e7e29ce64
+      internalID: -2069337170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weather-icons-set_5
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 304
+        width: 70.2
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b7a2324518cb294298a0500851fef49
+      internalID: -364862134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weather-icons-set_6
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 304
+        width: 70.2
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08ecf2ca1b92d634692dc770535f2bfa
+      internalID: -758468902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weather-icons-set_7
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 304
+        width: 70.2
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 832396b0966f83b43af617be415ac58b
+      internalID: -862712238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weather-icons-set_8
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 304
+        width: 70.2
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6fd6c6204cf9424681ca821eb67d54d
+      internalID: -286717025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weather-icons-set_9
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 304
+        width: 70.2
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d91f3feef0eabf14195658467851931a
+      internalID: -1100241756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weather-icons-set_10
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 228
+        width: 70.2
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78939d1bf9f7ebb4891b9705c24e3c9e
+      internalID: -1288037296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weather-icons-set_11
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 228
+        width: 70.2
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7258c45a69a2eac43b6694662cded54a
+      internalID: 118720560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weather-icons-set_12
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 228
+        width: 70.2
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0abb427c760b9944f979571100d4388b
+      internalID: -683663436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weather-icons-set_13
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 228
+        width: 70.2
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 789043b8a97d33947ae8311d7f47703a
+      internalID: -2054239211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weather-icons-set_14
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 228
+        width: 70.2
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b460373c1657ac04ca3db287dfbfc93e
+      internalID: -1163842737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weather-icons-set_15
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 152
+        width: 70.2
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fe7033dad7ccc547af89bc14fec2f73
+      internalID: -1216810596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weather-icons-set_16
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 152
+        width: 70.2
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12a49c19657397346b2eee8519deb0b9
+      internalID: 784192100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weather-icons-set_17
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 152
+        width: 70.2
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b9c864d02ae5294789883fe213cef73
+      internalID: -453563003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weather-icons-set_18
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 152
+        width: 70.2
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f018d8b48c83cc845aaffa9fe8ae7b44
+      internalID: 1589038252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weather-icons-set_19
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 152
+        width: 70.2
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ec969d8f937e9446b740f1c62e209df
+      internalID: -654974781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weather-icons-set_20
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 76
+        width: 70.2
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcc72a6754c85864eb30d5b37603549b
+      internalID: -47133673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weather-icons-set_21
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 76
+        width: 70.2
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e22693cfef676fe4cac14f1625e7ef71
+      internalID: -593260410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weather-icons-set_22
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 76
+        width: 70.2
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 846b67256a7462b40aaf119066b45b81
+      internalID: -1550581640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weather-icons-set_23
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 76
+        width: 70.2
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3a9f51c114138c44a48904681dc04a1
+      internalID: -2032143842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weather-icons-set_24
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 76
+        width: 70.2
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 094e013600560a8459bd0f671622d936
+      internalID: -299058912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weather-icons-set_25
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 0
+        width: 70.2
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f888f66379df3e448d5ca906c90ad7d
+      internalID: -1537381233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weather-icons-set_26
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 0
+        width: 70.2
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32aa189c392d32c4a9e5c30abd5a99bb
+      internalID: 674803741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weather-icons-set_27
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 0
+        width: 70.2
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e233a9c692f40ca4b96964ea0bdb22c5
+      internalID: 305189368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weather-icons-set_28
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 0
+        width: 70.2
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fba2f8356437394b9a9d50a631df81c
+      internalID: 1823200492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weather-icons-set_29
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 0
+        width: 70.2
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f369b13b23dbaca4f9384628a806e55a
+      internalID: 218165216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 3e5f8148b9018af4a80315965d1c7329
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      weather-icons-set_0: -1833239655
+      weather-icons-set_1: -918322155
+      weather-icons-set_10: -1288037296
+      weather-icons-set_11: 118720560
+      weather-icons-set_12: -683663436
+      weather-icons-set_13: -2054239211
+      weather-icons-set_14: -1163842737
+      weather-icons-set_15: -1216810596
+      weather-icons-set_16: 784192100
+      weather-icons-set_17: -453563003
+      weather-icons-set_18: 1589038252
+      weather-icons-set_19: -654974781
+      weather-icons-set_2: 122100718
+      weather-icons-set_20: -47133673
+      weather-icons-set_21: -593260410
+      weather-icons-set_22: -1550581640
+      weather-icons-set_23: -2032143842
+      weather-icons-set_24: -299058912
+      weather-icons-set_25: -1537381233
+      weather-icons-set_26: 674803741
+      weather-icons-set_27: 305189368
+      weather-icons-set_28: 1823200492
+      weather-icons-set_29: 218165216
+      weather-icons-set_3: -1890440549
+      weather-icons-set_4: -2069337170
+      weather-icons-set_5: -364862134
+      weather-icons-set_6: -758468902
+      weather-icons-set_7: -862712238
+      weather-icons-set_8: -286717025
+      weather-icons-set_9: -1100241756
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

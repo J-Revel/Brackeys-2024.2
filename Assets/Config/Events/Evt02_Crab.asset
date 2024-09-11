@@ -22,7 +22,7 @@ MonoBehaviour:
     m_WaitForCompletion: 0
     m_LocalVariables: []
   options:
-  - description_localized:
+  - description:
       m_TableReference:
         m_TableCollectionName: GUID:52f63490201a54b459bf91fa1737e885
       m_TableEntryReference:
@@ -31,10 +31,12 @@ MonoBehaviour:
       m_FallbackState: 0
       m_WaitForCompletion: 0
       m_LocalVariables: []
-    requirements: []
-    results:
+    requirements:
     - resource: 1
       delta: 5
+    results:
+    - resource: 1
+      delta: -5
     temporary_movement_bonus: 0
     permanent_movement_bonus: 0
     random_movement: 0
@@ -48,7 +50,7 @@ MonoBehaviour:
       m_WaitForCompletion: 0
       m_LocalVariables: []
     next_event: {fileID: 0}
-  - description_localized:
+  - description:
       m_TableReference:
         m_TableCollectionName: GUID:52f63490201a54b459bf91fa1737e885
       m_TableEntryReference:

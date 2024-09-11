@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public enum PlayerResource
+public enum ResourceType
 {
     Wood, Food, Rope, 
 }
@@ -11,7 +11,7 @@ public enum PlayerResource
 [System.Serializable]
 public struct ResourceStock
 {
-    public PlayerResource resource;
+    public ResourceType resource;
     public int stock;
 }
 
@@ -25,7 +25,7 @@ public class PlayerResourceStock : MonoBehaviour
         instance = this;
     }
 
-    public int GetStock(PlayerResource resource)
+    public int GetStock(ResourceType resource)
     {
         for (int i = 0; i < stocks.Count; i++)
         {
@@ -38,7 +38,7 @@ public class PlayerResourceStock : MonoBehaviour
         return 0;
     }
 
-    public void AddStock(PlayerResource resource, int quantity)
+    public void AddStock(ResourceType resource, int quantity)
     {
         for (int i = 0; i < stocks.Count; i++)
         {

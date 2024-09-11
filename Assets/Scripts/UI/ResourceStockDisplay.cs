@@ -5,7 +5,7 @@ using UnityEngine;
 public class ResourceStockDisplay : MonoBehaviour
 {
     private TMPro.TextMeshProUGUI text;
-    public PlayerResource resource;
+    public ResourceType resource;
 
     public void Start()
     {

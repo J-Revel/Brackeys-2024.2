@@ -12,20 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cb991c5920b4754b9c6e8021e332829, type: 3}
   m_Name: Evt03_WindGust
   m_EditorClassIdentifier: 
-  description_backup: "Un crabe semble nous accoste \u201CEh Petit ! t'aurais pas
-    un truc \xE0 manger ? \u201C"
-  description_localized:
+  description:
     m_TableReference:
       m_TableCollectionName: GUID:52f63490201a54b459bf91fa1737e885
     m_TableEntryReference:
-      m_KeyId: 2075068346368
+      m_KeyId: 3231253409792
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
   options:
-  - description_backup: 
-    description_localized:
+  - description_localized:
       m_TableReference:
         m_TableCollectionName: GUID:52f63490201a54b459bf91fa1737e885
       m_TableEntryReference:
@@ -34,6 +31,7 @@ MonoBehaviour:
       m_FallbackState: 0
       m_WaitForCompletion: 0
       m_LocalVariables: []
+    requirements: []
     results:
     - resource: 0
       delta: -5

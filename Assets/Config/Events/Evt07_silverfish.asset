@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5cb991c5920b4754b9c6e8021e332829, type: 3}
-  m_Name: Evt06_Martin
+  m_Name: Evt07_silverfish
   m_EditorClassIdentifier: 
-  id: evt06
+  id: evt07
   options:
+  - requirements: []
+    results: []
+    next_event: {fileID: 0}
   - requirements: []
     results:
     - effect_type: 1
       resource: 0
-      delta: 4
+      delta: 2
     next_event: {fileID: 0}
-  - requirements: []
-    results: []
-    next_event: {fileID: 11400000, guid: 5d6338f5b1d14c14ea3eb9cd16954fe4, type: 2}

@@ -19,12 +19,12 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 676523814912
-    m_Localized: A lantern fish appears at the surface. It looks like he wants to
+    m_Localized: A lantern fish appears at the surface. It looks like they want to
       show you something.
     m_Metadata:
       m_Items: []
   - m_Id: 1108474212352
-    m_Localized: 
+    m_Localized: They leave.
     m_Metadata:
       m_Items: []
   - m_Id: 1426037551104
@@ -45,11 +45,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3231253409792
-    m_Localized: A strong gust of wind pushes your ship against rocks
+    m_Localized: You find a large crate in good condition. What's inside?
     m_Metadata:
       m_Items: []
   - m_Id: 22349029453824
-    m_Localized: The boat is damaged ! You must do an emergency repair !
+    m_Localized: It was probably dangerous anyway
     m_Metadata:
       m_Items: []
   - m_Id: 411399913615360
@@ -57,15 +57,187 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 411682114777088
-    m_Localized: The boat is damaged ! You must do an emergency repair !
+    m_Localized: Repair immediately!
     m_Metadata:
       m_Items: []
   - m_Id: 411682114777089
-    m_Localized: The boat is damaged ! You must do an emergency repair !
+    m_Localized: Let the boat move forward.
     m_Metadata:
       m_Items: []
   - m_Id: 411682114777090
+    m_Localized: We'll see later
+    m_Metadata:
+      m_Items: []
+  - m_Id: 411399947169792
+    m_Localized: They take you to a secret hideout!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30435911806976
+    m_Localized: He owes you one!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 313153144893440
+    m_Localized: The crab is unhappy and burns a hole in our boat. It needs to be
+      fixed right away!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 659600558665728
+    m_Localized: "\u201COh my poor little darling. I'll help you! \u201C"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 659600579637248
+    m_Localized: Give him the rope he needs
+    m_Metadata:
+      m_Items: []
+  - m_Id: 659600579637249
+    m_Localized: "\u201CDarn, you\u2019re cool! thanks a lot, little bear ! \u201C"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 659600579637250
+    m_Localized: Keep the rope to yourself
+    m_Metadata:
+      m_Items: []
+  - m_Id: 659600579637251
+    m_Localized: "\u201CPfff go back to your forest! \u201CHe kicks the boat and
+      drops our provisions."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 659600579637252
+    m_Localized: Let me share some fruits with you, then!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 660309781917696
+    m_Localized: A big gust pushes you onto the reefs. The boat needs repairs!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 660309781917697
+    m_Localized: Phew, we avoided disaster!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 660309781917698
+    m_Localized: The boat is not yet sunk, but it will go slower...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 660309781917699
+    m_Localized: Luminescent jellyfish dance in the middle of the sea.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 660309781917700
+    m_Localized: Fascinated, Little Bear lets himself be carried away.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 660309781917701
+    m_Localized: While advancing on the sea, little bear cub sees a strange raft
+      which seems to be made of cloud.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 660309781917702
+    m_Localized: Take the Nuage boat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 660309781917703
+    m_Localized: This new boat is magnificent!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 660309781917704
+    m_Localized: Stayed on our raft
+    m_Metadata:
+      m_Items: []
+  - m_Id: 660309781917705
+    m_Localized: The raft seems to be moving away.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 660309781917706
+    m_Localized: "Martin the dolphin comes to meet us \u201CHey! A bear on the sea!
+      we will all have seen it! \u201C"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 660309781917707
+    m_Localized: Tell him we're lost
+    m_Metadata:
+      m_Items: []
+  - m_Id: 660309781917708
+    m_Localized: Ask him what he wants
+    m_Metadata:
+      m_Items: []
+  - m_Id: 660309781917709
+    m_Localized: "\u201CHey, I just wanted to see who you were! You wouldn't have
+      any rope to give me \r\nOtherwise ? \u201C"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 660309781917710
+    m_Localized: A school of silver fish seems to want to play with us.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 660309781917711
+    m_Localized: Play with fish
+    m_Metadata:
+      m_Items: []
+  - m_Id: 660309781917712
+    m_Localized: Little bear takes the time to play with the fish. He is very happy
+      but has not made any progress today.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 660309781917713
+    m_Localized: Continue on your way
+    m_Metadata:
+      m_Items: []
+  - m_Id: 660309781917714
+    m_Localized: The fish seem to follow us and start to race with us
+    m_Metadata:
+      m_Items: []
+  - m_Id: 660309781917715
+    m_Localized: "The handy octopus comes out of the water and its eyes meet yours
+      \u201COh ? another bear! Twice in the same week is crazy! How can I help you?
+      \u201C"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 660309781917716
+    m_Localized: Ask her help to craft a shelter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 660309781917717
+    m_Localized: That's it for you, big girl
+    m_Metadata:
+      m_Items: []
+  - m_Id: 660309781917718
+    m_Localized: Explain that your mommy is waiting for you
+    m_Metadata:
+      m_Items: []
+  - m_Id: 660309781917719
+    m_Localized: You must be in a hurry, I'll move you forward!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 660309781917720
+    m_Localized: Confess you're a bit hungry
+    m_Metadata:
+      m_Items: []
+  - m_Id: 660309781917721
+    m_Localized: A strong gust of wind pushes your ship against rocks
+    m_Metadata:
+      m_Items: []
+  - m_Id: 660309781917722
     m_Localized: The boat is damaged ! You must do an emergency repair !
+    m_Metadata:
+      m_Items: []
+  - m_Id: 660309781917723
+    m_Localized: Take the time to disassemble it
+    m_Metadata:
+      m_Items: []
+  - m_Id: 660309781917724
+    m_Localized: Laborious but rewarding work!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 660309781917725
+    m_Localized: Leave it
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662510084435968
+    m_Localized: Next
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662510101213184
+    m_Localized: It seems to be holding up
     m_Metadata:
       m_Items: []
   references:

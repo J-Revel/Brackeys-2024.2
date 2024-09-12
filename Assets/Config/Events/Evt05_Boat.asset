@@ -10,19 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5cb991c5920b4754b9c6e8021e332829, type: 3}
-  m_Name: Evt02_Crab
+  m_Name: Evt05_Boat
   m_EditorClassIdentifier: 
-  id: evt02
+  id: evt05
   options:
-  - requirements:
-    - effect_type: 0
-      resource: 1
-      delta: -1
-    results: []
+  - requirements: []
+    results:
+    - effect_type: 2
+      resource: 0
+      delta: 1
     next_event: {fileID: 0}
   - requirements: []
     results:
-    - effect_type: 0
+    - effect_type: 2
       resource: 0
-      delta: -2
+      delta: 0
     next_event: {fileID: 0}

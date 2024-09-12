@@ -359,6 +359,167 @@ MonoBehaviour:
     m_Localized: "\u201CYou bears are really so kind! See you next little one!\u201D"
     m_Metadata:
       m_Items: []
+  - m_Id: 690879190675485
+    m_Localized: A gigantic wave risks turning the boat over!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 726761658527744
+    m_Localized: Dismantle the mast urgently
+    m_Metadata:
+      m_Items: []
+  - m_Id: 726761675304960
+    m_Localized: We avoided the worst! but we will have to repair it if it is damaged
+    m_Metadata:
+      m_Items: []
+  - m_Id: 726761675304961
+    m_Localized: Wait for the wave to pass
+    m_Metadata:
+      m_Items: []
+  - m_Id: 726761675304962
+    m_Localized: That could have been worse. But the boat seems to be working less
+      well.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 726761675304963
+    m_Localized: There is a pirate hat in the middle of the water!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 726761675304964
+    m_Localized: Take It
+    m_Metadata:
+      m_Items: []
+  - m_Id: 726761675304965
+    m_Localized: It suits us really well!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 726761675304966
+    m_Localized: let it float
+    m_Metadata:
+      m_Items: []
+  - m_Id: 726761675304967
+    m_Localized: Someone must miss him
+    m_Metadata:
+      m_Items: []
+  - m_Id: 726761675304968
+    m_Localized: Captivating songs seem to come from afar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 726761675304969
+    m_Localized: follow the music
+    m_Metadata:
+      m_Items: []
+  - m_Id: 726761675304970
+    m_Localized: A singing seagull sings continuously over the pieces of driftwood
+      but runs away when it sees you.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 726761675304971
+    m_Localized: far away from music
+    m_Metadata:
+      m_Items: []
+  - m_Id: 726761675304972
+    m_Localized: A little safety detour
+    m_Metadata:
+      m_Items: []
+  - m_Id: 726761675304973
+    m_Localized: You're starting to get hungry.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 726761675304974
+    m_Localized: take from reserves
+    m_Metadata:
+      m_Items: []
+  - m_Id: 726761675304975
+    m_Localized: You feel much better! His fruit was excellent
+    m_Metadata:
+      m_Items: []
+  - m_Id: 726761675304976
+    m_Localized: try to catch fish
+    m_Metadata:
+      m_Items: []
+  - m_Id: 726761675304977
+    m_Localized: Difficult to catch a fish with your bare hands. You ended up finding
+      a small fish but it took a long time.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 726761675304978
+    m_Localized: The storm is getting closer. the waves are big and it is difficult
+      to move forward.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 726761675304979
+    m_Localized: Reduce sail
+    m_Metadata:
+      m_Items: []
+  - m_Id: 726761675304980
+    m_Localized: we must respect the difficulty of the sea
+    m_Metadata:
+      m_Items: []
+  - m_Id: 726761675304981
+    m_Localized: Tarek the Turtle hits the bottom of the boat which begins to sink
+      "Oh sorry Excuse me"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 726761675304982
+    m_Localized: "\u201CIt doesn\u2019t matter, I\u2019ll fix it!\u201D"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 726761675304983
+    m_Localized: Repairing the boat was easy. the hole was small
+    m_Metadata:
+      m_Items: []
+  - m_Id: 726761675304984
+    m_Localized: "\u201CYou could have paid attention!\u201D"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 726761675304985
+    m_Localized: "\u201CI didn\u2019t think I\u2019d run into a bear! Sorry again!
+      Here\u2019s to compensate you!\u201D"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 726761675304986
+    m_Localized: A treasure chest appears to float on water
+    m_Metadata:
+      m_Items: []
+  - m_Id: 726761675304987
+    m_Localized: Pick it up and open it
+    m_Metadata:
+      m_Items: []
+  - m_Id: 726761675304988
+    m_Localized: It's filled with gold! but it takes up a lot of space on the boat
+      and all its parts don't seem very useful.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 726761675304989
+    m_Localized: Leave it there
+    m_Metadata:
+      m_Items: []
+  - m_Id: 726761679499264
+    m_Localized: It was probably a trap!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 726761679499265
+    m_Localized: Prevent the nearest hackers
+    m_Metadata:
+      m_Items: []
+  - m_Id: 726761679499266
+    m_Localized: They're sending a boat to pick him up as quickly as possible! They
+      give us an orange in exchange.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 726761679499267
+    m_Localized: "A clown fish comes to tell us a joke: \u201CWhat currency do fish
+      use?\u201D"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 726761679499268
+    m_Localized: Sub-marines
+    m_Metadata:
+      m_Items: []
+  - m_Id: 726761679499269
+    m_Localized: ahahah
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

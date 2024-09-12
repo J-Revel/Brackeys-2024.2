@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 6648602100406100368}
   - component: {fileID: 8028121667679884690}
   - component: {fileID: 5706747380829211478}
+  - component: {fileID: 1733776904542060255}
   m_Layer: 0
-  m_Name: Shelter Cell
+  m_Name: Cave Island Cell
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -100,3 +101,16 @@ MonoBehaviour:
   cell:
     x: 0
     y: -1
+--- !u!114 &1733776904542060255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4384118138972654202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f64be7b138900ae43a2969283e42ba42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  action_icon: {fileID: 21300000, guid: af0fb9ac731fcd64ca8bd0652371753f, type: 3}

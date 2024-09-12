@@ -7,6 +7,7 @@ using UnityEngine;
 public class ShelterCell : MonoBehaviour
 {
     private CellEntity cell_entity;
+    public ResourceStock[] cost;
     public Sprite action_icon;
     
     public void Start()

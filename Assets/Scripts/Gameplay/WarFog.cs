@@ -26,6 +26,28 @@ public class WarFog : MonoBehaviour
                 }
 
                 warfog_cells[cursor].visible = math.abs(i) + math.abs(j) < vision_range;
+                int2[] neighbour_cells = new int2[]
+                {
+                    cursor + new int2(1, 0),
+                    cursor + new int2(-1, 0),
+                    cursor + new int2(1, 1),
+                    cursor + new int2(-1, 1),
+                    cursor + new int2(0, 1),
+                    cursor + new int2(1, -1),
+                    cursor + new int2(-1, -1),
+                    cursor + new int2(0, -1),
+                };
+                bool is_border = false;
+                foreach (int2 neighbour_cell in neighbour_cells)
+                {
+                    if (warfog_cells.ContainsKey(neighbour_cell) && warfog_cells[neighbour_cell].visible)
+                    {
+                        is_border = true;
+                        break;
+                    }
+                }
+
+                warfog_cells[cursor].border = is_border;
             }
         }
     }

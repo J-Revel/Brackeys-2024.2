@@ -7,9 +7,11 @@ using UnityEngine;
 public class ShelterCell : MonoBehaviour
 {
     private CellEntity cell_entity;
+    public Sprite action_icon;
+    
     public void Start()
     {
         cell_entity = GetComponent<CellEntity>();
-        GridInstance.instance.GetCellContent(cell_entity.cell).safe = true;
+        GridInstance.instance.GetCellContent(cell_entity.cell).enter_coroutines.Add(ActionPopupMenu.instance.ShowActionCoroutine(action_icon));
     }
 }

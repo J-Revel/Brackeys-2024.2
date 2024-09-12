@@ -42,6 +42,5 @@ public class FogCell : MonoBehaviour
         {
             particle_system.gameObject.SetActive(show_particles || time < transition_duration);
         }
-            
     }
 }

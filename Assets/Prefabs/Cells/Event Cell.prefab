@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 6185319869701566141}
   - component: {fileID: 6459993404571413018}
   - component: {fileID: 194629484473380689}
-  - component: {fileID: 600139067158243158}
   m_Layer: 0
   m_Name: Event Cell
   m_TagString: Untagged
@@ -117,23 +116,3 @@ MonoBehaviour:
   config_list: {fileID: 11400000, guid: bf43fe704649b8b49846d09fe3fa3907, type: 2}
   choice_menu_prefab: {fileID: 1909837818303817273, guid: c2fc9c76a54d7854c9c2e9a09a991066,
     type: 3}
---- !u!114 &600139067158243158
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2824583769246515552}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f64be7b138900ae43a2969283e42ba42, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  shelter_icon_prefab: {fileID: 6975918559753945938, guid: 95d84a991171a6242a90860d1d05b144,
-    type: 3}
-  appear_duration: 0.3
-  icon_offset:
-    x: 0
-    y: 1
-    z: 0
-  hide: 0

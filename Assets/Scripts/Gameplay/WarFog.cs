@@ -25,7 +25,7 @@ public class WarFog : MonoBehaviour
                     warfog_cells[cursor].visible = false;
                 }
 
-                warfog_cells[cursor].visible = math.abs(i) + math.abs(j) < vision_range;
+                warfog_cells[cursor].visible = math.length(new int2(i, j)) < vision_range;
                 int2[] neighbour_cells = new int2[]
                 {
                     cursor + new int2(1, 0),

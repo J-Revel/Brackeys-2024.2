@@ -20,7 +20,7 @@ MonoBehaviour:
   m_TableData:
   - m_Id: 676523814912
     m_Localized: A lantern fish appears at the surface. It looks like they want to
-      show you something.
+      show you something
     m_Metadata:
       m_Items: []
   - m_Id: 1108474212352
@@ -65,7 +65,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 411682114777090
-    m_Localized: We'll see later
+    m_Localized: You'll deal with it later
     m_Metadata:
       m_Items: []
   - m_Id: 411399947169792
@@ -99,11 +99,11 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 659600579637251
     m_Localized: "\u201CPfff go back to your forest! \u201CHe kicks the boat and
-      drops our provisions."
+      drops your provisions."
     m_Metadata:
       m_Items: []
   - m_Id: 659600579637252
-    m_Localized: Let me share some fruits with you, then!
+    m_Localized: '"Let me share some fruits with you, then!"'
     m_Metadata:
       m_Items: []
   - m_Id: 660309781917696
@@ -111,7 +111,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 660309781917697
-    m_Localized: Phew, we avoided disaster!
+    m_Localized: Phew, you avoided disaster!
     m_Metadata:
       m_Items: []
   - m_Id: 660309781917698
@@ -123,16 +123,17 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 660309781917700
-    m_Localized: Fascinated, Little Bear lets himself be carried away.
+    m_Localized: You enjoy the show so much you don't notice they pushed your boat
+      away with them
     m_Metadata:
       m_Items: []
   - m_Id: 660309781917701
-    m_Localized: While advancing on the sea, little bear cub sees a strange raft
-      which seems to be made of cloud.
+    m_Localized: While advancing on the sea, you see a strange raft which seems to
+      be made of cloud
     m_Metadata:
       m_Items: []
   - m_Id: 660309781917702
-    m_Localized: Take the Nuage boat
+    m_Localized: Take the cloud raft
     m_Metadata:
       m_Items: []
   - m_Id: 660309781917703
@@ -140,7 +141,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 660309781917704
-    m_Localized: Stayed on our raft
+    m_Localized: Stay on your boat
     m_Metadata:
       m_Items: []
   - m_Id: 660309781917705
@@ -148,21 +149,21 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 660309781917706
-    m_Localized: "Martin the dolphin comes to meet us \u201CHey! A bear on the sea!
-      we will all have seen it! \u201C"
+    m_Localized: "Martin the dolphin comes to meet you \u201CHey! A bear on the sea!
+      now we've seen it all! \u201C"
     m_Metadata:
       m_Items: []
   - m_Id: 660309781917707
-    m_Localized: Tell him we're lost
+    m_Localized: Admit that you're lost
     m_Metadata:
       m_Items: []
   - m_Id: 660309781917708
-    m_Localized: Ask him what he wants
+    m_Localized: Ask him what he wants exactly
     m_Metadata:
       m_Items: []
   - m_Id: 660309781917709
-    m_Localized: "\u201CHey, I just wanted to see who you were! You wouldn't have
-      any rope to give me \r\nOtherwise ? \u201C"
+    m_Localized: '"Oh sorry! I was curious, but didn''t mean any harm! So, yeah,
+      do you have any rope to share?"'
     m_Metadata:
       m_Items: []
   - m_Id: 660309781917710
@@ -174,12 +175,12 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 660309781917712
-    m_Localized: Little bear takes the time to play with the fish. He is very happy
-      but has not made any progress today.
+    m_Localized: You take the time to play with the fish. You are very happy but
+      have not made any progress today.
     m_Metadata:
       m_Items: []
   - m_Id: 660309781917713
-    m_Localized: Continue on your way
+    m_Localized: Keep on going
     m_Metadata:
       m_Items: []
   - m_Id: 660309781917714
@@ -197,7 +198,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 660309781917717
-    m_Localized: That's it for you, big girl
+    m_Localized: '"That''s it for you, big girl"'
     m_Metadata:
       m_Items: []
   - m_Id: 660309781917718
@@ -205,11 +206,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 660309781917719
-    m_Localized: You must be in a hurry, I'll move you forward!
+    m_Localized: '"You must be in a hurry, then. I''ll move you forward!"'
     m_Metadata:
       m_Items: []
   - m_Id: 660309781917720
-    m_Localized: Confess you're a bit hungry
+    m_Localized: Admit that you're a bit hungry
     m_Metadata:
       m_Items: []
   - m_Id: 660309781917721
@@ -217,7 +218,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 660309781917722
-    m_Localized: The boat is damaged ! You must do an emergency repair !
+    m_Localized: The boat is damaged! You must do an emergency repair !
     m_Metadata:
       m_Items: []
   - m_Id: 660309781917723
@@ -233,11 +234,129 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 662510084435968
-    m_Localized: Next
+    m_Localized: ...
     m_Metadata:
       m_Items: []
   - m_Id: 662510101213184
     m_Localized: It seems to be holding up
+    m_Metadata:
+      m_Items: []
+  - m_Id: 690879190675456
+    m_Localized: Malou the Kangaroo seems to have made a mistake in reaching Australia.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 690879190675457
+    m_Localized: Point him to the South (towards Australia)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 690879190675458
+    m_Localized: He thanks us and gives us some ropes that he had collected
+    m_Metadata:
+      m_Items: []
+  - m_Id: 690879190675459
+    m_Localized: Tell him North (Towards the North Pole)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 690879190675460
+    m_Localized: He thanks us and gives us some ropes that he had picked up (but
+      it wasn't very nice)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 690879190675461
+    m_Localized: Pretend you've never met him
+    m_Metadata:
+      m_Items: []
+  - m_Id: 690879190675462
+    m_Localized: A Kangaroo in the open sea was definitely a trap!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 690879190675463
+    m_Localized: You find a trap for a fish. It seems empty
+    m_Metadata:
+      m_Items: []
+  - m_Id: 690879190675464
+    m_Localized: Put bait in
+    m_Metadata:
+      m_Items: []
+  - m_Id: 690879190675465
+    m_Localized: ...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 690879190675466
+    m_Localized: Dismantle the trap
+    m_Metadata:
+      m_Items: []
+  - m_Id: 690879190675467
+    m_Localized: Fish deserve to be free! and that's some resources
+    m_Metadata:
+      m_Items: []
+  - m_Id: 690879190675468
+    m_Localized: Go your way
+    m_Metadata:
+      m_Items: []
+  - m_Id: 690879190675469
+    m_Localized: Everyone has to survive
+    m_Metadata:
+      m_Items: []
+  - m_Id: 690879190675470
+    m_Localized: The fish are in the trap!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 690879190675471
+    m_Localized: wait until there are no more fish
+    m_Metadata:
+      m_Items: []
+  - m_Id: 690879190675472
+    m_Localized: ...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 690879190675473
+    m_Localized: Collect the fish
+    m_Metadata:
+      m_Items: []
+  - m_Id: 690879190675474
+    m_Localized: Lots of food!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 690879190675475
+    m_Localized: Mark the Shark is attracted to all this fish
+    m_Metadata:
+      m_Items: []
+  - m_Id: 690879190675476
+    m_Localized: Talk to the Shark
+    m_Metadata:
+      m_Items: []
+  - m_Id: 690879190675477
+    m_Localized: '"Hello Sir"'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 690879190675478
+    m_Localized: Flee !
+    m_Metadata:
+      m_Items: []
+  - m_Id: 690879190675479
+    m_Localized: A shark can be scary! it was the safest
+    m_Metadata:
+      m_Items: []
+  - m_Id: 690879190675480
+    m_Localized: "\u201CThank you very much for a good meal! For the trouble I\u2019ll
+      give you this!\u201D"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 690879190675481
+    m_Localized: Accept the gift
+    m_Metadata:
+      m_Items: []
+  - m_Id: 690879190675482
+    m_Localized: He gives us the 2025 sharkoid fin thruster!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 690879190675483
+    m_Localized: Refuse the gift
+    m_Metadata:
+      m_Items: []
+  - m_Id: 690879190675484
+    m_Localized: "\u201CYou bears are really so kind! See you next little one!\u201D"
     m_Metadata:
       m_Items: []
   references:

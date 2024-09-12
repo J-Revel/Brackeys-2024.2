@@ -1,37 +1,36 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UI;
 using UnityEngine;
 using UnityEngine.Localization;
+using UnityEngine.Localization.Settings;
+using UnityEngine.Localization.Tables;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
+using Random = UnityEngine.Random;
 
-[System.Serializable]
-public struct ResourceGain
+public enum ChoiceEffectType
 {
+    Resource,
+    TemporaryMovement,
+    PermanentMovement,
+    RandomDisplacement,
+}
+[System.Serializable]
+public struct ChoiceEffect
+{
+    public ChoiceEffectType effect_type;
     public ResourceType resource;
     public int delta;
-    
 }
 
 [System.Serializable]
 public struct ChoiceConfig
 {
-    [FormerlySerializedAs("description_localized")] public LocalizedString description;
-    public ResourceGain[] requirements;
-    public ResourceGain[] results;
-    public int temporary_movement_bonus;
-    public int permanent_movement_bonus;
-    public int random_movement;
-    public LocalizedString outcome;
+    public ChoiceEffect[] requirements;
+    public ChoiceEffect[] results;
     public EventConfigAsset next_event;
-}
-
-[System.Serializable]
-public struct EventConfig
-{
-    public LocalizedString description_localized;
-    public ChoiceConfig[] options;
 }
 
 public class EventChoiceMenu : MonoBehaviour
@@ -39,50 +38,125 @@ public class EventChoiceMenu : MonoBehaviour
     public EventConfigList config;
     
     public TMPro.TextMeshProUGUI description_text;
-    public Transform choice_panel;
+    public Transform choice_panel_model;
+    private Transform current_choice_panel;
     public EventChoiceButton choice_button_prefab;
-    public GameObject outcome_panel;
-    public TMPro.TextMeshProUGUI outcome_text;
-    public EventChoiceMenu menu_prefab;
     private List<EventChoiceButton> choice_buttons = new List<EventChoiceButton>();
-    
-    void Start()
+    public CanvasGroup background_canvas_group;
+    public float appear_anim_duration = 1;
+
+    IEnumerator Start()
     {
+        StartCoroutine(AppearCoroutine());
         EventConfigAsset selected_event = config.event_config[Random.Range(0, config.event_config.Length)];
-        ShowEvent(selected_event);
+        yield return ShowEventCoroutine(selected_event);
     }
 
-    public void ShowEvent(EventConfigAsset selected_event)
+    IEnumerator AppearCoroutine()
     {
-        foreach (EventChoiceButton button in choice_buttons)
-            Destroy(button.gameObject);
-        choice_buttons.Clear();
-        description_text.text = selected_event.description.GetLocalizedString();
-        foreach (ChoiceConfig choice_config in selected_event.options)
+        for (float time = 0; time < appear_anim_duration; time += Time.deltaTime)
         {
-            EventChoiceButton choice_button = Instantiate(choice_button_prefab, choice_panel);
+            background_canvas_group.alpha = time / appear_anim_duration;
+            yield return null;
+        }
+
+        background_canvas_group.alpha = 1;
+    }
+    
+    IEnumerator DisappearCoroutine()
+    {
+        for (float time = 0; time < appear_anim_duration; time += Time.deltaTime)
+        {
+            background_canvas_group.alpha = 1 - time / appear_anim_duration;
+            yield return null;
+        }
+
+        background_canvas_group.alpha = 0;
+        Destroy(gameObject);
+    }
+
+    public IEnumerator ShowEventCoroutine(EventConfigAsset selected_event)
+    {
+        List<Coroutine> coroutines = new List<Coroutine>();
+        choice_buttons.Clear();
+        description_text.text = LocalizationSettings.StringDatabase.GetLocalizedString(selected_event.id + "_description");
+        current_choice_panel = Instantiate(choice_panel_model, choice_panel_model.parent);
+        for(int i=0; i<selected_event.options.Length; i++)
+        {
+            ChoiceConfig choice_config = selected_event.options[i];
+            EventChoiceButton choice_button = Instantiate(choice_button_prefab, current_choice_panel);
+            
+            coroutines.Add(StartCoroutine(choice_button.paper_animations.AppearAnimCoroutine()));
             choice_button.config = choice_config;
+            choice_button.choice_id = selected_event.id + "_answer" + (i+1).ToString("00");
             ChoiceConfig active_choice_config = choice_config;
             choice_buttons.Add(choice_button);
-            choice_button.button.onClick.AddListener(() =>
+            int option_index = i;
+            choice_button.selected_delegate += () =>
             {
-                foreach (ResourceGain result in active_choice_config.results)
+                foreach (ChoiceEffect result in active_choice_config.results)
                 {
-                    PlayerResourceStock.instance.AddStock(result.resource, result.delta);
+                    switch (result.effect_type)
+                    {
+                        case ChoiceEffectType.Resource:   
+                            PlayerResourceStock.instance.AddStock(result.resource, result.delta);
+                            break;
+
+                        case ChoiceEffectType.TemporaryMovement:
+                            PlayerController.instance.ReceiveTemporaryMovementBonus(result.delta);
+                            break;
+                        case ChoiceEffectType.PermanentMovement:
+                            PlayerController.instance.ReceivePermanentMovementBonus(result.delta);
+                            break;
+                        case ChoiceEffectType.RandomDisplacement:
+                            break;
+                        default:
+                            throw new ArgumentOutOfRangeException();
+                    }
                 }
 
-                if (active_choice_config.next_event != null)
-                {
-                    ShowEvent(active_choice_config.next_event);
-                }
-                else if (!active_choice_config.outcome.IsEmpty)
-                {
-                    outcome_text.text = active_choice_config.outcome.GetLocalizedString();
-                    outcome_panel.SetActive(true);
-                }
-                else
-                    Destroy(gameObject);
-            });
+                StartCoroutine(ShowOutcomeCoroutine(option_index, active_choice_config, active_choice_config.next_event));
+            };
+        }
+
+        foreach (Coroutine coroutine in coroutines)
+            yield return coroutine;
+    }
+
+    public IEnumerator ShowOutcomeCoroutine(int option_index, ChoiceConfig choice, EventConfigAsset next_event)
+    {
+        var choice_panel = current_choice_panel;
+        List<Coroutine> coroutines = new List<Coroutine>();
+        for (int i = 0; i < choice_buttons.Count; i++)
+        {
+            AnimatedPaperWidget paper_widget = choice_buttons[i].paper_animations;
+            if (i == option_index)
+                coroutines.Add(StartCoroutine(paper_widget.FlipAnimCoroutine(choice)));
+            else 
+                coroutines.Add(StartCoroutine(DisappearButton(i)));
+        }
+
+        foreach (Coroutine coroutine in coroutines)
+            yield return coroutine;
+        yield return choice_buttons[option_index].WaitClickCoroutine();
+        if (next_event != null)
+        {
+            StartCoroutine(choice_buttons[option_index].paper_animations.DisappearAnimCoroutine());
+            
+            yield return ShowEventCoroutine(next_event);
+            Destroy(choice_panel.gameObject);
+        }
+        else
+        {
+            yield return choice_buttons[option_index].paper_animations.DisappearAnimCoroutine();
+            yield return DisappearCoroutine();
         }
     }
+
+    private IEnumerator DisappearButton(int index)
+    {
+        AnimatedPaperWidget paper_widget = choice_buttons[index].paper_animations;
+        yield return paper_widget.DisappearAnimCoroutine();
+    }
 }
+

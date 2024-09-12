@@ -27,7 +27,6 @@ public class EventCell : MonoBehaviour
     {
         EventChoiceMenu choice_menu = MenuSystem.instance.OpenMenu(choice_menu_prefab);
         choice_menu.config = config_list;
-        Destroy(gameObject);
         while (choice_menu != null)
             yield return null;
     }

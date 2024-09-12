@@ -12,66 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cb991c5920b4754b9c6e8021e332829, type: 3}
   m_Name: Evt01_Fish
   m_EditorClassIdentifier: 
-  description:
-    m_TableReference:
-      m_TableCollectionName: GUID:52f63490201a54b459bf91fa1737e885
-    m_TableEntryReference:
-      m_KeyId: 676523814912
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
+  id: evt01
   options:
-  - description_localized:
-      m_TableReference:
-        m_TableCollectionName: GUID:52f63490201a54b459bf91fa1737e885
-      m_TableEntryReference:
-        m_KeyId: 1108474212352
-        m_Key: 
-      m_FallbackState: 0
-      m_WaitForCompletion: 0
-      m_LocalVariables: []
-    requirements: []
+  - requirements: []
     results:
     - resource: 1
       delta: 5
     temporary_movement_bonus: 0
     permanent_movement_bonus: 0
     random_movement: 0
-    outcome:
-      m_TableReference:
-        m_TableCollectionName: GUID:52f63490201a54b459bf91fa1737e885
-      m_TableEntryReference:
-        m_KeyId: 30435911806976
-        m_Key: 
-      m_FallbackState: 0
-      m_WaitForCompletion: 0
-      m_LocalVariables: []
-    next_event: {fileID: 11400000, guid: 2e901eeea865f574498cf1bdee613091, type: 2}
-  - description_localized:
-      m_TableReference:
-        m_TableCollectionName: GUID:52f63490201a54b459bf91fa1737e885
-      m_TableEntryReference:
-        m_KeyId: 1426037551104
-        m_Key: 
-      m_FallbackState: 0
-      m_WaitForCompletion: 0
-      m_LocalVariables: []
-    requirements: []
+    next_event: {fileID: 0}
+  - requirements: []
     results: []
     temporary_movement_bonus: 0
     permanent_movement_bonus: 0
     random_movement: 0
-    outcome:
-      m_TableReference:
-        m_TableCollectionName: 
-      m_TableEntryReference:
-        m_KeyId: 0
-        m_Key: 
-      m_FallbackState: 0
-      m_WaitForCompletion: 0
-      m_LocalVariables: []
     next_event: {fileID: 0}
-  references:
-    version: 2
-    RefIds: []

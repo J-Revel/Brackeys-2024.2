@@ -12,8 +12,6 @@ public class PlayerController : MonoBehaviour
     public float range = 5;
     public GameObject target_cell_prefab;
     private List<GameObject> target_cells = new List<GameObject>();
-    public CardinalDirection wind_direction;
-    public int wind_strength;
 
     public static PlayerController instance;
     public List<WindTarget> wind_targets = new List<WindTarget>();
@@ -22,6 +20,10 @@ public class PlayerController : MonoBehaviour
     public PathDisplay path_display;
 
     public int2 checkpoint;
+    
+    float movement_actions;
+    private int temporary_action_bonus;
+    private int permanent_action_bonus;
 
     public void Awake()
     {
@@ -30,7 +32,8 @@ public class PlayerController : MonoBehaviour
     
     public IEnumerator Start()
     {
-        float movement_actions = range;
+        movement_actions = range + temporary_action_bonus + permanent_action_bonus;
+        temporary_action_bonus = 0;
         while (true)
         {
             Plane plane = new Plane(Vector3.forward, Vector3.zero);
@@ -59,8 +62,10 @@ public class PlayerController : MonoBehaviour
 
             if (skip)
             {
-                yield return ApplyWind(wind_direction, wind_strength);
-                movement_actions = range;
+                if(WeatherHandler.instance.current_wind_intensity > 0 )
+                    yield return ApplyWind(WeatherHandler.instance.current_wind_direction, WeatherHandler.instance.current_wind_intensity);
+                movement_actions = range + temporary_action_bonus + permanent_action_bonus;
+                temporary_action_bonus = 0;
                 skip = false;
                 yield return ActivateCell();
                 yield return GameState.instance.FinishTurnCoroutine();
@@ -83,24 +88,24 @@ public class PlayerController : MonoBehaviour
                     if (movement_actions <= 0)
                     {
                         int2 start_cell = current_cell;
-                        if (wind_strength > 0)
+                        if (WeatherHandler.instance.current_wind_intensity > 0)
                         {
-                            yield return ApplyWind(wind_direction, wind_strength);
+                            yield return ApplyWind(WeatherHandler.instance.current_wind_direction, WeatherHandler.instance.current_wind_intensity);
                         }
 
                         current_cell = GridInstance.instance.PosToCell(transform.position);
                         if (math.any(start_cell != current_cell))
                         {
+                            yield return LeaveCell(start_cell);
                             yield return ActivateCell();
                         }
 
                         yield return GameState.instance.FinishTurnCoroutine();
-                        movement_actions = range;
+                        movement_actions = range + temporary_action_bonus + permanent_action_bonus;
+                        temporary_action_bonus = 0;
                     }
                 }
             }
-
-            dijkstra.data.Dispose();
 
             yield return null;
         }
@@ -117,6 +122,18 @@ public class PlayerController : MonoBehaviour
         foreach (Coroutine coroutine in coroutines)
             yield return coroutine;
         
+    }
+    
+    public IEnumerator LeaveCell(int2 cell)
+    {
+        List<Coroutine> coroutines = new List<Coroutine>();
+        foreach(IEnumerator enumerator in GridInstance.instance.GetCellContent(cell).leave_coroutines)
+        {
+            coroutines.Add(StartCoroutine(enumerator));
+        }
+
+        foreach (Coroutine coroutine in coroutines)
+            yield return coroutine;
     }
 
     public void SkipTurn()
@@ -147,5 +164,20 @@ public class PlayerController : MonoBehaviour
         transform.position = GridInstance.instance.CellToPos(checkpoint);
         current_cell = checkpoint;
         player.cell = checkpoint;
+    }
+
+    public void ReceiveTemporaryMovementBonus(int quantity)
+    {
+        temporary_action_bonus += quantity;
+    }
+    
+    public void ReceivePermanentMovementBonus(int quantity)
+    {
+        permanent_action_bonus += quantity;
+    }
+
+    public void OnStormEnd()
+    {
+        permanent_action_bonus = 0;
     }
 }

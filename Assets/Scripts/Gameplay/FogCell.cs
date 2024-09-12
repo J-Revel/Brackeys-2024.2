@@ -12,10 +12,12 @@ public class FogCell : MonoBehaviour
     private SpriteRenderer sprite_renderer;
     public Color visible_color = new Color(0, 0, 0, 0);
     public Color fog_color = Color.black;
+    private ParticleSystem particles;
 
     private void Start()
     {
         sprite_renderer = GetComponent<SpriteRenderer>();
+        particles = GetComponent<ParticleSystem>();
     }
     
 
@@ -26,5 +28,9 @@ public class FogCell : MonoBehaviour
         else time -= Time.deltaTime;
         time = math.clamp(time, 0, transition_duration);
         sprite_renderer.color = Color.Lerp(fog_color, visible_color, time / transition_duration);
+        if(!visible && !particles.isPlaying)
+            particles.Play(true);
+        else if (visible && particles.isPlaying)
+            particles.Stop(true);
     }
 }

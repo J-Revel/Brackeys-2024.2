@@ -72,6 +72,7 @@ public class CellEntity : MonoBehaviour
         float distance = math.distance((float2)target_cell, (float2)cell);
         float2 start_pos = (float2)cell;
         float2 target_pos = (float2)target_cell;
+        int2 start_cell = cell;
         cell = target_cell;
         float duration = distance / speed;
         for (float time = 0; time < duration; time += Time.deltaTime)
@@ -84,6 +85,10 @@ public class CellEntity : MonoBehaviour
         if (activate_cells)
         {
             List<Coroutine> coroutines = new List<Coroutine>();
+            foreach(IEnumerator enumerator in GridInstance.instance.GetCellContent(start_cell).leave_coroutines)
+            {
+                coroutines.Add(StartCoroutine(enumerator));
+            }
             foreach(IEnumerator enumerator in GridInstance.instance.GetCellContent(target_cell).enter_coroutines)
             {
                 coroutines.Add(StartCoroutine(enumerator));
@@ -117,10 +122,10 @@ public class CellEntity : MonoBehaviour
         public DijkstraMap(int2 start_cell, Allocator allocator)
         {
             this.start_cell = start_cell;
-            data = new NativeHashMap<int2, DijkstraMapElement>(1024, allocator);
+            data = new Dictionary<int2, DijkstraMapElement>();
         }
         public int2 start_cell;
-        public NativeHashMap<int2, DijkstraMapElement> data;
+        public Dictionary<int2, DijkstraMapElement> data;
         public int2[] PathFind(int2 target_cell, out float length)
         {
             length = 0;
@@ -146,9 +151,9 @@ public class CellEntity : MonoBehaviour
 
         public int2[] ListCells()
         {
-            int2[] result = new int2[data.Count()];
+            int2[] result = new int2[data.Count];
             int cursor = 0;
-            foreach (KeyValue<int2, DijkstraMapElement> data_pair in data)
+            foreach (KeyValuePair<int2, DijkstraMapElement> data_pair in data)
             {
                 result[cursor] = data_pair.Key;
                 cursor++;

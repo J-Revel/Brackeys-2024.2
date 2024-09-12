@@ -12,42 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cb991c5920b4754b9c6e8021e332829, type: 3}
   m_Name: Evt03_WindGust
   m_EditorClassIdentifier: 
-  description:
-    m_TableReference:
-      m_TableCollectionName: GUID:52f63490201a54b459bf91fa1737e885
-    m_TableEntryReference:
-      m_KeyId: 3231253409792
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
+  id: evt10
   options:
-  - description_localized:
-      m_TableReference:
-        m_TableCollectionName: GUID:52f63490201a54b459bf91fa1737e885
-      m_TableEntryReference:
-        m_KeyId: 22349029453824
-        m_Key: 
-      m_FallbackState: 0
-      m_WaitForCompletion: 0
-      m_LocalVariables: []
-    requirements: []
+  - requirements:
+    - effect_type: 0
+      resource: 0
+      delta: 5
     results:
-    - resource: 0
+    - effect_type: 0
+      resource: 0
       delta: -5
-    temporary_movement_bonus: 0
-    permanent_movement_bonus: 0
-    random_movement: 0
-    outcome:
-      m_TableReference:
-        m_TableCollectionName: 
-      m_TableEntryReference:
-        m_KeyId: 0
-        m_Key: 
-      m_FallbackState: 0
-      m_WaitForCompletion: 0
-      m_LocalVariables: []
     next_event: {fileID: 0}
-  references:
-    version: 2
-    RefIds: []
+  - requirements: []
+    results:
+    - effect_type: 2
+      resource: 0
+      delta: -1
+    next_event: {fileID: 0}

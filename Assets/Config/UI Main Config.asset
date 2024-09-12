@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   resource_icons:
   - resource: 0
-    sprite: {fileID: 786667271, guid: 07c1595131fb08e478e0003752d97691, type: 3}
+    sprite: {fileID: 21300000, guid: 7a3013045c9d3c14c8433b7ff9e82212, type: 3}
   - resource: 1
-    sprite: {fileID: 1360121031, guid: 07c1595131fb08e478e0003752d97691, type: 3}
+    sprite: {fileID: 21300000, guid: 2ae8986266a89c54cb0fa79284c2b12e, type: 3}
   - resource: 2
-    sprite: {fileID: -1991228265, guid: 07c1595131fb08e478e0003752d97691, type: 3}
+    sprite: {fileID: 21300000, guid: 37be6df6d3c95a345836699ac4bab220, type: 3}

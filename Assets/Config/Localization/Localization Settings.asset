@@ -67,7 +67,7 @@ MonoBehaviour:
         asm: Unity.Localization}
       data:
         m_DefaultTableReference:
-          m_TableCollectionName: 
+          m_TableCollectionName: Main Loc Table
         m_CustomTableProvider:
           rid: -2
         m_CustomTablePostprocessor:

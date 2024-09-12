@@ -24,7 +24,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1108474212352
-    m_Localized: Suivre le poisson
+    m_Localized: Il s'en va.
     m_Metadata:
       m_Items: []
   - m_Id: 1426037551104
@@ -45,16 +45,40 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3231253409792
-    m_Localized: Une grosse bourrasque nous pousse sur les massifs rocheux.
+    m_Localized: "Une grosse bourrasque nous pousse sur les massifs rocheux. Le bateau
+      a besoin de r\xE9parations !"
     m_Metadata:
       m_Items: []
   - m_Id: 22349029453824
-    m_Localized: "Le bateau a pris quelque d\xE9gat que l\u2019on doit r\xE9parer
-      d\u2019urgence !"
+    m_Localized: "Le bateau n'est pas encore coul\xE9, mais il ira moins vite..."
     m_Metadata:
       m_Items: []
   - m_Id: 30435911806976
     m_Localized: "Il te revaudra \xE7a !"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 313153144893440
+    m_Localized: "Tu r\xE9ussis \xE0 t'\xE9chapper !"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 411399913615360
+    m_Localized: Suivre le poisson
+    m_Metadata:
+      m_Items: []
+  - m_Id: 411399947169792
+    m_Localized: "Il vous am\xE8ne \xE0 une cache secr\xE8te !"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 411682114777088
+    m_Localized: "R\xE9parer imm\xE9diatement !"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 411682114777089
+    m_Localized: "Ouf, on a \xE9vit\xE9 la catastrophe !"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 411682114777090
+    m_Localized: On verra plus tard
     m_Metadata:
       m_Items: []
   references:

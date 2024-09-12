@@ -9,7 +9,9 @@ public class CellContent
     public bool safe;
     public List<IEnumerator> cross_coroutines = new List<IEnumerator>();
     public List<IEnumerator> enter_coroutines = new List<IEnumerator>();
+    public System.Action enter_coroutines_finished;
     public List<IEnumerator> leave_coroutines = new List<IEnumerator>();
+    public System.Action leave_coroutines_finished;
     
 }
 public class GridInstance : MonoBehaviour

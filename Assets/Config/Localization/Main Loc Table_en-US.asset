@@ -24,7 +24,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1108474212352
-    m_Localized: Follow the fish
+    m_Localized: 
     m_Metadata:
       m_Items: []
   - m_Id: 1426037551104
@@ -49,6 +49,22 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 22349029453824
+    m_Localized: The boat is damaged ! You must do an emergency repair !
+    m_Metadata:
+      m_Items: []
+  - m_Id: 411399913615360
+    m_Localized: Follow the fish
+    m_Metadata:
+      m_Items: []
+  - m_Id: 411682114777088
+    m_Localized: The boat is damaged ! You must do an emergency repair !
+    m_Metadata:
+      m_Items: []
+  - m_Id: 411682114777089
+    m_Localized: The boat is damaged ! You must do an emergency repair !
+    m_Metadata:
+      m_Items: []
+  - m_Id: 411682114777090
     m_Localized: The boat is damaged ! You must do an emergency repair !
     m_Metadata:
       m_Items: []

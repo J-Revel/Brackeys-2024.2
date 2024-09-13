@@ -22,12 +22,14 @@ public class PlayerController : MonoBehaviour
     public PathDisplay path_display;
 
     public int2 checkpoint;
+    public float look_direction_default_scale = -1;
     
     float movement_actions;
     private int temporary_action_bonus;
     private int permanent_action_bonus;
 
     public EventReference test_event;
+    public Transform display;
 
     public void Awake()
     {
@@ -85,7 +87,7 @@ public class PlayerController : MonoBehaviour
                     {
                         cell.SetActive(false);
                     }
-                    yield return player.FollowPathCoroutine(path, movement_speed, true);
+                    yield return player.FollowPathCoroutine(path, movement_speed, true, true);
                     current_cell = GridInstance.instance.PosToCell(transform.position);
                     movement_actions -= length;
                     if (movement_actions <= 0)
@@ -134,6 +136,7 @@ public class PlayerController : MonoBehaviour
     public void Update()
     {
         current_cell = GridInstance.instance.PosToCell(transform.position);
+        display.localScale = new float3(player.look_direction * look_direction_default_scale, 1, 1);
     }
 
     public IEnumerator ApplyWind(CardinalDirection direction, int strength)

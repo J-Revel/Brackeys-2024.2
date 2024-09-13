@@ -19,6 +19,8 @@ public class CellEntity : MonoBehaviour
     private GridConfig grid_config;
     public List<IEnumerator> enter_coroutines = new List<IEnumerator>();
     public EventReference move_audio_event;
+    [HideInInspector]
+    public int look_direction = 1;
 
     private void Start()
     {
@@ -47,21 +49,11 @@ public class CellEntity : MonoBehaviour
     }
     #endif
 
-    public void MoveTo(int2 target_cell, float speed, bool activate_cells)
-    {
-        StartCoroutine(MoveToCoroutine(target_cell, speed, activate_cells));
-    }
-    
-    public void FollowPath(int2[] path, float speed, bool activate_cells)
-    {
-        StartCoroutine(FollowPathCoroutine(path, speed, activate_cells));
-    }
-    
-    public IEnumerator FollowPathCoroutine(int2[] path, float speed, bool activate_cells)
+    public IEnumerator FollowPathCoroutine(int2[] path, float speed, bool activate_cells, bool can_turn)
     {
         for (int i = 0; i < path.Length; i++)
         {
-            yield return MoveToCoroutine(path[i], speed, activate_cells);
+            yield return MoveToCoroutine(path[i], speed, activate_cells, can_turn);
         }
     }
 
@@ -79,8 +71,15 @@ public class CellEntity : MonoBehaviour
         cell_content.enter_coroutines_finished?.Invoke();
     }
     
-    public IEnumerator MoveToCoroutine(int2 target_cell, float speed, bool activate_cells)
+    public IEnumerator MoveToCoroutine(int2 target_cell, float speed, bool activate_cells, bool can_turn)
     {
+        if (can_turn)
+        {
+            if (target_cell.x - cell.x > 0)
+                look_direction = 1;
+            if (target_cell.x - cell.x < 0)
+                look_direction = -1;
+        }
         if (!move_audio_event.IsNull)
         {
             EventInstance move_event_state = FMODUnity.RuntimeManager.CreateInstance(move_audio_event);

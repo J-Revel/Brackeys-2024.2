@@ -1,10 +1,7 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
 using Unity.Mathematics;
-using UnityEditor.Localization.Plugins.XLIFF.V12;
 using UnityEngine;
-using UnityEngine.Serialization;
 using Random = UnityEngine.Random;
 
 public enum WeatherPhase
@@ -61,7 +58,6 @@ public class WeatherHandler : MonoBehaviour
     public float fog_transition_duration = 3;
     private WeatherPhaseConfig active_phase_config;
     private int active_phase_index = 0;
-    public CanvasGroup fade_canvas_group;
     public WindParticleSystem[] wind_particle_systems;
 
     private void Awake()

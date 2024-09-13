@@ -1,5 +1,32 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8612997630144946599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Wind Puissance/Wind Puissance 2
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Wind Puissance/Wind Puissance 2
+  Guid:
+    Data1: 1289937434
+    Data2: 1078320512
+    Data3: -402232419
+    Data4: -946932737
+  Banks:
+  - {fileID: 4983992731430885925}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2272
 --- !u!114 &-8603192890432182905
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15,10 +42,10 @@ MonoBehaviour:
   Path: Assets/Audio/Bank/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638618213365765113
+  lastModified: 638618476802127212
   FileSizes: []
   Exists: 1
---- !u!114 &-4996895171019790211
+--- !u!114 &-5957784299612114030
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -28,22 +55,50 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: snapshot:/storm
+  m_Name: event:/SFX/Wind Puissance/Wind Puissance 1
   m_EditorClassIdentifier: 
-  Path: snapshot:/storm
+  Path: event:/SFX/Wind Puissance/Wind Puissance 1
   Guid:
-    Data1: 492296309
-    Data2: 1150324840
-    Data3: -268293492
-    Data4: 48155770
+    Data1: -118946954
+    Data2: 1244188738
+    Data3: -1849806208
+    Data4: -62802085
   Banks:
-  - {fileID: -4652518440470459895}
+  - {fileID: 4983992731430885925}
+  - {fileID: -8603192890432182905}
   IsStream: 0
   Is3D: 0
-  IsOneShot: 0
+  IsOneShot: 1
   Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2428
+--- !u!114 &-5898997509632519291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/tuile/CAVE
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/tuile/CAVE
+  Guid:
+    Data1: 304309816
+    Data2: 1270154892
+    Data3: -771013991
+    Data4: 279154595
+  Banks:
+  - {fileID: 4983992731430885925}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
   Length: 0
 --- !u!114 &-4652518440470459895
 MonoBehaviour:
@@ -60,9 +115,91 @@ MonoBehaviour:
   Path: Assets/Audio/Bank/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638618213365445975
+  lastModified: 638618476801626713
   FileSizes: []
   Exists: 1
+--- !u!114 &-4315786277677315050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/tuile/Event-Choisis
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/tuile/Event-Choisis
+  Guid:
+    Data1: -734128714
+    Data2: 1302455509
+    Data3: -396043856
+    Data4: 1986269652
+  Banks:
+  - {fileID: -8603192890432182905}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 690
+--- !u!114 &-2809209086701804765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/tuile/Courant
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/tuile/Courant
+  Guid:
+    Data1: -390623773
+    Data2: 1077560575
+    Data3: 381147032
+    Data4: 1729176713
+  Banks:
+  - {fileID: -8603192890432182905}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 556
+--- !u!114 &-1878053621796489521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Musique/Quete
+  m_EditorClassIdentifier: 
+  Path: event:/Musique/Quete
+  Guid:
+    Data1: -195073187
+    Data2: 1260955925
+    Data3: -1998526835
+    Data4: -1275976837
+  Banks:
+  - {fileID: 4983992731430885925}
+  - {fileID: 8863148733194802302}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 73291
 --- !u!114 &-1641193398927174220
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -78,11 +215,65 @@ MonoBehaviour:
   Path: Assets/Audio/Bank/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638618213365485860
+  lastModified: 638618476801802086
   FileSizes:
   - Name: 
-    Value: 1004
+    Value: 1994
   Exists: 1
+--- !u!114 &-790880471027828048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/tuile/Abbri
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/tuile/Abbri
+  Guid:
+    Data1: -1311530765
+    Data2: 1260413583
+    Data3: 658646716
+    Data4: 1532019556
+  Banks:
+  - {fileID: -8603192890432182905}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1400
+--- !u!114 &-583631766697383894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/basique/Press Bouton
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/basique/Press Bouton
+  Guid:
+    Data1: -2049503068
+    Data2: 1175386391
+    Data3: -1612397437
+    Data4: 1314925482
+  Banks:
+  - {fileID: -8603192890432182905}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 381
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -99,17 +290,146 @@ MonoBehaviour:
   - {fileID: -1641193398927174220}
   - {fileID: -4652518440470459895}
   - {fileID: -8603192890432182905}
+  - {fileID: 4983992731430885925}
+  - {fileID: 8863148733194802302}
   EditorEvents:
-  - {fileID: -4996895171019790211}
   - {fileID: 2498852841137098314}
-  - {fileID: 8314284853611528312}
+  - {fileID: -8612997630144946599}
+  - {fileID: 652161920578871403}
+  - {fileID: -5898997509632519291}
+  - {fileID: -1878053621796489521}
+  - {fileID: -5957784299612114030}
+  - {fileID: 6490810416847316514}
+  - {fileID: 4538511999045684169}
+  - {fileID: 6433343785901279933}
+  - {fileID: 5447365000601626224}
+  - {fileID: 3556098420072095922}
+  - {fileID: 1436469032710464280}
+  - {fileID: 7001039967533576491}
+  - {fileID: -583631766697383894}
+  - {fileID: -4315786277677315050}
+  - {fileID: 592675104968585964}
+  - {fileID: 3912206861501611291}
+  - {fileID: -2809209086701804765}
+  - {fileID: 4687080078081267374}
+  - {fileID: -790880471027828048}
+  - {fileID: 477864820759511121}
   EditorParameters: []
   MasterBanks:
   - {fileID: -4652518440470459895}
   StringsBanks:
   - {fileID: -1641193398927174220}
-  cacheTime: 638618213365765113
+  cacheTime: 638618476802127212
   cacheVersion: 131619
+--- !u!114 &477864820759511121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/tuile/Pirate Accepte
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/tuile/Pirate Accepte
+  Guid:
+    Data1: -996208396
+    Data2: 1142751271
+    Data3: 970508175
+    Data4: -1652057545
+  Banks:
+  - {fileID: -8603192890432182905}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 840
+--- !u!114 &592675104968585964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/basique/Clic refuser
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/basique/Clic refuser
+  Guid:
+    Data1: -1622176326
+    Data2: 1136966519
+    Data3: 822781106
+    Data4: 867879556
+  Banks:
+  - {fileID: -8603192890432182905}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 698
+--- !u!114 &652161920578871403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Musique/Musique
+  m_EditorClassIdentifier: 
+  Path: event:/Musique/Musique
+  Guid:
+    Data1: -1302519250
+    Data2: 1149937744
+    Data3: -252502876
+    Data4: 518488790
+  Banks:
+  - {fileID: 4983992731430885925}
+  - {fileID: 8863148733194802302}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 73177
+--- !u!114 &1436469032710464280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/tuile/Loot
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/tuile/Loot
+  Guid:
+    Data1: 970566253
+    Data2: 1103848504
+    Data3: 1757124523
+    Data4: 786880528
+  Banks:
+  - {fileID: -8603192890432182905}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1511
 --- !u!114 &2498852841137098314
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -137,7 +457,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
---- !u!114 &8314284853611528312
+--- !u!114 &3556098420072095922
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -147,9 +467,90 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Move
+  m_Name: event:/SFX/basique/Storm
   m_EditorClassIdentifier: 
-  Path: event:/Move
+  Path: event:/SFX/basique/Storm
+  Guid:
+    Data1: 1563379554
+    Data2: 1222296260
+    Data3: 1900276884
+    Data4: 711824165
+  Banks:
+  - {fileID: -8603192890432182905}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5672
+--- !u!114 &3912206861501611291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/tuile/Apparition Papier Event
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/tuile/Apparition Papier Event
+  Guid:
+    Data1: -1556226110
+    Data2: 1162947841
+    Data3: -238881114
+    Data4: -654659470
+  Banks:
+  - {fileID: -8603192890432182905}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1181
+--- !u!114 &4538511999045684169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Wind Puissance/Wind Puissance 3
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Wind Puissance/Wind Puissance 3
+  Guid:
+    Data1: 822155228
+    Data2: 1268335462
+    Data3: -155010908
+    Data4: 605649950
+  Banks:
+  - {fileID: 4983992731430885925}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3865
+--- !u!114 &4687080078081267374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/basique/Move
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/basique/Move
   Guid:
     Data1: 40224497
     Data2: 1128356485
@@ -164,3 +565,147 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1841
+--- !u!114 &4983992731430885925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Ambiance.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Bank/Ambiance.bank
+  Name: Ambiance
+  StudioPath: bank:/Ambiance
+  lastModified: 638618476801496744
+  FileSizes: []
+  Exists: 1
+--- !u!114 &5447365000601626224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/tuile/Pirate
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/tuile/Pirate
+  Guid:
+    Data1: -169014196
+    Data2: 1215050892
+    Data3: -855517513
+    Data4: 1901555997
+  Banks:
+  - {fileID: -8603192890432182905}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2600
+--- !u!114 &6433343785901279933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/basique/Clic
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/basique/Clic
+  Guid:
+    Data1: 1674023702
+    Data2: 1241231775
+    Data3: 1329658517
+    Data4: 1651323323
+  Banks:
+  - {fileID: -8603192890432182905}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 336
+--- !u!114 &6490810416847316514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambiance/Amb-Wave
+  m_EditorClassIdentifier: 
+  Path: event:/Ambiance/Amb-Wave
+  Guid:
+    Data1: -465373990
+    Data2: 1296428381
+    Data3: 477728407
+    Data4: -307430803
+  Banks:
+  - {fileID: 4983992731430885925}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 222186
+--- !u!114 &7001039967533576491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/tuile/Event
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/tuile/Event
+  Guid:
+    Data1: -1033807724
+    Data2: 1074194361
+    Data3: 760919459
+    Data4: -1269251176
+  Banks:
+  - {fileID: -8603192890432182905}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1986
+--- !u!114 &8863148733194802302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Musique.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Bank/Musique.bank
+  Name: Musique
+  StudioPath: bank:/Musique
+  lastModified: 638618476801957196
+  FileSizes: []
+  Exists: 1

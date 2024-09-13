@@ -4,15 +4,9 @@ using UnityEngine;
 
 public class RandomSprite : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public Sprite[] sprites;
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        GetComponent<SpriteRenderer>().sprite = sprites[Random.Range(0, sprites.Length)];
     }
 }

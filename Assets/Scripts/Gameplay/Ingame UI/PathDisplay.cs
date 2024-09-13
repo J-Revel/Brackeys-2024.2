@@ -85,8 +85,11 @@ public class PathDisplay : MonoBehaviour
             float2 random_offset = random.NextFloat2();
             float3 target_pos = GridInstance.instance.CellToPos(path[i]);
             float offset = math.lerp(random_offset_scale.x, random_offset_scale.y, random_offset.y);
-            target_pos.x += offset * math.cos(random_offset.x * math.PI * 2);
-            target_pos.y += offset * math.sin(random_offset.x * math.PI * 2);
+            if (i < path.Length - 1)
+            {
+                target_pos.x += offset * math.cos(random_offset.x * math.PI * 2);
+                target_pos.y += offset * math.sin(random_offset.x * math.PI * 2);
+            }
             line_renderer.SetPosition(i+1, target_pos);
             spawned_points[i].transform.position = target_pos;
         }

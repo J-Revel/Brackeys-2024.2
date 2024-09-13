@@ -15,6 +15,8 @@ public class WindParticleSystem : MonoBehaviour
     
     public void UpdateDisplay(int wind_intensity)
     {
+        if(particle_system == null)
+            particle_system = GetComponent<ParticleSystem>();
         ParticleSystem.EmissionModule wind_emission = particle_system.emission;
         wind_emission.rateOverTime = spawn_rates[wind_intensity];
         ParticleSystem.MainModule main_module = particle_system.main;

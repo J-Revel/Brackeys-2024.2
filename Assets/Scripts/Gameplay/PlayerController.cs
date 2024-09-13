@@ -38,6 +38,7 @@ public class PlayerController : MonoBehaviour
     
     public IEnumerator Start()
     {
+        GameState.instance.phase_reset_delegate += OnStormEnd;
         movement_actions = range + temporary_action_bonus + permanent_action_bonus;
         temporary_action_bonus = 0;
         while (true)

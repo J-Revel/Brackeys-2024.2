@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 99109768649928713}
   - component: {fileID: 3440001456238668038}
   m_Layer: 0
-  m_Name: Rope Cell
+  m_Name: Food Cell
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 1100180181994710208}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -956, y: -540, z: 0}
+  m_LocalPosition: {x: 4, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 1281ab22763cff04395df6671b29b40c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: efc6c185f45652c49bafd3b52e5ca62d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -109,7 +109,7 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
-  look_direction: 0
+  look_direction: 1
 --- !u!114 &99109768649928713
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -135,5 +135,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 211a9977d9839b6478476b47cd04aeac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resource: 2
+  resource: 1
   quantity: 5

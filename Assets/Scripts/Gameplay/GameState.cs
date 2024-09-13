@@ -11,6 +11,7 @@ public class GameState : MonoBehaviour
 
     public int turn_index = 0;
     public CoroutineDelegate turn_change_delegate;
+    public System.Action phase_reset_delegate;
 
     void Awake()
     {

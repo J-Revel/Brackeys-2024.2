@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using FMOD.Studio;
+using FMODUnity;
 using Unity.Collections;
 using Unity.Collections.LowLevel.Unsafe;
 using Unity.Mathematics;
@@ -16,6 +18,7 @@ public class CellEntity : MonoBehaviour
     public int2 cell;
     private GridConfig grid_config;
     public List<IEnumerator> enter_coroutines = new List<IEnumerator>();
+    public EventReference move_audio_event;
 
     private void Start()
     {
@@ -64,6 +67,11 @@ public class CellEntity : MonoBehaviour
     
     public IEnumerator MoveToCoroutine(int2 target_cell, float speed, bool activate_cells)
     {
+        if (!move_audio_event.IsNull)
+        {
+            EventInstance move_event_state = FMODUnity.RuntimeManager.CreateInstance(move_audio_event);
+            move_event_state.start();
+        }
         CellContent start_cell_content = GridInstance.instance.GetCellContent(cell);
         foreach (IEnumerator coroutine in enter_coroutines)
         {

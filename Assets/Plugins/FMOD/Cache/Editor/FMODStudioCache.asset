@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-6136103435747191709
+--- !u!114 &-8603192890432182905
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -12,13 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
   m_Name: bank:/SFX.bank
   m_EditorClassIdentifier: 
-  Path: ../../../Desktop/composition musical/jeu ours/projet ours/Build/Desktop/SFX.bank
+  Path: Assets/Audio/Bank/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638618213365765113
-  FileSizes:
-  - Name: Desktop
-    Value: 176768
+  lastModified: 638618254799165749
+  FileSizes: []
   Exists: 1
 --- !u!114 &-4996895171019790211
 MonoBehaviour:
@@ -39,7 +37,7 @@ MonoBehaviour:
     Data3: -268293492
     Data4: 48155770
   Banks:
-  - {fileID: 4634501867448840713}
+  - {fileID: -4652518440470459895}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -47,7 +45,25 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
---- !u!114 &-1633216018366188862
+--- !u!114 &-4652518440470459895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Bank/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638618254798565736
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-1641193398927174220
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -59,12 +75,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
   m_Name: bank:/Master.strings.bank
   m_EditorClassIdentifier: 
-  Path: ../../../Desktop/composition musical/jeu ours/projet ours/Build/Desktop/Master.strings.bank
+  Path: Assets/Audio/Bank/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638618213365485860
+  lastModified: 638618254798585739
   FileSizes:
-  - Name: Desktop
+  - Name: 
     Value: 1004
   Exists: 1
 --- !u!114 &11400000
@@ -80,19 +96,19 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: -1633216018366188862}
-  - {fileID: 4634501867448840713}
-  - {fileID: -6136103435747191709}
+  - {fileID: -1641193398927174220}
+  - {fileID: -4652518440470459895}
+  - {fileID: -8603192890432182905}
   EditorEvents:
   - {fileID: -4996895171019790211}
   - {fileID: 2498852841137098314}
-  - {fileID: 7307034634350571051}
+  - {fileID: 8314284853611528312}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 4634501867448840713}
+  - {fileID: -4652518440470459895}
   StringsBanks:
-  - {fileID: -1633216018366188862}
-  cacheTime: 638618213365765113
+  - {fileID: -1641193398927174220}
+  cacheTime: 638618254799165749
   cacheVersion: 131619
 --- !u!114 &2498852841137098314
 MonoBehaviour:
@@ -113,7 +129,7 @@ MonoBehaviour:
     Data3: -493103714
     Data4: -340684516
   Banks:
-  - {fileID: 4634501867448840713}
+  - {fileID: -4652518440470459895}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -121,27 +137,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
---- !u!114 &4634501867448840713
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: ../../../Desktop/composition musical/jeu ours/projet ours/Build/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 638618213365445975
-  FileSizes:
-  - Name: Desktop
-    Value: 2402
-  Exists: 1
---- !u!114 &7307034634350571051
+--- !u!114 &8314284853611528312
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -160,7 +156,7 @@ MonoBehaviour:
     Data3: -1556852601
     Data4: 1283858793
   Banks:
-  - {fileID: -6136103435747191709}
+  - {fileID: -8603192890432182905}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1

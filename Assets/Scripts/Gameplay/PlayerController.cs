@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using FMOD.Studio;
+using FMODUnity;
 using UI;
 using Unity.Collections;
 using Unity.Mathematics;
@@ -24,6 +26,8 @@ public class PlayerController : MonoBehaviour
     float movement_actions;
     private int temporary_action_bonus;
     private int permanent_action_bonus;
+
+    public EventReference test_event;
 
     public void Awake()
     {

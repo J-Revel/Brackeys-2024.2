@@ -30,7 +30,7 @@ public class ActionPopupMenu : MonoBehaviour
             confirm = true;
         });
         
-        confirm_button.onClick.AddListener(() =>
+        cancel_button.onClick.AddListener(() =>
         {
             answer_selected = true;
         });

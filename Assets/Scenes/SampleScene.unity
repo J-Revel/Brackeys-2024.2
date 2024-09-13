@@ -38,6 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -389,12 +390,12 @@ MonoBehaviour:
   m_RequiresColorTexture: 0
   m_Version: 2
   m_TaaSettings:
-    m_Quality: 3
-    m_FrameInfluence: 0.1
-    m_JitterScale: 1
-    m_MipBias: 0
-    m_VarianceClampScale: 0.9
-    m_ContrastAdaptiveSharpening: 0
+    quality: 3
+    frameInfluence: 0.1
+    jitterScale: 1
+    mipBias: 0
+    varianceClampScale: 0.9
+    contrastAdaptiveSharpening: 0
 --- !u!114 &330585548
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2212,7 +2213,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1090059731}
   movement_speed: 2
-  range: 5
+  range: 3
   target_cell_prefab: {fileID: 9209741433165734896, guid: 8aeb29f98cbefad41b446dae87825ed5,
     type: 3}
   wind_targets: []
@@ -3223,7 +3224,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cell_prefab: {fileID: 6380770080136256403, guid: 45a30f4091affc946bb1e6fb8c7b35f3,
     type: 3}
-  fog_cell_size: 10
+  sprite_cell_prefab: {fileID: 2486158132449909400, guid: 1596474610a5dd24b8a7e08e5a7e0fbe,
+    type: 3}
+  used_cell_coords: []
+  unused_cells: []
+  fog_cell_size: 8
   vision_range: 6
 --- !u!4 &1522782367
 Transform:

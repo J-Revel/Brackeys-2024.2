@@ -72,6 +72,14 @@ public class WeatherHandler : MonoBehaviour
         current_wind_intensity = Random.Range(calm_phase.wind_intensity_range.x, calm_phase.wind_intensity_range.y + 1);
     }
 
+    public void SkipStorm()
+    {
+        PlayerController.instance.checkpoint = PlayerController.instance.current_cell;
+        RandomizePhaseDurations();
+        current_turn = 0;
+        PlayerController.instance.OnStormEnd();
+    }
+
     public int current_phase
     {
         get
@@ -107,25 +115,22 @@ public class WeatherHandler : MonoBehaviour
         
         if (current_turn > phase_durations.x + phase_durations.y + phase_durations.z)
         {
-            if (!GridInstance.instance.GetCellContent(PlayerController.instance.player.cell).safe)
+            for (float time = 0; time < death_fade_duration; time += Time.deltaTime)
             {
-                for (float time = 0; time < death_fade_duration; time += Time.deltaTime)
-                {
-                    death_canvas_group.alpha = time / death_fade_duration;   
-                    yield return null;
-                }
-                death_canvas_group.alpha = 1;
-
-                PlayerController.instance.TeleportToCheckpoint();
-                
-                for (float time = 0; time < death_fade_duration; time += Time.deltaTime)
-                {
-                    death_canvas_group.alpha = 1 - time / death_fade_duration;   
-                    yield return null;
-                }
-
-                death_canvas_group.alpha = 0;
+                death_canvas_group.alpha = time / death_fade_duration;   
+                yield return null;
             }
+            death_canvas_group.alpha = 1;
+
+            PlayerController.instance.TeleportToCheckpoint();
+            
+            for (float time = 0; time < death_fade_duration; time += Time.deltaTime)
+            {
+                death_canvas_group.alpha = 1 - time / death_fade_duration;   
+                yield return null;
+            }
+
+            death_canvas_group.alpha = 0;
 
             current_turn = 0;
             RandomizePhaseDurations();

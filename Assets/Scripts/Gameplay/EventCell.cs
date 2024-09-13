@@ -29,5 +29,6 @@ public class EventCell : MonoBehaviour
         choice_menu.config = config_list;
         while (choice_menu != null)
             yield return null;
+        Destroy(gameObject);
     }
 }

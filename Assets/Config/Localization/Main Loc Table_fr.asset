@@ -20,7 +20,7 @@ MonoBehaviour:
   m_TableData:
   - m_Id: 676523814912
     m_Localized: "Un poisson lumi\xE8re sors de l\u2019eau. Il semble vouloir te
-      montrer quelque-chose.  "
+      montrer quelque-chose"
     m_Metadata:
       m_Items: []
   - m_Id: 1108474212352
@@ -79,7 +79,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 411682114777090
-    m_Localized: On verra plus tard
+    m_Localized: "Tu verras \xE7a plus tard"
     m_Metadata:
       m_Items: []
   - m_Id: 659600558665728
@@ -104,7 +104,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 659600579637252
-    m_Localized: Partageons mes fruits alors !
+    m_Localized: '"Partageons mes fruits alors !"'
     m_Metadata:
       m_Items: []
   - m_Id: 660309781917696
@@ -113,7 +113,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 660309781917697
-    m_Localized: "Ouf, on a \xE9vit\xE9 la catastrophe !"
+    m_Localized: "Ouf, tu as \xE9vit\xE9 la catastrophe !"
     m_Metadata:
       m_Items: []
   - m_Id: 660309781917698
@@ -125,12 +125,13 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 660309781917700
-    m_Localized: "Fascin\xE9e, Petite Ourse se laisse emporter."
+    m_Localized: "Tu es tellement fascin\xE9e par le spectacle que tu n'as pas remarqu\xE9
+      qu'elles avaient emport\xE9 ton bateau avec elles"
     m_Metadata:
       m_Items: []
   - m_Id: 660309781917701
-    m_Localized: "En avan\xE7ant sur la mer, Petite Ourse voit un radeau \xE9trange
-      qui semble form\xE9 de nuages."
+    m_Localized: "En avan\xE7ant sur la mer, tu vois un radeau \xE9trange qui semble
+      form\xE9 de nuages"
     m_Metadata:
       m_Items: []
   - m_Id: 660309781917702
@@ -201,7 +202,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 660309781917717
-    m_Localized: Voila pour toi ma grande
+    m_Localized: '"Voila pour toi ma grande"'
     m_Metadata:
       m_Items: []
   - m_Id: 660309781917718
@@ -209,7 +210,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 660309781917719
-    m_Localized: "Tu dois \xEAtre impatiente, je t\u2019avance !"
+    m_Localized: "\"Tu dois \xEAtre impatiente, alors. Je t\u2019avance !\""
     m_Metadata:
       m_Items: []
   - m_Id: 660309781917720
@@ -238,11 +239,293 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 662510084435968
-    m_Localized: Suite
+    m_Localized: ...
     m_Metadata:
       m_Items: []
   - m_Id: 662510101213184
     m_Localized: Ca semble tenir bon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 690879190675456
+    m_Localized: "Malou le Kangourou semble s'\xEAtre tromper pour rejoindre l'australie. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 690879190675457
+    m_Localized: Lui indiquer le Sud (vers l'australie)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 690879190675458
+    m_Localized: Il nous remercie et nous donne des cordes qu'il avait ramasser
+    m_Metadata:
+      m_Items: []
+  - m_Id: 690879190675459
+    m_Localized: "Lui indiquer le Nord (Vers le p\xF4le Nord)"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 690879190675460
+    m_Localized: "Il nous remercie et nous donne des cordes qu'il avait ramasser
+      (mais ce n'ai pas tr\xE8s gentil)"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 690879190675461
+    m_Localized: "Faire comme si on ne l'avais jamais rencontr\xE9"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 690879190675462
+    m_Localized: "Un Kangourou en pleine mer c'\xE9tait forcement un pi\xE8ge ! "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 690879190675463
+    m_Localized: "Tu trouve un pi\xE8ge un poisson. Il semble vide"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 690879190675464
+    m_Localized: "Mettre un \xE2ppat dedans"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 690879190675465
+    m_Localized: ...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 690879190675466
+    m_Localized: "D\xE9monter le pi\xE8ge"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 690879190675467
+    m_Localized: "Les poissons m\xE9ritent d'\xEAtre libre ! et \xE7a fait quelques
+      ressources"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 690879190675468
+    m_Localized: Passer son chemin
+    m_Metadata:
+      m_Items: []
+  - m_Id: 690879190675469
+    m_Localized: Il faut bien que tous le monde survivent
+    m_Metadata:
+      m_Items: []
+  - m_Id: 690879190675470
+    m_Localized: "Les poissons sont dans le pi\xE8ge ! "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 690879190675471
+    m_Localized: attendre qu'il n'y ait plus de poisson
+    m_Metadata:
+      m_Items: []
+  - m_Id: 690879190675472
+    m_Localized: ...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 690879190675473
+    m_Localized: Ramasser les poissons
+    m_Metadata:
+      m_Items: []
+  - m_Id: 690879190675474
+    m_Localized: 'Le plein de nourriture ! '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 690879190675475
+    m_Localized: "Benjamin le Requin est attir\xE9 par tout ce poisson"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 690879190675476
+    m_Localized: Parler au Requin
+    m_Metadata:
+      m_Items: []
+  - m_Id: 690879190675477
+    m_Localized: '"Bonjour monsieur"'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 690879190675478
+    m_Localized: 'Fuir ! '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 690879190675479
+    m_Localized: "Un requin peut faire peur ! c'\xE9tait le plus sur"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 690879190675480
+    m_Localized: "\" Merci beaucoup pour se bon repas ! pour la peine je vais te
+      donner \xE7a ! \""
+    m_Metadata:
+      m_Items: []
+  - m_Id: 690879190675481
+    m_Localized: Accepter le cadeau
+    m_Metadata:
+      m_Items: []
+  - m_Id: 690879190675482
+    m_Localized: "Il nous donne le propulseur a ailerons requino\xEFd 2025 !"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 690879190675483
+    m_Localized: Refuser le cadeau
+    m_Metadata:
+      m_Items: []
+  - m_Id: 690879190675484
+    m_Localized: "\"Vous les ours vous \xEAtes vraiment trop gentil ! \xE0 la prochaine
+      petite ! \""
+    m_Metadata:
+      m_Items: []
+  - m_Id: 690879190675485
+    m_Localized: 'Une gigantesque Vague risque de faire se retourner le bateau ! '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 726761658527744
+    m_Localized: Demonter le mat en urgence
+    m_Metadata:
+      m_Items: []
+  - m_Id: 726761675304960
+    m_Localized: "On a \xE9vit\xE9 le pire ! mais il va falloir r\xE9parer se qu'il
+      c'est abimer"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 726761675304961
+    m_Localized: Attendre que la vague passe
+    m_Metadata:
+      m_Items: []
+  - m_Id: 726761675304962
+    m_Localized: "\xE7a c'est aurait pu \xEAtre pire. Mais le bateau semble moins
+      bien fonctionner."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 726761675304963
+    m_Localized: 'Il y a chapeau de pirate au milieu de l''eau ! '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 726761675304964
+    m_Localized: Le prendre
+    m_Metadata:
+      m_Items: []
+  - m_Id: 726761675304965
+    m_Localized: "\xE7a nous va super bien ! "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 726761675304966
+    m_Localized: le laisser flotter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 726761675304967
+    m_Localized: Il doit bien manquer a quelqu'un
+    m_Metadata:
+      m_Items: []
+  - m_Id: 726761675304968
+    m_Localized: Des chants envoutant semble venir au loin
+    m_Metadata:
+      m_Items: []
+  - m_Id: 726761675304969
+    m_Localized: suivre la musique
+    m_Metadata:
+      m_Items: []
+  - m_Id: 726761675304970
+    m_Localized: Une mouette chantante chante en continue sur les morceaux de bois
+      flottant mais s'enfuit en te voyant.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 726761675304971
+    m_Localized: l'enloigner de la musique
+    m_Metadata:
+      m_Items: []
+  - m_Id: 726761675304972
+    m_Localized: "Un petit d\xE9tour de s\xE9curit\xE9"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 726761675304973
+    m_Localized: Tu commence a avoir faim.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 726761675304974
+    m_Localized: "Prendre dans les r\xE9serves"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 726761675304975
+    m_Localized: "Tu te sens beaucoup mieux ! Ses fruits \xE9tait excellent"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 726761675304976
+    m_Localized: tenter d'attrapper du poisson
+    m_Metadata:
+      m_Items: []
+  - m_Id: 726761675304977
+    m_Localized: Difficile d'attraper un poisson a mains nue. Tu fini par trouver
+      un petit poisson mais se fut long.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 726761675304978
+    m_Localized: L'orage se rapproche. les vagues sont grosses et il est difficiles
+      d'avancer.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 726761675304979
+    m_Localized: "R\xE9duire la voile"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 726761675304980
+    m_Localized: "il faut respecter la difficult\xE9 de la mer"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 726761675304981
+    m_Localized: Tarek la Tortue frappe le fond du bateau qui commence a couler "
+      Oh pardon Excusez moi "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 726761675304982
+    m_Localized: "\" C'est pas grave je vais r\xE9parer \xE7a ! \""
+    m_Metadata:
+      m_Items: []
+  - m_Id: 726761675304983
+    m_Localized: "R\xE9parer le bateau fut facile. le trou \xE9tait petit."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 726761675304984
+    m_Localized: '" Vous auriez pu faire attention ! "'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 726761675304985
+    m_Localized: "\" Je pensais pas tomber sur une ourse ! encore d\xE9sol\xE9 !
+      tenez pour vous d\xE9dommager ! \""
+    m_Metadata:
+      m_Items: []
+  - m_Id: 726761675304986
+    m_Localized: "Un coffre au tr\xE9sor semble flotter sur l'eau"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 726761675304987
+    m_Localized: Le ramasser et l'ouvrir
+    m_Metadata:
+      m_Items: []
+  - m_Id: 726761675304988
+    m_Localized: "Il est rempli d'or ! mais il prend beaucoup de place sur le bateau
+      et toutes ses pi\xE8ces ne semble pas tr\xE8s utiles."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 726761675304989
+    m_Localized: Le laisser la
+    m_Metadata:
+      m_Items: []
+  - m_Id: 726761679499264
+    m_Localized: "C'\xE9tait sans doute un pi\xE8ge ! "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 726761679499265
+    m_Localized: "Pr\xE9venir les pirates les plus proches"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 726761679499266
+    m_Localized: "Ils envoient un bateau le chercher au plus vite ! ils nous donnent
+      une orange en \xE9change."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 726761679499267
+    m_Localized: Un poisson clown viens nous faire une blague " Quelle monnaie utilisent
+      les poissons ? "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 726761679499268
+    m_Localized: Les sous-marins
+    m_Metadata:
+      m_Items: []
+  - m_Id: 726761679499269
+    m_Localized: ahahah
     m_Metadata:
       m_Items: []
   references:

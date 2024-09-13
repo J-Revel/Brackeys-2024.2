@@ -64,6 +64,20 @@ public class CellEntity : MonoBehaviour
             yield return MoveToCoroutine(path[i], speed, activate_cells);
         }
     }
+
+    public IEnumerator ActivateCell(int2 cell)
+    {
+        List<Coroutine> coroutines = new List<Coroutine>();
+        CellContent cell_content = GridInstance.instance.GetCellContent(cell);
+        foreach(IEnumerator enumerator in cell_content.enter_coroutines)
+        {
+            coroutines.Add(StartCoroutine(enumerator));
+        }
+
+        foreach (Coroutine coroutine in coroutines)
+            yield return coroutine;
+        cell_content.enter_coroutines_finished?.Invoke();
+    }
     
     public IEnumerator MoveToCoroutine(int2 target_cell, float speed, bool activate_cells)
     {
@@ -73,10 +87,6 @@ public class CellEntity : MonoBehaviour
             move_event_state.start();
         }
         CellContent start_cell_content = GridInstance.instance.GetCellContent(cell);
-        foreach (IEnumerator coroutine in enter_coroutines)
-        {
-            start_cell_content.enter_coroutines.Remove(coroutine);
-        }
         float distance = math.distance((float2)target_cell, (float2)cell);
         float2 start_pos = (float2)cell;
         float2 target_pos = (float2)target_cell;
@@ -97,10 +107,7 @@ public class CellEntity : MonoBehaviour
             {
                 coroutines.Add(StartCoroutine(enumerator));
             }
-            foreach(IEnumerator enumerator in GridInstance.instance.GetCellContent(target_cell).enter_coroutines)
-            {
-                coroutines.Add(StartCoroutine(enumerator));
-            }
+            coroutines.Add(StartCoroutine(ActivateCell(target_cell)));
 
             foreach (Coroutine coroutine in coroutines)
                 yield return coroutine;

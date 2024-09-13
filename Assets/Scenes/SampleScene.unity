@@ -1184,6 +1184,7 @@ MonoBehaviour:
   - 3
   - 7
   - 10
+  fade_canvas_group: {fileID: 0}
 --- !u!1001 &753640969
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6766,12 +6767,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1036243547}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 1.0021049, y: -0.49612135, z: 3.0252092}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1090059734}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1054857875
 PrefabInstance:
@@ -7159,6 +7160,7 @@ Transform:
   m_Children:
   - {fileID: 1712145280}
   - {fileID: 1773190892}
+  - {fileID: 1036243550}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1090059735
@@ -9784,4 +9786,3 @@ SceneRoots:
   - {fileID: 1746352408}
   - {fileID: 1298530275}
   - {fileID: 965383755}
-  - {fileID: 1036243550}

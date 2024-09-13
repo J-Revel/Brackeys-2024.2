@@ -13,6 +13,12 @@ public class ShelterCell : MonoBehaviour
     public void Start()
     {
         cell_entity = GetComponent<CellEntity>();
-        GridInstance.instance.GetCellContent(cell_entity.cell).enter_coroutines.Add(ActionPopupMenu.instance.ShowActionCoroutine(action_icon, cost));
+        CellContent cell_content = GridInstance.instance.GetCellContent(cell_entity.cell);
+        cell_content.enter_coroutines.Add(ActionPopupMenu.instance.ShowActionCoroutine(action_icon, cost));
+        cell_content.enter_coroutines_finished += () =>
+        {
+            cell_content.enter_coroutines.Add(ActionPopupMenu.instance.ShowActionCoroutine(action_icon, cost));
+        };
+
     }
 }

@@ -64,6 +64,7 @@ public class WeatherHandler : MonoBehaviour
     public ParticleSystem wind_particle_system;
     public int[] wind_particle_spawn_rates = new int[]{0, 10, 20, 50};
     public float[] wind_particle_speeds = new float[]{0, 3, 7, 10};
+    public CanvasGroup fade_canvas_group;
     private ParticleSystem.EmissionModule wind_emission;
 
     private void Awake()
@@ -105,8 +106,26 @@ public class WeatherHandler : MonoBehaviour
         main_module.startSpeed = wind_particle_speeds[current_wind_intensity];
     }
 
-    public void SkipStorm()
+    public IEnumerator SkipStormCoroutine()
     {
+        for (float time = 0; time < death_fade_duration; time += Time.deltaTime)
+        {
+            death_canvas_group.alpha = time / death_fade_duration;   
+            yield return null;
+        }
+        death_canvas_group.alpha = 1;
+        fog_bottom_mat.SetColor("_Tint", calm_phase.fog_bottom_color);
+        fog_middle_mat.SetColor("_Tint", calm_phase.fog_middle_color);
+        fog_top_mat.SetColor("_Tint", calm_phase.fog_top_color);
+        fog_sprite_mat.SetColor("_Tint", calm_phase.fog_sprite_color);
+        active_phase_index = 0;
+        active_phase_config = calm_phase;
+
+        for (float time = 0; time < death_fade_duration; time += Time.deltaTime)
+        {
+            death_canvas_group.alpha = 1 - time / death_fade_duration;   
+            yield return null;
+        }
         PlayerController.instance.checkpoint = PlayerController.instance.current_cell;
         RandomizePhaseDurations();
         current_turn = 0;

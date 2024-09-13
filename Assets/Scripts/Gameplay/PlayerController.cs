@@ -71,7 +71,6 @@ public class PlayerController : MonoBehaviour
                 movement_actions = range + temporary_action_bonus + permanent_action_bonus;
                 temporary_action_bonus = 0;
                 skip = false;
-                yield return ActivateCell();
                 yield return GameState.instance.FinishTurnCoroutine();
             }
 
@@ -101,7 +100,7 @@ public class PlayerController : MonoBehaviour
                         if (math.any(start_cell != current_cell))
                         {
                             yield return LeaveCell(start_cell);
-                            yield return ActivateCell();
+                            yield return player.ActivateCell(current_cell);
                         }
 
                         yield return GameState.instance.FinishTurnCoroutine();
@@ -115,19 +114,6 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    public IEnumerator ActivateCell()
-    {
-        List<Coroutine> coroutines = new List<Coroutine>();
-        foreach(IEnumerator enumerator in GridInstance.instance.GetCellContent(current_cell).enter_coroutines)
-        {
-            coroutines.Add(StartCoroutine(enumerator));
-        }
-
-        foreach (Coroutine coroutine in coroutines)
-            yield return coroutine;
-        
-    }
-    
     public IEnumerator LeaveCell(int2 cell)
     {
         List<Coroutine> coroutines = new List<Coroutine>();

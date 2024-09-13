@@ -46,6 +46,7 @@ public class ActionPopupMenu : MonoBehaviour
     {
         confirm_button.interactable = true;
         current_requirements = requirements;
+        confirm = false;
         foreach (var requirement in requirements)
         {
             if (PlayerResourceStock.instance.GetStock(requirement.resource) < requirement.stock)
@@ -72,7 +73,7 @@ public class ActionPopupMenu : MonoBehaviour
         
         if (confirm)
         {
-            WeatherHandler.instance.SkipStorm();
+            yield return WeatherHandler.instance.SkipStormCoroutine();
         }
     }
 }

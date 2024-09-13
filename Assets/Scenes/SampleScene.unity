@@ -12214,7 +12214,7 @@ MonoBehaviour:
       Data3: -1556852601
       Data4: 1283858793
     Path: event:/Move
-  look_direction: 0
+  look_direction: 1
 --- !u!114 &1090059732
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12240,6 +12240,7 @@ MonoBehaviour:
   checkpoint:
     x: 0
     y: 0
+  look_direction_default_scale: -1
   test_event:
     Guid:
       Data1: 40224497
@@ -13695,7 +13696,7 @@ LineRenderer:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.14912105
+        value: 0.013409376
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -13780,6 +13781,12 @@ MonoBehaviour:
   path: []
   previous_path: []
   path_transition_duration: 0
+  random_offset_scale:
+    x: 0.2
+    y: 0.5
+  point_prefabs:
+  - {fileID: 3708826917784601786, guid: 6b2b8aaf2b863f2459aa24164dc594e4, type: 3}
+  spawned_points: []
 --- !u!1 &1745067871
 GameObject:
   m_ObjectHideFlags: 0

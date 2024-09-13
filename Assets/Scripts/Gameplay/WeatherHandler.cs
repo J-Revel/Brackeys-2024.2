@@ -61,11 +61,8 @@ public class WeatherHandler : MonoBehaviour
     public float fog_transition_duration = 3;
     private WeatherPhaseConfig active_phase_config;
     private int active_phase_index = 0;
-    public ParticleSystem wind_particle_system;
-    public int[] wind_particle_spawn_rates = new int[]{0, 10, 20, 50};
-    public float[] wind_particle_speeds = new float[]{0, 3, 7, 10};
     public CanvasGroup fade_canvas_group;
-    private ParticleSystem.EmissionModule wind_emission;
+    public WindParticleSystem[] wind_particle_systems;
 
     private void Awake()
     {
@@ -99,11 +96,11 @@ public class WeatherHandler : MonoBehaviour
                 quaternion.Euler(0, 0, -math.PI / 2), quaternion.Euler(0, 0, 0),
                 quaternion.Euler(0, 0, math.PI), quaternion.Euler(0, 0,  math.PI / 2)
         };
-        wind_particle_system.transform.rotation = rotations[direction_index];
-        wind_emission = wind_particle_system.emission;
-        wind_emission.rateOverTime = wind_particle_spawn_rates[current_wind_intensity];
-        var main_module = wind_particle_system.main;
-        main_module.startSpeed = wind_particle_speeds[current_wind_intensity];
+        foreach (WindParticleSystem wind_particle_system in wind_particle_systems)
+        {
+            wind_particle_system.transform.rotation = rotations[direction_index];
+            wind_particle_system.UpdateDisplay(current_wind_intensity);
+        }
     }
 
     public IEnumerator SkipStormCoroutine()
@@ -201,11 +198,11 @@ public class WeatherHandler : MonoBehaviour
                 quaternion.Euler(0, 0, -math.PI / 2), quaternion.Euler(0, 0, 0),
                 quaternion.Euler(0, 0, math.PI), quaternion.Euler(0, 0,  math.PI / 2)
             };
-            wind_particle_system.transform.rotation = rotations[direction_index];
-            wind_emission = wind_particle_system.emission;
-            wind_emission.rateOverTime = new ParticleSystem.MinMaxCurve(wind_particle_spawn_rates[current_wind_intensity]);
-            var main_module = wind_particle_system.main;
-            main_module.startSpeed = wind_particle_speeds[current_wind_intensity];
+            foreach (WindParticleSystem wind_particle_system in wind_particle_systems)
+            {
+                wind_particle_system.transform.rotation = rotations[direction_index];
+                wind_particle_system.UpdateDisplay(current_wind_intensity);
+            }
         }
 
         if (current_turn > phase_durations.x + phase_durations.y + phase_durations.z)

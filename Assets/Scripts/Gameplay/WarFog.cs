@@ -14,6 +14,7 @@ public class WarFog : MonoBehaviour
     public List<FogCell> fog_cells = new List<FogCell>();
     public int fog_cell_size = 10;
     public int vision_range = 5;
+    public float transition_duration = 1;
 
     public enum CellState
     {
@@ -245,6 +246,10 @@ public class WarFog : MonoBehaviour
                                 {
                                     command_type = CellCommandType.Sprite, start_alpha = 0, end_alpha = 1, spawn = true, destroy = false,
                                 },
+                                new CellCommandAction
+                                {
+                                    command_type = CellCommandType.Particle, start_alpha = 0, end_alpha = 1, spawn = true, destroy = true,
+                                },
                             };
                         case CellState.Border:
                             return new CellCommandAction[]
@@ -352,11 +357,18 @@ public class WarFog : MonoBehaviour
             bottom_big_tile.transform.localScale = Vector3.one * (fog_cell_size * 2);
             temporary_sprite_cells.Add(bottom_big_tile);
         }
-        for (float time = 0; time < 2; time += Time.deltaTime)
+
+        StartCoroutine(PlayTransition(cell_command_states));
+        yield return null;
+    }
+
+    public IEnumerator PlayTransition(List<CellCommandState> cell_command_states)
+    {
+        for (float time = 0; time < transition_duration; time += Time.deltaTime)
         {
             foreach(CellCommandState command_state in cell_command_states)
             {
-                command_state.ratio = time / 2;
+                command_state.ratio = time / transition_duration;
                 command_state.UpdateAction();
             }
             yield return null;
@@ -366,45 +378,6 @@ public class WarFog : MonoBehaviour
             command_state.ratio = 1;
             command_state.FinishAction();
         }
-
-        /*
-        for (int i = -fog_cell_size; i < fog_cell_size; i++)
-        {
-            for (int j = -fog_cell_size; j < fog_cell_size; j++)
-            {
-                int2 cursor = new int2(player_cell.x + i, player_cell.y + j);
-                if (!warfog_cells.ContainsKey(cursor))
-                {
-                    warfog_cells[cursor] = Instantiate(cell_prefab, GridInstance.instance.CellToPos(cursor), Quaternion.identity);
-                    warfog_cells[cursor].visible = false;
-                }
-
-                warfog_cells[cursor].visible = math.length(new int2(i, j)) < vision_range;
-                int2[] neighbour_cells = new int2[]
-                {
-                    cursor + new int2(1, 0),
-                    cursor + new int2(-1, 0),
-                    cursor + new int2(1, 1),
-                    cursor + new int2(-1, 1),
-                    cursor + new int2(0, 1),
-                    cursor + new int2(1, -1),
-                    cursor + new int2(-1, -1),
-                    cursor + new int2(0, -1),
-                };
-                bool is_border = false;
-                foreach (int2 neighbour_cell in neighbour_cells)
-                {
-                    if (warfog_cells.ContainsKey(neighbour_cell) && warfog_cells[neighbour_cell].visible)
-                    {
-                        is_border = true;
-                        break;
-                    }
-                }
-
-                warfog_cells[cursor].border = is_border;
-            }
-        }
-        */
-        yield return null;
+        
     }
 }

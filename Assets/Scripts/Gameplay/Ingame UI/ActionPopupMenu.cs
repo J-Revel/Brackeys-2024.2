@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class ActionPopupMenu : MonoBehaviour
 {
     public static ActionPopupMenu instance;
-    public ResourceStock[] requirements;
     public Image image;
     public Button confirm_button;
     public Button cancel_button;
@@ -29,6 +28,7 @@ public class ActionPopupMenu : MonoBehaviour
             answer_selected = true;
             confirm = true;
         });
+
         
         cancel_button.onClick.AddListener(() =>
         {
@@ -36,8 +36,16 @@ public class ActionPopupMenu : MonoBehaviour
         });
     }
 
-    public IEnumerator ShowActionCoroutine(Sprite sprite)
+    public IEnumerator ShowActionCoroutine(Sprite sprite, ResourceStock[] requirements)
     {
+        confirm_button.interactable = true;
+        foreach (var requirement in requirements)
+        {
+            if (PlayerResourceStock.instance.GetStock(requirement.resource) < requirement.stock)
+            {
+                confirm_button.interactable = false;
+            }
+        }
         image.sprite = sprite;
         answer_selected = false;
         for (float time = 0; time < appear_duration; time += Time.deltaTime)

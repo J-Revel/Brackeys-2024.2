@@ -17,6 +17,10 @@ public enum WeatherPhase
 [System.Serializable]
 public struct WeatherPhaseConfig
 {
+    public Color fog_bottom_color;
+    public Color fog_middle_color;
+    public Color fog_top_color;
+    public Color fog_sprite_color;
     public int2 duration_range;
     public int2 wind_intensity_range;
     public float wind_direction_change_ratio;
@@ -49,6 +53,19 @@ public class WeatherHandler : MonoBehaviour
     public int current_wind_intensity = 0;
     public CardinalDirection current_wind_direction;
 
+    public Material fog_bottom_mat;
+    public Material fog_middle_mat;
+    public Material fog_top_mat;
+    public Material fog_sprite_mat;
+
+    public float fog_transition_duration = 3;
+    private WeatherPhaseConfig active_phase_config;
+    private int active_phase_index = 0;
+    public ParticleSystem wind_particle_system;
+    public int[] wind_particle_spawn_rates = new int[]{0, 10, 20, 50};
+    public float[] wind_particle_speeds = new float[]{0, 3, 7, 10};
+    private ParticleSystem.EmissionModule wind_emission;
+
     private void Awake()
     {
         instance = this;
@@ -58,6 +75,10 @@ public class WeatherHandler : MonoBehaviour
     {
         RandomizePhaseDurations();
         GameState.instance.turn_change_delegate += TurnChangeCoroutine;
+        fog_bottom_mat.SetColor("_Tint", calm_phase.fog_bottom_color);
+        fog_middle_mat.SetColor("_Tint", calm_phase.fog_middle_color);
+        fog_top_mat.SetColor("_Tint", calm_phase.fog_top_color);
+        fog_sprite_mat.SetColor("_Tint", calm_phase.fog_sprite_color);
     }
 
     public void RandomizePhaseDurations()
@@ -68,8 +89,20 @@ public class WeatherHandler : MonoBehaviour
             Random.Range(stormy_phase.duration_range.x, stormy_phase.duration_range.y)
         );
         CardinalDirection[] directions = new CardinalDirection[] { CardinalDirection.East, CardinalDirection.North, CardinalDirection.South, CardinalDirection.West};
-        current_wind_direction = directions[Random.Range(0, directions.Length)];
+        int direction_index = Random.Range(0, directions.Length);
+        current_wind_direction = directions[direction_index];
         current_wind_intensity = Random.Range(calm_phase.wind_intensity_range.x, calm_phase.wind_intensity_range.y + 1);
+
+        quaternion[] rotations = new quaternion[]
+        {
+                quaternion.Euler(0, 0, -math.PI / 2), quaternion.Euler(0, 0, 0),
+                quaternion.Euler(0, 0, math.PI), quaternion.Euler(0, 0,  math.PI / 2)
+        };
+        wind_particle_system.transform.rotation = rotations[direction_index];
+        wind_emission = wind_particle_system.emission;
+        wind_emission.rateOverTime = wind_particle_spawn_rates[current_wind_intensity];
+        var main_module = wind_particle_system.main;
+        main_module.startSpeed = wind_particle_speeds[current_wind_intensity];
     }
 
     public void SkipStorm()
@@ -92,10 +125,29 @@ public class WeatherHandler : MonoBehaviour
         }
     }
 
+    IEnumerator FogTransitionCoroutine(WeatherPhaseConfig start_phase, WeatherPhaseConfig target_phase)
+    {
+        
+        for (float time = 0; time < fog_transition_duration; time += Time.deltaTime)
+        {
+            float f = time / fog_transition_duration;
+            fog_bottom_mat.SetColor("_Tint", Color.Lerp(start_phase.fog_bottom_color, target_phase.fog_bottom_color, f));
+            fog_middle_mat.SetColor("_Tint", Color.Lerp(start_phase.fog_middle_color, target_phase.fog_middle_color, f));
+            fog_top_mat.SetColor("_Tint", Color.Lerp(start_phase.fog_top_color, target_phase.fog_top_color, f));
+            fog_sprite_mat.SetColor("_Tint", Color.Lerp(start_phase.fog_sprite_color, target_phase.fog_sprite_color, f));
+            yield return null;
+        }
+        
+        fog_bottom_mat.SetColor("_Tint", target_phase.fog_bottom_color);
+        fog_middle_mat.SetColor("_Tint", target_phase.fog_middle_color);
+        fog_top_mat.SetColor("_Tint", target_phase.fog_top_color);
+        fog_sprite_mat.SetColor("_Tint", target_phase.fog_sprite_color);
+    }
+
     IEnumerator TurnChangeCoroutine()
     {
         current_turn++;
-        WeatherPhaseConfig active_phase_config;
+        WeatherPhaseConfig previous_phase_config = active_phase_config;
         if (current_turn <= phase_durations.x)
         {
             active_phase_config = calm_phase;
@@ -103,16 +155,40 @@ public class WeatherHandler : MonoBehaviour
         else if (current_turn <= phase_durations.x + phase_durations.y)
         {
             active_phase_config = cloudy_phase;
+            if (active_phase_index < 1)
+            {
+                active_phase_index = 1;
+                StartCoroutine(FogTransitionCoroutine(calm_phase, cloudy_phase));
+            }
         }
-        else active_phase_config = stormy_phase;
+        else
+        {
+            active_phase_config = stormy_phase;
+            if (active_phase_index < 2)
+            {
+                active_phase_index = 2;
+                StartCoroutine(FogTransitionCoroutine(cloudy_phase, stormy_phase));
+            }
+        }
 
         if (Random.value < active_phase_config.wind_direction_change_ratio)
         {
             CardinalDirection[] directions = new CardinalDirection[] { CardinalDirection.East, CardinalDirection.North, CardinalDirection.South, CardinalDirection.West};
-            current_wind_direction = directions[Random.Range(0, directions.Length)];
+            int direction_index = Random.Range(0, directions.Length);
+            current_wind_direction = directions[direction_index];
             current_wind_intensity = Random.Range(active_phase_config.wind_intensity_range.x, active_phase_config.wind_intensity_range.y + 1);
+            quaternion[] rotations = new quaternion[]
+            {
+                quaternion.Euler(0, 0, -math.PI / 2), quaternion.Euler(0, 0, 0),
+                quaternion.Euler(0, 0, math.PI), quaternion.Euler(0, 0,  math.PI / 2)
+            };
+            wind_particle_system.transform.rotation = rotations[direction_index];
+            wind_emission = wind_particle_system.emission;
+            wind_emission.rateOverTime = new ParticleSystem.MinMaxCurve(wind_particle_spawn_rates[current_wind_intensity]);
+            var main_module = wind_particle_system.main;
+            main_module.startSpeed = wind_particle_speeds[current_wind_intensity];
         }
-        
+
         if (current_turn > phase_durations.x + phase_durations.y + phase_durations.z)
         {
             for (float time = 0; time < death_fade_duration; time += Time.deltaTime)

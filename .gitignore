@@ -6,3 +6,4 @@ obj/Debug
 UserSettings
 *.csproj
 *.sln
+*.log

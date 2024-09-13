@@ -13,6 +13,7 @@ public class ActionPopupMenu : MonoBehaviour
     public bool answer_selected;
     public bool confirm;
     private float3 target_scale;
+    private ResourceStock[] current_requirements;
 
     private void Awake()
     {
@@ -27,18 +28,24 @@ public class ActionPopupMenu : MonoBehaviour
         {
             answer_selected = true;
             confirm = true;
+            foreach (ResourceStock requirement in current_requirements)
+            {
+                PlayerResourceStock.instance.AddStock(requirement.resource, -requirement.stock);
+            }
         });
 
         
         cancel_button.onClick.AddListener(() =>
         {
             answer_selected = true;
+            
         });
     }
 
     public IEnumerator ShowActionCoroutine(Sprite sprite, ResourceStock[] requirements)
     {
         confirm_button.interactable = true;
+        current_requirements = requirements;
         foreach (var requirement in requirements)
         {
             if (PlayerResourceStock.instance.GetStock(requirement.resource) < requirement.stock)

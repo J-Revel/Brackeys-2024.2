@@ -108,6 +108,13 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  enter_audio_event:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
   look_direction: 1
 --- !u!114 &9076326639793483298
 MonoBehaviour:
@@ -123,9 +130,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cost:
   - resource: 0
-    stock: 5
+    stock: 6
   - resource: 2
-    stock: 2
+    stock: 3
   action_icon: {fileID: 21300000, guid: 415757daec39635498952990db9d4da6, type: 3}
   action_sound:
     Guid:

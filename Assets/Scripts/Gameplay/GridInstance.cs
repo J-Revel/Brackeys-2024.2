@@ -6,11 +6,9 @@ using UnityEngine;
 public class CellContent
 {
     public bool accessible;
-    public List<IEnumerator> cross_coroutines = new List<IEnumerator>();
+    public bool push_target;
     public List<IEnumerator> enter_coroutines = new List<IEnumerator>();
     public System.Action enter_coroutines_finished;
-    public List<IEnumerator> leave_coroutines = new List<IEnumerator>();
-    public System.Action leave_coroutines_finished;
     
 }
 public class GridInstance : MonoBehaviour
@@ -49,7 +47,7 @@ public class GridInstance : MonoBehaviour
             CellContent new_content = new CellContent
             {
                 accessible = true,
-
+                push_target = true,
             };
             cells[cell] = new_content;
         }

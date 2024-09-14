@@ -8,6 +8,8 @@ public class ResourceQuantityWidget: MonoBehaviour
         Flat,
         Delta
     };
+
+    public ChoiceEffectType effect_type;
     public ResourceType resource;
     public int quantity;
     public TMPro.TextMeshProUGUI text;
@@ -17,6 +19,6 @@ public class ResourceQuantityWidget: MonoBehaviour
     public void Start()
     {
         text.text = quantity.ToString();
-        icon.sprite = config.GetResourceIcon(resource);
+        icon.sprite = config.GetEffectIcon(effect_type, resource);
     }
 }

@@ -117,13 +117,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b331cfaab69448893b9c1473f2ea718, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  requirements: []
   image: {fileID: 3639516361549545657}
   confirm_button: {fileID: 5431821887583470339}
   cancel_button: {fileID: 6880891201641192400}
   appear_duration: 0.5
   answer_selected: 0
   confirm: 0
+  open_event:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &3440509237980912753
 GameObject:
   m_ObjectHideFlags: 0

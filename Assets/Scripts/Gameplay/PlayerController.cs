@@ -101,7 +101,6 @@ public class PlayerController : MonoBehaviour
                         current_cell = GridInstance.instance.PosToCell(transform.position);
                         if (math.any(start_cell != current_cell))
                         {
-                            yield return LeaveCell(start_cell);
                             yield return player.ActivateCell(current_cell);
                         }
 
@@ -114,18 +113,6 @@ public class PlayerController : MonoBehaviour
 
             yield return null;
         }
-    }
-
-    public IEnumerator LeaveCell(int2 cell)
-    {
-        List<Coroutine> coroutines = new List<Coroutine>();
-        foreach(IEnumerator enumerator in GridInstance.instance.GetCellContent(cell).leave_coroutines)
-        {
-            coroutines.Add(StartCoroutine(enumerator));
-        }
-
-        foreach (Coroutine coroutine in coroutines)
-            yield return coroutine;
     }
 
     public void SkipTurn()

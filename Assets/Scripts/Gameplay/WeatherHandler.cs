@@ -73,6 +73,8 @@ public class WeatherHandler : MonoBehaviour
     private ColorAdjustments color_adjustments;
     private FilmGrain film_grain;
 
+    public System.Action weather_change_delegate;
+
     private void Awake()
     {
         instance = this;
@@ -85,6 +87,9 @@ public class WeatherHandler : MonoBehaviour
         {
             ApplyWeatherPhase(calm_phase);
             current_turn = 0;
+            active_phase_index = 0;
+            active_phase_config = calm_phase;
+            weather_change_delegate?.Invoke();
             RandomizePhaseDurations();
         };
         GameState.instance.turn_change_delegate += TurnChangeCoroutine;
@@ -137,6 +142,7 @@ public class WeatherHandler : MonoBehaviour
         ApplyWeatherPhase(calm_phase);
         active_phase_index = 0;
         active_phase_config = calm_phase;
+        weather_change_delegate?.Invoke();
 
         for (float time = 0; time < death_fade_duration; time += Time.deltaTime)
         {
@@ -210,6 +216,7 @@ public class WeatherHandler : MonoBehaviour
             wind_particle_system.transform.rotation = rotations[direction_index];
             wind_particle_system.UpdateDisplay(current_wind_intensity);
         }
+        weather_change_delegate?.Invoke();
     }
 
     IEnumerator TurnChangeCoroutine()

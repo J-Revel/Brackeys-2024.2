@@ -26,6 +26,7 @@ public class EventChoiceButton : MonoBehaviour
         for (int i = 0; i < config.requirements.Length; i++)
         {
             ResourceQuantityWidget quantity_widget = Instantiate(resource_requirement_prefab, requirement_panel);
+            quantity_widget.effect_type = ChoiceEffectType.Resource;
             quantity_widget.resource = config.requirements[i].resource;
             quantity_widget.quantity = config.requirements[i].delta;
             if (PlayerResourceStock.instance.GetStock(config.requirements[i].resource) < config.requirements[i].delta)
@@ -54,6 +55,7 @@ public class EventChoiceButton : MonoBehaviour
             for (int i = 0; i < config.results.Length; i++)
             {
                 ResourceQuantityWidget quantity_widget = Instantiate(resource_requirement_prefab, result_panel);
+                quantity_widget.effect_type = config.results[i].effect_type;
                 quantity_widget.resource = config.results[i].resource;
                 quantity_widget.quantity = config.results[i].delta;
             }

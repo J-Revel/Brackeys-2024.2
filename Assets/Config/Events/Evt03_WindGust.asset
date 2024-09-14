@@ -17,7 +17,7 @@ MonoBehaviour:
   - requirements:
     - effect_type: 0
       resource: 0
-      delta: 5
+      delta: 3
     results:
     - effect_type: 0
       resource: 0

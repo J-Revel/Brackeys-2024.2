@@ -81,7 +81,12 @@ public class WeatherHandler : MonoBehaviour
     void Start()
     {
         RandomizePhaseDurations();
-        GameState.instance.phase_reset_delegate += RandomizePhaseDurations;
+        GameState.instance.phase_reset_delegate += () =>
+        {
+            ApplyWeatherPhase(calm_phase);
+            current_turn = 0;
+            RandomizePhaseDurations();
+        };
         GameState.instance.turn_change_delegate += TurnChangeCoroutine;
         fog_bottom_mat.SetColor("_Tint", calm_phase.fog_bottom_color);
         fog_middle_mat.SetColor("_Tint", calm_phase.fog_middle_color);
@@ -119,6 +124,7 @@ public class WeatherHandler : MonoBehaviour
             wind_particle_system.UpdateDisplay(current_wind_intensity);
         }
     }
+    
 
     public IEnumerator SkipStormCoroutine()
     {
@@ -256,7 +262,6 @@ public class WeatherHandler : MonoBehaviour
             death_canvas_group.alpha = 0;
 
             current_turn = 0;
-            GameState.instance.phase_reset_delegate?.Invoke();
         }
     }
 }

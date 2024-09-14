@@ -64,8 +64,8 @@ MonoBehaviour:
     Data3: -1849806208
     Data4: -62802085
   Banks:
-  - {fileID: 4983992731430885925}
   - {fileID: -8603192890432182905}
+  - {fileID: 4983992731430885925}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -99,7 +99,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 4532
 --- !u!114 &-4652518440470459895
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -315,7 +315,7 @@ MonoBehaviour:
   - {fileID: -4652518440470459895}
   StringsBanks:
   - {fileID: -1641193398927174220}
-  cacheTime: 638619247629452803
+  cacheTime: 638619263854930298
   cacheVersion: 131619
 --- !u!114 &477864820759511121
 MonoBehaviour:
@@ -658,7 +658,7 @@ MonoBehaviour:
   Path: Assets/Audio/Bank/Ambiance.bank
   Name: Ambiance
   StudioPath: bank:/Ambiance
-  lastModified: 638619247628862820
+  lastModified: 638619263854930298
   FileSizes: []
   Exists: 1
 --- !u!114 &5447365000601626224

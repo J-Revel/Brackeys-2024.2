@@ -101,6 +101,14 @@ MonoBehaviour:
   cell:
     x: 0
     y: -1
+  move_audio_event:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  look_direction: 1
 --- !u!114 &9076326639793483298
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -119,3 +127,10 @@ MonoBehaviour:
   - resource: 2
     stock: 2
   action_icon: {fileID: 21300000, guid: 415757daec39635498952990db9d4da6, type: 3}
+  action_sound:
+    Guid:
+      Data1: -1311530765
+      Data2: 1260413583
+      Data3: 658646716
+      Data4: 1532019556
+    Path: event:/SFX/tuile/Abbri

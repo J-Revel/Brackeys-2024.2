@@ -101,6 +101,21 @@ MonoBehaviour:
   cell:
     x: 2
     y: 3
+  move_audio_event:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  enter_audio_event:
+    Guid:
+      Data1: -1033807724
+      Data2: 1074194361
+      Data3: 760919459
+      Data4: -1269251176
+    Path: event:/SFX/tuile/Event
+  look_direction: 1
 --- !u!114 &194629484473380689
 MonoBehaviour:
   m_ObjectHideFlags: 0

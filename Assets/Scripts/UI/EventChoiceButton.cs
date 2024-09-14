@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Localization.Settings;
+using UnityEngine.ResourceManagement.AsyncOperations;
 using UnityEngine.UI;
 
 public class EventChoiceButton : MonoBehaviour
@@ -10,15 +11,18 @@ public class EventChoiceButton : MonoBehaviour
     public Button button;
     public TMPro.TextMeshProUGUI text;
     public ResourceQuantityWidget resource_requirement_prefab;
+    public ResourceQuantityWidget resource_result_prefab;
     public Transform requirement_panel;
     public Transform result_panel;
     public GameObject lock_display;
     public AnimatedPaperWidget paper_animations;
     public System.Action selected_delegate;
 
-    public void Start()
+    public IEnumerator Start()
     {
-        text.text = LocalizationSettings.StringDatabase.GetLocalizedString(choice_id);
+        var loading_op = LocalizationSettings.StringDatabase.GetLocalizedStringAsync(choice_id);
+        yield return loading_op;
+        text.text = loading_op.Result;
         string description = "";
         bool enough_resource = true;
         
@@ -49,12 +53,13 @@ public class EventChoiceButton : MonoBehaviour
         button.interactable = enough_resource;
         paper_animations.show_background_delegate += (ChoiceConfig config) =>
         {
-            text.text = LocalizationSettings.StringDatabase.GetLocalizedString(choice_id + "_result");
+            var async_op = LocalizationSettings.StringDatabase.GetLocalizedStringAsync(choice_id + "_result");
+            async_op.Completed += (AsyncOperationHandle<string> handle) => { text.text = handle.Result; };
             
             requirement_panel.gameObject.SetActive(false);
             for (int i = 0; i < config.results.Length; i++)
             {
-                ResourceQuantityWidget quantity_widget = Instantiate(resource_requirement_prefab, result_panel);
+                ResourceQuantityWidget quantity_widget = Instantiate(resource_result_prefab, result_panel);
                 quantity_widget.effect_type = config.results[i].effect_type;
                 quantity_widget.resource = config.results[i].resource;
                 quantity_widget.quantity = config.results[i].delta;

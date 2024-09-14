@@ -10,18 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5cb991c5920b4754b9c6e8021e332829, type: 3}
-  m_Name: Evt10_Wind 1
+  m_Name: Evt23_Nemo
   m_EditorClassIdentifier: 
-  id: evt10
+  id: evt23
   options:
   - requirements: []
-    results:
-    - effect_type: 0
-      resource: 0
-      delta: 7
-    - effect_type: 1
-      resource: 0
-      delta: -3
+    results: []
     next_event: {fileID: 0}
   - requirements: []
     results: []

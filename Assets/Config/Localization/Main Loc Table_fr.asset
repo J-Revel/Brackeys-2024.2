@@ -19,7 +19,7 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 676523814912
-    m_Localized: "Un poisson lumi\xE8re sors de l\u2019eau. Il semble vouloir te
+    m_Localized: "Un poisson lumi\xE8re sort de l\u2019eau. Il semble vouloir te
       montrer quelque-chose"
     m_Metadata:
       m_Items: []
@@ -67,7 +67,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 411399947169792
-    m_Localized: "Il t'am\xE8ne \xE0 une cache secr\xE8te !"
+    m_Localized: "Il t'emm\xE8ne \xE0 une cache secr\xE8te !"
     m_Metadata:
       m_Items: []
   - m_Id: 411682114777088
@@ -179,7 +179,7 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 660309781917712
     m_Localized: "Tu prends le temps de jouer avec les poissons.Tu es tr\xE8s heureuse
-      mais n\u2019a pas avanc\xE9 aujourd\u2019hui. "
+      mais n\u2019as pas avanc\xE9 aujourd\u2019hui. "
     m_Metadata:
       m_Items: []
   - m_Id: 660309781917713
@@ -193,7 +193,7 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 660309781917715
     m_Localized: "La pieuvre bricoleuse sort de l\u2019eau et son regard croise le
-      tiens \u201C Oh ? encore une ourse ! Deux fois dans la m\xEAme semaine, c\u2019est
+      tien \u201C Oh ? encore une ourse ! Deux fois dans la m\xEAme semaine, c\u2019est
       fou ! Comment puis-je t\u2019aider ? \u201C"
     m_Metadata:
       m_Items: []
@@ -252,11 +252,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 690879190675457
-    m_Localized: Lui indiquer le Sud (vers l'australie)
+    m_Localized: Lui indiquer le Sud (vers l'Australie)
     m_Metadata:
       m_Items: []
   - m_Id: 690879190675458
-    m_Localized: "Il te remercie et te donne des cordes qu'il avait ramass\xE9"
+    m_Localized: "Il te remercie et te donne des cordes qu'il avait ramass\xE9es"
     m_Metadata:
       m_Items: []
   - m_Id: 690879190675459
@@ -264,8 +264,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 690879190675460
-    m_Localized: "Il te remercie et te donne des cordes qu'il avait ramass\xE9 (mais
-      ce n'ai pas tr\xE8s gentil)"
+    m_Localized: "Il te remercie et te donne des cordes qu'il avait ramass\xE9es
+      (mais ce n'est pas tr\xE8s gentil)"
     m_Metadata:
       m_Items: []
   - m_Id: 690879190675461
@@ -389,7 +389,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 726761675304963
-    m_Localized: "Il y a chapeau de pirate \xE0 la surface de l'eau ! "
+    m_Localized: "Il y a un chapeau de pirate \xE0 la surface de l'eau ! "
     m_Metadata:
       m_Items: []
   - m_Id: 726761675304964
@@ -438,7 +438,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 726761675304975
-    m_Localized: "Tu te sens beaucoup mieux ! Ses fruits \xE9tait excellents"
+    m_Localized: "Tu te sens beaucoup mieux ! Ces fruits \xE9tait excellents"
     m_Metadata:
       m_Items: []
   - m_Id: 726761675304976
@@ -473,7 +473,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 726761675304983
-    m_Localized: "R\xE9parer le bateau fut facile. le trou \xE9tait petit."
+    m_Localized: "R\xE9parer le bateau fut facile. Le trou \xE9tait petit."
     m_Metadata:
       m_Items: []
   - m_Id: 726761675304984
@@ -495,11 +495,11 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 726761675304988
     m_Localized: "Il est rempli d'or ! mais il prend beaucoup de place sur le bateau
-      et toutes ses pi\xE8ces ne semble pas tr\xE8s utiles."
+      et toutes ces pi\xE8ces ne semble pas tr\xE8s utiles."
     m_Metadata:
       m_Items: []
   - m_Id: 726761675304989
-    m_Localized: Le laisser la
+    m_Localized: "Le laisser l\xE0"
     m_Metadata:
       m_Items: []
   - m_Id: 726761679499264
@@ -516,7 +516,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 726761679499267
-    m_Localized: Un poisson clown viens nous faire une blague " Quelle monnaie utilisent
+    m_Localized: Un poisson-clown vient nous faire une blague " Quelle monnaie utilisent
       les poissons ? "
     m_Metadata:
       m_Items: []
@@ -526,6 +526,95 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 726761679499269
     m_Localized: ahahah
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1466187992412160
+    m_Localized: Une mouette s'approche et te tend un zirgouflex en souriant.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1466188034355200
+    m_Localized: Le prendre
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1466188034355201
+    m_Localized: "Il est un peu rouill\xE9, mais a l'air fonctionnel."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1466188034355202
+    m_Localized: L'ignorer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1466188034355203
+    m_Localized: "Tu continues ton chemin en faisant semblant de ne pas avoir vu
+      la mouette. De toutes fa\xE7ons, qu'aurais-tu fait d'un zirgouflex?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1466188063715328
+    m_Localized: Tu attrapes le zirgouflex.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1466188063715329
+    m_Localized: "L'utiliser, tant qu'\xE0 faire."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1466188063715330
+    m_Localized: "Tu te peignes les cheveux avec. Pas tr\xE8s utile, mais \xE7a fait
+      du bien."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1466188063715331
+    m_Localized: "Le rejeter \xE0 l'eau."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1466188063715332
+    m_Localized: "Tu regardes le zirgouflex couler lentement en te demandant si tu
+      as pris la bonne d\xE9cision."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1466188063715333
+    m_Localized: "Un banc de poissons commence \xE0 \xE9voluer de plus en plus pr\xE8s
+      du bateau"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1466188063715334
+    m_Localized: "Tu les regardes passer, fascin\xE9e, en les saluant de la main."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1466188063715335
+    m_Localized: "En longeant le bateau, ils cr\xE9ent une vague qui propulse l'embarcation"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1466188063715336
+    m_Localized: Ca tombe bien, tu as faim! Tu essaies d'en attraper un.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1466188063715337
+    m_Localized: "Sans succ\xE8s... maintenant tu as faim ET tu es mouill\xE9e."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1466188063715338
+    m_Localized: "Un poisson-clown, accompagn\xE9 d'un poisson chirurgien bleu, s'adresse
+      \xE0 toi, l'air d\xE9sesp\xE9r\xE9. \"Vous n'auriez pas vu mon fils?\""
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1466188063715339
+    m_Localized: "\"Non, d\xE9sol\xE9e...je recherche aussi ma maman, est-ce que
+      vous l'auriez vue?\""
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1466188063715340
+    m_Localized: "\"Non! Il n'y a pas d'ours par ici! Bonne chance \xE0 vous!\""
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1466188063715341
+    m_Localized: "Tu te rappelles avoir vu un groupe de poissons r\xE9cemment. \"Non,
+      mais dans cette direction il y a un banc de poissons, ils l'ont peut-\xEAtre
+      vu?\""
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1466188063715342
+    m_Localized: '"Merci merci merci!". Ils partent tellement vite que tu n''as pas
+      le temps de dire au revoir.'
     m_Metadata:
       m_Items: []
   references:

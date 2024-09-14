@@ -67,8 +67,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Besoins :'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: eb919df335dc50d40ab762da2fa49017, type: 2}
+  m_sharedMaterial: {fileID: -2948199567305691537, guid: eb919df335dc50d40ab762da2fa49017,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -326,42 +327,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 204ac08ac3c249dabae0c71063f35466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  choice_id: 
   config:
-    description:
-      m_TableReference:
-        m_TableCollectionName: 
-      m_TableEntryReference:
-        m_KeyId: 0
-        m_Key: 
-      m_FallbackState: 0
-      m_WaitForCompletion: 0
-      m_LocalVariables: []
     requirements: []
     results: []
-    temporary_movement_bonus: 0
-    permanent_movement_bonus: 0
-    random_movement: 0
-    outcome:
-      m_TableReference:
-        m_TableCollectionName: 
-      m_TableEntryReference:
-        m_KeyId: 0
-        m_Key: 
-      m_FallbackState: 0
-      m_WaitForCompletion: 0
-      m_LocalVariables: []
     next_event: {fileID: 0}
   button: {fileID: 1134789069007783090}
   text: {fileID: 3128623954227391839}
   resource_requirement_prefab: {fileID: 5462333732132100872, guid: 9d5ab91892edf0e4bb9feb1ea4f4103e,
     type: 3}
+  resource_result_prefab: {fileID: 4611544612869986430, guid: 1e8c207ceb5c8924faee0d3f09d19386,
+    type: 3}
   requirement_panel: {fileID: 2387063606670096194}
   result_panel: {fileID: 7228637411310303393}
   lock_display: {fileID: 8439441886177705521}
   paper_animations: {fileID: 7356294292827050709}
-  references:
-    version: 2
-    RefIds: []
 --- !u!1 &5263773876502413976
 GameObject:
   m_ObjectHideFlags: 0
@@ -429,8 +409,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: "R\xE9parer le bateau"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: eb919df335dc50d40ab762da2fa49017, type: 2}
+  m_sharedMaterial: {fileID: -2948199567305691537, guid: eb919df335dc50d40ab762da2fa49017,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -454,8 +435,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
-  m_fontSizeBase: 30
+  m_fontSize: 35
+  m_fontSizeBase: 35
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

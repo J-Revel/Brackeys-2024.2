@@ -15,7 +15,7 @@ MonoBehaviour:
   resource_icons:
   - effect_type: 0
     resource: 0
-    sprite: {fileID: 21300000, guid: 7a3013045c9d3c14c8433b7ff9e82212, type: 3}
+    sprite: {fileID: 21300000, guid: dd182edfb0e3d5641864e7533a267b86, type: 3}
   - effect_type: 0
     resource: 1
     sprite: {fileID: 21300000, guid: 0f225f90bd2c43d43b30be7f6765fb87, type: 3}

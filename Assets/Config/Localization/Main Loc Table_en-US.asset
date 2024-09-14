@@ -508,16 +508,103 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 726761679499267
-    m_Localized: "A clown fish comes to tell us a joke: \u201CWhat currency do fish
-      use?\u201D"
+    m_Localized: "A clown fish comes to tell us a joke: \u201CWhat is shark's favourite
+      dessert?\u201D"
     m_Metadata:
       m_Items: []
   - m_Id: 726761679499268
-    m_Localized: Sub-marines
+    m_Localized: Jelly-fish
     m_Metadata:
       m_Items: []
   - m_Id: 726761679499269
     m_Localized: ahahah
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1466187992412160
+    m_Localized: A seagull approaches and holds a dinglehopper out to you.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1466188034355200
+    m_Localized: Take it!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1466188034355201
+    m_Localized: It's a bit rusty, but looks functionnal.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1466188034355202
+    m_Localized: Ignore it.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1466188034355203
+    m_Localized: You keep going, pretending you haven't seen the animal. Anyway,
+      what would you have done with a dinglehopper?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1466188063715328
+    m_Localized: You grap the dinglehopper.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1466188063715329
+    m_Localized: Since you have come this far, use it.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1466188063715330
+    m_Localized: Thanks to the dinglehopper, you can comb your hair. Not very useful,
+      but you feel amazing.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1466188063715331
+    m_Localized: Throw it to the sea.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1466188063715332
+    m_Localized: You watch it as it slowly sinks into the ocean, wondering if you
+      have taken the right decision.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1466188063715333
+    m_Localized: A school of fishs is swimming really close to the boat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1466188063715334
+    m_Localized: Teach them the basics of astronomy.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1466188063715335
+    m_Localized: They are glad to learn more about the stars!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1466188063715336
+    m_Localized: Don't disturb them. They seem concentrated.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1466188063715337
+    m_Localized: They pass close to the boat, following their teacher. One fish seems
+      to be a bit late, but soon joins the group.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1466188063715338
+    m_Localized: A clown fish, accompanied by a blue ray-finned fish, appears, looking
+      desperate. "Have you seen my son?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1466188063715339
+    m_Localized: '"No, sorry... I''m also looking for my mom, have you seen her?"'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1466188063715340
+    m_Localized: '"No, there are no bears around here! Good luck to you!"'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1466188063715341
+    m_Localized: You remeber having seen a scholl of fish recently, and give them
+      the directions. Maybe they can help.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1466188063715342
+    m_Localized: '"Tanhkyou thankyou thankyou!" They run so fast you don''t even
+      have time to say goodbye.'
     m_Metadata:
       m_Items: []
   references:

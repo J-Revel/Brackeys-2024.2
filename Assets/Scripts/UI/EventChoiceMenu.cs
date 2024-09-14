@@ -92,7 +92,9 @@ public class EventChoiceMenu : MonoBehaviour
     {
         List<Coroutine> coroutines = new List<Coroutine>();
         choice_buttons.Clear();
-        description_text.text = LocalizationSettings.StringDatabase.GetLocalizedString(selected_event.id + "_description");
+        var loading_operation = LocalizationSettings.StringDatabase.GetLocalizedStringAsync(selected_event.id + "_description");
+        yield return loading_operation;
+        description_text.text = loading_operation.Result;
         current_choice_panel = Instantiate(choice_panel_model, choice_panel_model.parent);
         for(int i=0; i<selected_event.options.Length; i++)
         {

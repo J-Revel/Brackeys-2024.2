@@ -23,9 +23,3 @@ MonoBehaviour:
   - requirements: []
     results: []
     next_event: {fileID: 0}
-  - requirements: []
-    results:
-    - effect_type: 1
-      resource: 0
-      delta: -1
-    next_event: {fileID: 0}

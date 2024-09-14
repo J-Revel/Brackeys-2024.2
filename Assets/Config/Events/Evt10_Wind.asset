@@ -18,7 +18,7 @@ MonoBehaviour:
     results:
     - effect_type: 0
       resource: 0
-      delta: 7
+      delta: 4
     - effect_type: 1
       resource: 0
       delta: -3

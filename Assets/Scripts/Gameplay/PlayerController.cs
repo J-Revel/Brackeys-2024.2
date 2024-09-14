@@ -24,7 +24,7 @@ public class PlayerController : MonoBehaviour
     public int2 checkpoint;
     public float look_direction_default_scale = -1;
     
-    float movement_actions;
+    public float movement_actions;
     private int temporary_action_bonus;
     private int permanent_action_bonus;
 

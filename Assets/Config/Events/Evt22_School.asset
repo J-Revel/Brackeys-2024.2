@@ -19,7 +19,7 @@ MonoBehaviour:
     - effect_type: 1
       resource: 0
       delta: 2
-    next_event: {fileID: 11400000, guid: 98d19eabd62fe854ba3e6ec43a48f351, type: 2}
+    next_event: {fileID: 0}
   - requirements: []
     results: []
     next_event: {fileID: 0}

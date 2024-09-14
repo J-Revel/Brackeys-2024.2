@@ -27,11 +27,11 @@ MonoBehaviour:
     results:
     - effect_type: 1
       resource: 0
-      delta: 5
+      delta: 3
     next_event: {fileID: 0}
   - requirements: []
     results:
     - effect_type: 0
       resource: 1
-      delta: 7
+      delta: 3
     next_event: {fileID: 0}

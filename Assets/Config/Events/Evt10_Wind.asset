@@ -21,7 +21,7 @@ MonoBehaviour:
       delta: 4
     - effect_type: 1
       resource: 0
-      delta: -3
+      delta: -4
     next_event: {fileID: 0}
   - requirements: []
     results: []

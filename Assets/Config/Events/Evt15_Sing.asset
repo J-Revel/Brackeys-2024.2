@@ -24,5 +24,5 @@ MonoBehaviour:
     results:
     - effect_type: 1
       resource: 0
-      delta: -3
+      delta: -2
     next_event: {fileID: 0}

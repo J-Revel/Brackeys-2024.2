@@ -28,7 +28,6 @@ public class PlayerController : MonoBehaviour
     private int temporary_action_bonus;
     private int permanent_action_bonus;
 
-    public EventReference test_event;
     public Transform display;
 
     public void Awake()

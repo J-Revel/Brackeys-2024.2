@@ -1,18 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
+using FMOD.Studio;
+using FMODUnity;
 using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public EventReference music_event;
+    public EventReference ambience_event;
 
-    // Update is called once per frame
-    void Update()
+    public void Start()
     {
-        
+        EventInstance music_instance = FMODUnity.RuntimeManager.CreateInstance(music_event);
+        music_instance.start();
+        EventInstance ambience_instance = FMODUnity.RuntimeManager.CreateInstance(ambience_event);
+        ambience_instance.start();
     }
 }

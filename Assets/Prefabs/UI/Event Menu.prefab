@@ -297,6 +297,7 @@ GameObject:
   - component: {fileID: 3677496942937650438}
   - component: {fileID: 4673143588621063349}
   - component: {fileID: 1909837818303817273}
+  - component: {fileID: 7707418517307900064}
   m_Layer: 5
   m_Name: Event Menu
   m_TagString: Untagged
@@ -350,7 +351,45 @@ MonoBehaviour:
   choice_panel_model: {fileID: 4305210970788400237}
   choice_button_prefab: {fileID: 8662459410331073049, guid: 96b595ebf43a54245a371ce8ad0c30b0,
     type: 3}
-  outcome_text: {fileID: 0}
-  menu_prefab: {fileID: 1909837818303817273}
   background_canvas_group: {fileID: 7413583162446116573}
   appear_anim_duration: 1
+  card_appear_sound:
+    Guid:
+      Data1: -1556226110
+      Data2: 1162947841
+      Data3: -238881114
+      Data4: -654659470
+    Path: event:/SFX/tuile/Apparition Papier Event
+  card_flip_sound:
+    Guid:
+      Data1: -1556226110
+      Data2: 1162947841
+      Data3: -238881114
+      Data4: -654659470
+    Path: event:/SFX/tuile/Apparition Papier Event
+  card_disappear_sound:
+    Guid:
+      Data1: -1556226110
+      Data2: 1162947841
+      Data3: -238881114
+      Data4: -654659470
+    Path: event:/SFX/tuile/Apparition Papier Event
+--- !u!114 &7707418517307900064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7493049489765711533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01f34cca3f5bd6045873ab46208c2f70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sound_event:
+    Guid:
+      Data1: -1033807724
+      Data2: 1074194361
+      Data3: 760919459
+      Data4: -1269251176
+    Path: event:/SFX/tuile/Event

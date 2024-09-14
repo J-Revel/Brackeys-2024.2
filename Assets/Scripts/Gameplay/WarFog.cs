@@ -274,6 +274,7 @@ public class WarFog : MonoBehaviour
     public void Start()
     {
         GameState.instance.turn_change_delegate += UpdateFog;
+        GameState.instance.phase_reset_delegate += () => StartCoroutine(UpdateFog());
         StartCoroutine(UpdateFog());
     }
     public IEnumerator UpdateFog()

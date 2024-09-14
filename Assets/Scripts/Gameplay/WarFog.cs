@@ -13,7 +13,7 @@ public class WarFog : MonoBehaviour
     private List<SpriteRenderer> temporary_sprite_cells = new List<SpriteRenderer>();
     public List<FogCell> fog_cells = new List<FogCell>();
     public int fog_cell_size = 10;
-    public int vision_range = 5;
+    public float vision_range = 5;
     public float transition_duration = 1;
 
     public enum CellState

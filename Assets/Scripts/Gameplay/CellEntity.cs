@@ -104,15 +104,7 @@ public class CellEntity : MonoBehaviour
 
         if (activate_cells)
         {
-            List<Coroutine> coroutines = new List<Coroutine>();
-            foreach(IEnumerator enumerator in start_cell_content.leave_coroutines)
-            {
-                coroutines.Add(StartCoroutine(enumerator));
-            }
-            coroutines.Add(StartCoroutine(ActivateCell(target_cell)));
-
-            foreach (Coroutine coroutine in coroutines)
-                yield return coroutine;
+            yield return ActivateCell(target_cell);
         }
         CellContent target_cell_content = GridInstance.instance.GetCellContent(target_cell);
         foreach (IEnumerator coroutine in enter_coroutines)

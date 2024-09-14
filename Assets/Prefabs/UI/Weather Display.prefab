@@ -1,0 +1,281 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &504501517278355005
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 441300206855780329}
+  - component: {fileID: 3584799308590438278}
+  - component: {fileID: 1981458004784611255}
+  m_Layer: 5
+  m_Name: Wind Direction Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &441300206855780329
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 504501517278355005}
+  m_LocalRotation: {x: 0, y: 0, z: 0.06914713, w: 0.9976065}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3687369955623885478}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 7.93}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.0000023842, y: 92}
+  m_SizeDelta: {x: 171.4195, y: 171.4195}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &3584799308590438278
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 504501517278355005}
+  m_CullTransparentMesh: 1
+--- !u!114 &1981458004784611255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 504501517278355005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 2326e1b217cfe4d40817c61bde62033e, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!1 &1212959199641281923
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3687369955623885478}
+  - component: {fileID: 1321989765322050650}
+  - component: {fileID: 2602181554730933657}
+  - component: {fileID: 2158675238144975753}
+  m_Layer: 5
+  m_Name: Weather Display
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &3687369955623885478
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1212959199641281923}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7193692073650506571}
+  - {fileID: 441300206855780329}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 413.3158, y: 503.59}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &1321989765322050650
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1212959199641281923}
+  m_CullTransparentMesh: 1
+--- !u!114 &2602181554730933657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1212959199641281923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 3f1d199b539511743b781da94ebf8b28, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!114 &2158675238144975753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1212959199641281923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cf9747520cb231449c07cc0163a2d32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weather_phase: 0
+  wind_intensity: 0
+  wind_direction: 0
+  image: {fileID: 1638707721480436594}
+  wind_direction_image: {fileID: 1981458004784611255}
+  weather_sprites:
+  - {fileID: 21300000, guid: 4cd633d5195bb584abe400706cdd48cd, type: 3}
+  - {fileID: 21300000, guid: c778692976c93f542aa8cb32670b2046, type: 3}
+  - {fileID: 21300000, guid: 5a25757e0bff4b546bfdfe7ddd98c24b, type: 3}
+  background_image: {fileID: 2602181554730933657}
+  background_sprites:
+  - {fileID: 21300000, guid: 3f1d199b539511743b781da94ebf8b28, type: 3}
+  - {fileID: 21300000, guid: feca65b6728a43540b2120de96bbc5d7, type: 3}
+  - {fileID: 21300000, guid: 5634c8d1cf5b3f64398c9d8b07b6bbc3, type: 3}
+  wind_direction_sprites:
+  - direction: 2
+    sprites:
+    - {fileID: 21300000, guid: 2326e1b217cfe4d40817c61bde62033e, type: 3}
+    - {fileID: 21300000, guid: 3f557fd3e65bd4044b89bbc1b4e554b5, type: 3}
+    - {fileID: 21300000, guid: 5e599d3c1e021b74187961af85992ad8, type: 3}
+    - {fileID: 21300000, guid: 1d96ad35fd2cca84ea5b4e5df4dd66b9, type: 3}
+  - direction: 0
+    sprites:
+    - {fileID: 21300000, guid: 2326e1b217cfe4d40817c61bde62033e, type: 3}
+    - {fileID: 21300000, guid: abdfc028bb5a8884b8a549e262e1e134, type: 3}
+    - {fileID: 21300000, guid: 3f3b051cd5741a640aebeb689253a55f, type: 3}
+    - {fileID: 21300000, guid: 52f20759612e5ef4fa9d1b7baf02c153, type: 3}
+  - direction: 1
+    sprites:
+    - {fileID: 21300000, guid: 2326e1b217cfe4d40817c61bde62033e, type: 3}
+    - {fileID: 21300000, guid: d9f0dd67522d6664ab269613cc4cb090, type: 3}
+    - {fileID: 21300000, guid: 13a3a9dc1a7d5d64fbd3cfcd93e1d7e1, type: 3}
+    - {fileID: 21300000, guid: c0fab48ff5dda994b83d5155c412ad69, type: 3}
+  - direction: 3
+    sprites:
+    - {fileID: 21300000, guid: 2326e1b217cfe4d40817c61bde62033e, type: 3}
+    - {fileID: 21300000, guid: 6b236f6e8fdc3544eb35f6b0c3c06477, type: 3}
+    - {fileID: 21300000, guid: a693b960bbb0b614dadb3ac1fbd7c291, type: 3}
+    - {fileID: 21300000, guid: 348d7f23594907542a0cfdb075144e2f, type: 3}
+--- !u!1 &7042565231576964408
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7193692073650506571}
+  - component: {fileID: 4717941208782256898}
+  - component: {fileID: 1638707721480436594}
+  m_Layer: 5
+  m_Name: Weather Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &7193692073650506571
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7042565231576964408}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3687369955623885478}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 29, y: -73}
+  m_SizeDelta: {x: 170.5166, y: 184.6049}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &4717941208782256898
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7042565231576964408}
+  m_CullTransparentMesh: 1
+--- !u!114 &1638707721480436594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7042565231576964408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 4cd633d5195bb584abe400706cdd48cd, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1

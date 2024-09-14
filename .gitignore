@@ -7,3 +7,4 @@ UserSettings
 *.csproj
 *.sln
 *.log
+Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset

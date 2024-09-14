@@ -5850,7 +5850,6 @@ MonoBehaviour:
     grain: 1
     sound_param_label: Fort
   death_fade_duration: 1
-  death_canvas_group: {fileID: 1069951249}
   current_wind_intensity: 0
   current_wind_direction: 0
   fog_bottom_mat: {fileID: 2100000, guid: 350895b44dce7a1488fe6d6b8bef8e2c, type: 2}
@@ -5885,8 +5884,10 @@ MonoBehaviour:
       Data3: 1900276884
       Data4: 711824165
     Path: event:/SFX/basique/Storm
-  gameover_menu_prefab: {fileID: 0}
-  shelter_menu_prefab: {fileID: 0}
+  gameover_menu_prefab: {fileID: 8035106520791537831, guid: 61e13c6c48daf054db1ad90d2e6e3017,
+    type: 3}
+  shelter_menu_prefab: {fileID: 8035106520791537831, guid: 5103d6037d45e614bb05357aef81d110,
+    type: 3}
 --- !u!1 &799592270
 GameObject:
   m_ObjectHideFlags: 0

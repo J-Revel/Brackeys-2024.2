@@ -26,7 +26,7 @@ namespace UI
             active_menu = new_menu.gameObject;
             return new_menu;
         }
-
+        
         public void CloseMenu()
         {
             if (active_menu != null)

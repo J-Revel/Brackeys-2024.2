@@ -49,11 +49,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 540ce422758126543be9cf63d8241ba1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  visible: 0
-  border: 0
-  transition_duration: 1
-  visible_color: {r: 0.4627451, g: 0.44705883, b: 0.4862745, a: 0}
-  fog_color: {r: 0.4627451, g: 0.44705883, b: 0.4862745, a: 1}
   particle_systems:
   - {fileID: 9025733671962207245}
   - {fileID: 1814938615070139007}
@@ -76,7 +71,7 @@ ParticleSystem:
   emitterVelocityMode: 1
   looping: 1
   prewarm: 1
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   startDelay:
@@ -4906,7 +4901,7 @@ ParticleSystem:
   emitterVelocityMode: 1
   looping: 1
   prewarm: 1
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   startDelay:
@@ -9745,7 +9740,7 @@ ParticleSystem:
   emitterVelocityMode: 1
   looping: 1
   prewarm: 1
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   startDelay:
@@ -14584,7 +14579,7 @@ ParticleSystem:
   emitterVelocityMode: 1
   looping: 1
   prewarm: 1
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   startDelay:

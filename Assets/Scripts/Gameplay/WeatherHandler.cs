@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using FMOD.Studio;
 using FMODUnity;
+using UI;
 using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.Rendering;
@@ -57,7 +58,6 @@ public class WeatherHandler : MonoBehaviour
     private int3 phase_durations;
     private int current_turn;
     public float death_fade_duration = 2;
-    public CanvasGroup death_canvas_group;
     public static WeatherHandler instance;
     public int current_wind_intensity = 0;
     public CardinalDirection current_wind_direction;
@@ -80,6 +80,13 @@ public class WeatherHandler : MonoBehaviour
     public EventReference ambience_event;
     public EventInstance ambience_audio_instance;
 
+    public EventReference storm_sheltered_sound;
+    public EventInstance storm_sheltered_instance;
+    public EventReference storm_gameover_sound;
+    public EventInstance storm_gameover_instance;
+
+    public GameoverMenu gameover_menu_prefab;
+    public GameoverMenu shelter_menu_prefab;
     
     private void Awake()
     {
@@ -90,6 +97,8 @@ public class WeatherHandler : MonoBehaviour
     {
         ambience_audio_instance = FMODUnity.RuntimeManager.CreateInstance(ambience_event);
         ambience_audio_instance.start();
+        storm_sheltered_instance = FMODUnity.RuntimeManager.CreateInstance(storm_sheltered_sound);
+        storm_gameover_instance = FMODUnity.RuntimeManager.CreateInstance(storm_gameover_sound);
         RandomizePhaseDurations();
         GameState.instance.phase_reset_delegate += () =>
         {
@@ -141,22 +150,16 @@ public class WeatherHandler : MonoBehaviour
 
     public IEnumerator SkipStormCoroutine()
     {
-        for (float time = 0; time < death_fade_duration; time += Time.deltaTime)
-        {
-            death_canvas_group.alpha = time / death_fade_duration;   
-            yield return null;
-        }
-        death_canvas_group.alpha = 1;
-        ApplyWeatherPhase(calm_phase);
+        storm_sheltered_instance.start();
         active_phase_index = 0;
         active_phase_config = calm_phase;
+
+        GameoverMenu shelter_menu = MenuSystem.instance.OpenMenu(shelter_menu_prefab);
+        while (!shelter_menu.closed)
+            yield return null;
+        ApplyWeatherPhase(calm_phase);
         weather_change_delegate?.Invoke();
 
-        for (float time = 0; time < death_fade_duration; time += Time.deltaTime)
-        {
-            death_canvas_group.alpha = 1 - time / death_fade_duration;   
-            yield return null;
-        }
         PlayerController.instance.checkpoint = PlayerController.instance.current_cell;
         RandomizePhaseDurations();
         current_turn = 0;
@@ -259,24 +262,14 @@ public class WeatherHandler : MonoBehaviour
 
         if (current_turn > phase_durations.x + phase_durations.y + phase_durations.z)
         {
-            for (float time = 0; time < death_fade_duration; time += Time.deltaTime)
-            {
-                death_canvas_group.alpha = time / death_fade_duration;   
+            storm_gameover_instance.start();
+            GameoverMenu gameover_menu = MenuSystem.instance.OpenMenu(gameover_menu_prefab);
+            while (!gameover_menu.closed)
                 yield return null;
-            }
-            death_canvas_group.alpha = 1;
 
             PlayerController.instance.TeleportToCheckpoint();
             GameState.instance.phase_reset_delegate?.Invoke();
             
-            for (float time = 0; time < death_fade_duration; time += Time.deltaTime)
-            {
-                death_canvas_group.alpha = 1 - time / death_fade_duration;   
-                yield return null;
-            }
-
-            death_canvas_group.alpha = 0;
-
             current_turn = 0;
         }
     }

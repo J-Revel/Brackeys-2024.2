@@ -247,7 +247,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 690879190675456
-    m_Localized: "Malou le Kangourou semble s'\xEAtre tromper pour rejoindre l'australie. "
+    m_Localized: "Malou le Kangourou semble s'\xEAtre tromp\xE9 de chemin pour rejoindre
+      l'Australie. "
     m_Metadata:
       m_Items: []
   - m_Id: 690879190675457
@@ -255,7 +256,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 690879190675458
-    m_Localized: Il nous remercie et nous donne des cordes qu'il avait ramasser
+    m_Localized: "Il te remercie et te donne des cordes qu'il avait ramass\xE9"
     m_Metadata:
       m_Items: []
   - m_Id: 690879190675459
@@ -263,24 +264,24 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 690879190675460
-    m_Localized: "Il nous remercie et nous donne des cordes qu'il avait ramasser
-      (mais ce n'ai pas tr\xE8s gentil)"
+    m_Localized: "Il te remercie et te donne des cordes qu'il avait ramass\xE9 (mais
+      ce n'ai pas tr\xE8s gentil)"
     m_Metadata:
       m_Items: []
   - m_Id: 690879190675461
-    m_Localized: "Faire comme si on ne l'avais jamais rencontr\xE9"
+    m_Localized: "Pr\xE9tendre ne pas l'avoir vu"
     m_Metadata:
       m_Items: []
   - m_Id: 690879190675462
-    m_Localized: "Un Kangourou en pleine mer c'\xE9tait forcement un pi\xE8ge ! "
+    m_Localized: "Peut-\xEAtre bien que tu as des hallucinations finalement"
     m_Metadata:
       m_Items: []
   - m_Id: 690879190675463
-    m_Localized: "Tu trouve un pi\xE8ge un poisson. Il semble vide"
+    m_Localized: "Tu trouves un pi\xE8ge \xE0 poissons. Il semble vide"
     m_Metadata:
       m_Items: []
   - m_Id: 690879190675464
-    m_Localized: "Mettre un \xE2ppat dedans"
+    m_Localized: "Y mettre un \xE2ppat"
     m_Metadata:
       m_Items: []
   - m_Id: 690879190675465
@@ -292,8 +293,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 690879190675467
-    m_Localized: "Les poissons m\xE9ritent d'\xEAtre libre ! et \xE7a fait quelques
-      ressources"
+    m_Localized: "Libres, poissons, vous \xEAtes libres ! Et tu m\xE9rites bien quelques
+      ressources pour \xE7a, hein?"
     m_Metadata:
       m_Items: []
   - m_Id: 690879190675468
@@ -301,15 +302,15 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 690879190675469
-    m_Localized: Il faut bien que tous le monde survivent
+    m_Localized: Tout le monde a besoin de survivre
     m_Metadata:
       m_Items: []
   - m_Id: 690879190675470
-    m_Localized: "Les poissons sont dans le pi\xE8ge ! "
+    m_Localized: "Il y a des poissons dans le pi\xE8ge ! "
     m_Metadata:
       m_Items: []
   - m_Id: 690879190675471
-    m_Localized: attendre qu'il n'y ait plus de poisson
+    m_Localized: Attendre qu'il y ait plus de poisson
     m_Metadata:
       m_Items: []
   - m_Id: 690879190675472
@@ -333,7 +334,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 690879190675477
-    m_Localized: '"Bonjour monsieur"'
+    m_Localized: '"Bonjour, Monsieur"'
     m_Metadata:
       m_Items: []
   - m_Id: 690879190675478
@@ -341,12 +342,12 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 690879190675479
-    m_Localized: "Un requin peut faire peur ! c'\xE9tait le plus sur"
+    m_Localized: "Un requin peut faire peur ! C'\xE9tait le plus s\xFBr"
     m_Metadata:
       m_Items: []
   - m_Id: 690879190675480
-    m_Localized: "\" Merci beaucoup pour se bon repas ! pour la peine je vais te
-      donner \xE7a ! \""
+    m_Localized: '" Merci beaucoup pour ce bon repas ! Laisse moi t''offrir quelque
+      chose en retour ! "'
     m_Metadata:
       m_Items: []
   - m_Id: 690879190675481
@@ -354,7 +355,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 690879190675482
-    m_Localized: "Il nous donne le propulseur a ailerons requino\xEFd 2025 !"
+    m_Localized: "Il te donne l'Aileron Propulseur Requino\xEFd 2025 !"
     m_Metadata:
       m_Items: []
   - m_Id: 690879190675483
@@ -362,21 +363,21 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 690879190675484
-    m_Localized: "\"Vous les ours vous \xEAtes vraiment trop gentil ! \xE0 la prochaine
-      petite ! \""
+    m_Localized: "\"Vous les ours vous \xEAtes vraiment trop gentils ! Bon voyage,
+      l'amie ! \""
     m_Metadata:
       m_Items: []
   - m_Id: 690879190675485
-    m_Localized: 'Une gigantesque Vague risque de faire se retourner le bateau ! '
+    m_Localized: 'Une gigantesque vague va faire se retourner le bateau ! '
     m_Metadata:
       m_Items: []
   - m_Id: 726761658527744
-    m_Localized: Demonter le mat en urgence
+    m_Localized: "D\xE9monter le mat en urgence"
     m_Metadata:
       m_Items: []
   - m_Id: 726761675304960
-    m_Localized: "On a \xE9vit\xE9 le pire ! mais il va falloir r\xE9parer se qu'il
-      c'est abimer"
+    m_Localized: "Tu as \xE9vit\xE9 le pire ! Mais il va falloir r\xE9parer ce qui
+      est abim\xE9"
     m_Metadata:
       m_Items: []
   - m_Id: 726761675304961
@@ -384,12 +385,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 726761675304962
-    m_Localized: "\xE7a c'est aurait pu \xEAtre pire. Mais le bateau semble moins
-      bien fonctionner."
+    m_Localized: "Ca aurait pu \xEAtre pire. Mais le bateau semble moins bien fonctionner."
     m_Metadata:
       m_Items: []
   - m_Id: 726761675304963
-    m_Localized: 'Il y a chapeau de pirate au milieu de l''eau ! '
+    m_Localized: "Il y a chapeau de pirate \xE0 la surface de l'eau ! "
     m_Metadata:
       m_Items: []
   - m_Id: 726761675304964
@@ -397,11 +397,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 726761675304965
-    m_Localized: "\xE7a nous va super bien ! "
+    m_Localized: 'Ca te va super bien ! '
     m_Metadata:
       m_Items: []
   - m_Id: 726761675304966
-    m_Localized: le laisser flotter
+    m_Localized: Le laisser flotter
     m_Metadata:
       m_Items: []
   - m_Id: 726761675304967
@@ -409,28 +409,28 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 726761675304968
-    m_Localized: Des chants envoutant semble venir au loin
+    m_Localized: Tu entends des chants envoutants au loin
     m_Metadata:
       m_Items: []
   - m_Id: 726761675304969
-    m_Localized: suivre la musique
+    m_Localized: Suivre la musique
     m_Metadata:
       m_Items: []
   - m_Id: 726761675304970
-    m_Localized: Une mouette chantante chante en continue sur les morceaux de bois
-      flottant mais s'enfuit en te voyant.
+    m_Localized: "Une mouette m\xE9lomane pos\xE9e sur des d\xE9bris chante sans
+      se lasser, mais elle s'enfuit en te voyant"
     m_Metadata:
       m_Items: []
   - m_Id: 726761675304971
-    m_Localized: l'enloigner de la musique
+    m_Localized: "S'\xE9loigner de la musique"
     m_Metadata:
       m_Items: []
   - m_Id: 726761675304972
-    m_Localized: "Un petit d\xE9tour de s\xE9curit\xE9"
+    m_Localized: On est jamais trop prudent
     m_Metadata:
       m_Items: []
   - m_Id: 726761675304973
-    m_Localized: Tu commence a avoir faim.
+    m_Localized: Tu as comme un petit creux (ou deux)
     m_Metadata:
       m_Items: []
   - m_Id: 726761675304974
@@ -438,21 +438,21 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 726761675304975
-    m_Localized: "Tu te sens beaucoup mieux ! Ses fruits \xE9tait excellent"
+    m_Localized: "Tu te sens beaucoup mieux ! Ses fruits \xE9tait excellents"
     m_Metadata:
       m_Items: []
   - m_Id: 726761675304976
-    m_Localized: tenter d'attrapper du poisson
+    m_Localized: Tenter d'attrapper du poisson
     m_Metadata:
       m_Items: []
   - m_Id: 726761675304977
-    m_Localized: Difficile d'attraper un poisson a mains nue. Tu fini par trouver
-      un petit poisson mais se fut long.
+    m_Localized: "Eh bien, tu as encore besoin d'entrainement... Il t'a fallu beaucoup
+      de temps pour avoir quelque chose \xE0 manger"
     m_Metadata:
       m_Items: []
   - m_Id: 726761675304978
-    m_Localized: L'orage se rapproche. les vagues sont grosses et il est difficiles
-      d'avancer.
+    m_Localized: L'orage se rapproche! Les vagues sont de plus en plus grosses et
+      il est difficile d'avancer
     m_Metadata:
       m_Items: []
   - m_Id: 726761675304979
@@ -460,7 +460,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 726761675304980
-    m_Localized: "il faut respecter la difficult\xE9 de la mer"
+    m_Localized: '  '
     m_Metadata:
       m_Items: []
   - m_Id: 726761675304981

@@ -250,7 +250,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 690879190675458
-    m_Localized: He thanks us and gives us some ropes that he had collected
+    m_Localized: He thanks you and gives you some ropes that he had collected
     m_Metadata:
       m_Items: []
   - m_Id: 690879190675459
@@ -258,24 +258,24 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 690879190675460
-    m_Localized: He thanks us and gives us some ropes that he had picked up (but
+    m_Localized: He thanks you and gives you some ropes that he had picked up (but
       it wasn't very nice)
     m_Metadata:
       m_Items: []
   - m_Id: 690879190675461
-    m_Localized: Pretend you've never met him
+    m_Localized: Pretend you didn't notice him
     m_Metadata:
       m_Items: []
   - m_Id: 690879190675462
-    m_Localized: A Kangaroo in the open sea was definitely a trap!
+    m_Localized: Maybe you're just seeing things after all
     m_Metadata:
       m_Items: []
   - m_Id: 690879190675463
-    m_Localized: You find a trap for a fish. It seems empty
+    m_Localized: You find a fish trap. It seems empty
     m_Metadata:
       m_Items: []
   - m_Id: 690879190675464
-    m_Localized: Put bait in
+    m_Localized: Put a bait in
     m_Metadata:
       m_Items: []
   - m_Id: 690879190675465
@@ -287,23 +287,23 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 690879190675467
-    m_Localized: Fish deserve to be free! and that's some resources
+    m_Localized: Go free, fish! And you deserve some ressources for that, right?
     m_Metadata:
       m_Items: []
   - m_Id: 690879190675468
-    m_Localized: Go your way
+    m_Localized: Go on your way
     m_Metadata:
       m_Items: []
   - m_Id: 690879190675469
-    m_Localized: Everyone has to survive
+    m_Localized: Everyone needs to survive
     m_Metadata:
       m_Items: []
   - m_Id: 690879190675470
-    m_Localized: The fish are in the trap!
+    m_Localized: There are fish in the trap!
     m_Metadata:
       m_Items: []
   - m_Id: 690879190675471
-    m_Localized: wait until there are no more fish
+    m_Localized: Wait until there is more of them
     m_Metadata:
       m_Items: []
   - m_Id: 690879190675472
@@ -319,7 +319,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 690879190675475
-    m_Localized: Mark the Shark is attracted to all this fish
+    m_Localized: Mark the Shark is drawn to all this fish
     m_Metadata:
       m_Items: []
   - m_Id: 690879190675476
@@ -327,7 +327,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 690879190675477
-    m_Localized: '"Hello Sir"'
+    m_Localized: '"Hello, Sir"'
     m_Metadata:
       m_Items: []
   - m_Id: 690879190675478
@@ -335,12 +335,12 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 690879190675479
-    m_Localized: A shark can be scary! it was the safest
+    m_Localized: A shark can be scary! It was the safest
     m_Metadata:
       m_Items: []
   - m_Id: 690879190675480
-    m_Localized: "\u201CThank you very much for a good meal! For the trouble I\u2019ll
-      give you this!\u201D"
+    m_Localized: "\u201CThank you very much for this good meal! Here, let me thank
+      you with this!\u201D"
     m_Metadata:
       m_Items: []
   - m_Id: 690879190675481
@@ -348,40 +348,40 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 690879190675482
-    m_Localized: He gives us the 2025 sharkoid fin thruster!
+    m_Localized: He gives you the 2025 Sharkoid Fin Thruster!
     m_Metadata:
       m_Items: []
   - m_Id: 690879190675483
-    m_Localized: Refuse the gift
+    m_Localized: Decline the gift
     m_Metadata:
       m_Items: []
   - m_Id: 690879190675484
-    m_Localized: "\u201CYou bears are really so kind! See you next little one!\u201D"
+    m_Localized: "\u201CYou bears are really so kind! Have a nice trip, friend!\u201D"
     m_Metadata:
       m_Items: []
   - m_Id: 690879190675485
-    m_Localized: A gigantic wave risks turning the boat over!
+    m_Localized: A gigantic wave is going to turn the boat over!
     m_Metadata:
       m_Items: []
   - m_Id: 726761658527744
-    m_Localized: Dismantle the mast urgently
+    m_Localized: Quickly remove the mast
     m_Metadata:
       m_Items: []
   - m_Id: 726761675304960
-    m_Localized: We avoided the worst! but we will have to repair it if it is damaged
+    m_Localized: You managed to avoid the worst! But you still need to repair some
+      parts
     m_Metadata:
       m_Items: []
   - m_Id: 726761675304961
-    m_Localized: Wait for the wave to pass
+    m_Localized: Wait for the wave to pass through
     m_Metadata:
       m_Items: []
   - m_Id: 726761675304962
-    m_Localized: That could have been worse. But the boat seems to be working less
-      well.
+    m_Localized: That could have been worse. But the boat seems less efficient now
     m_Metadata:
       m_Items: []
   - m_Id: 726761675304963
-    m_Localized: There is a pirate hat in the middle of the water!
+    m_Localized: There is a pirate hat floating around on the surface!
     m_Metadata:
       m_Items: []
   - m_Id: 726761675304964
@@ -389,62 +389,62 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 726761675304965
-    m_Localized: It suits us really well!
+    m_Localized: It suits you really well!
     m_Metadata:
       m_Items: []
   - m_Id: 726761675304966
-    m_Localized: let it float
+    m_Localized: Let it float
     m_Metadata:
       m_Items: []
   - m_Id: 726761675304967
-    m_Localized: Someone must miss him
+    m_Localized: Someone must miss it
     m_Metadata:
       m_Items: []
   - m_Id: 726761675304968
-    m_Localized: Captivating songs seem to come from afar
+    m_Localized: You hear enchanting singing from afar
     m_Metadata:
       m_Items: []
   - m_Id: 726761675304969
-    m_Localized: follow the music
+    m_Localized: Follow the music
     m_Metadata:
       m_Items: []
   - m_Id: 726761675304970
-    m_Localized: A singing seagull sings continuously over the pieces of driftwood
-      but runs away when it sees you.
+    m_Localized: A music lover seagull is singing, here on some floating debris.
+      But you startle him and he flies away
     m_Metadata:
       m_Items: []
   - m_Id: 726761675304971
-    m_Localized: far away from music
+    m_Localized: Sail away from music
     m_Metadata:
       m_Items: []
   - m_Id: 726761675304972
-    m_Localized: A little safety detour
+    m_Localized: One is never too careful
     m_Metadata:
       m_Items: []
   - m_Id: 726761675304973
-    m_Localized: You're starting to get hungry.
+    m_Localized: You could take a snack (or two)
     m_Metadata:
       m_Items: []
   - m_Id: 726761675304974
-    m_Localized: take from reserves
+    m_Localized: Take some from the stock
     m_Metadata:
       m_Items: []
   - m_Id: 726761675304975
-    m_Localized: You feel much better! His fruit was excellent
+    m_Localized: You feel much better! These fruits were delicious
     m_Metadata:
       m_Items: []
   - m_Id: 726761675304976
-    m_Localized: try to catch fish
+    m_Localized: Try to catch some fish
     m_Metadata:
       m_Items: []
   - m_Id: 726761675304977
-    m_Localized: Difficult to catch a fish with your bare hands. You ended up finding
-      a small fish but it took a long time.
+    m_Localized: Well, you still need to practice this skill... It took a long time
+      to get something to eat
     m_Metadata:
       m_Items: []
   - m_Id: 726761675304978
-    m_Localized: The storm is getting closer. the waves are big and it is difficult
-      to move forward.
+    m_Localized: The storm is getting closer! The waves are getting biger and biger,
+      and it's hard to move forward
     m_Metadata:
       m_Items: []
   - m_Id: 726761675304979

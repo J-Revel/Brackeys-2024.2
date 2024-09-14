@@ -6716,8 +6716,8 @@ MonoBehaviour:
   spawn_rates: 00000000020000000400000008000000
   speeds:
   - 0
-  - 2.5
   - 5
+  - 10
   - 10
 --- !u!1 &452675672
 GameObject:
@@ -15026,8 +15026,8 @@ MonoBehaviour:
   spawn_rates: 0000000003000000070000000f000000
   speeds:
   - 0
-  - 3
-  - 7
+  - 4
+  - 12
   - 15
 --- !u!1001 &1041690623
 PrefabInstance:
@@ -19439,8 +19439,8 @@ MonoBehaviour:
   spawn_rates: 0000000003000000050000000a000000
   speeds:
   - 0
-  - 2.5
   - 5
+  - 10
   - 10
 --- !u!199 &1882530441
 ParticleSystemRenderer:

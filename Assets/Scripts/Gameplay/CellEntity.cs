@@ -20,6 +20,8 @@ public class CellEntity : MonoBehaviour
     public List<IEnumerator> enter_coroutines = new List<IEnumerator>();
     public EventReference move_audio_event;
     private EventInstance move_audio_instance;
+    public EventReference enter_audio_event;
+    private EventInstance enter_audio_instance;
     [HideInInspector]
     public int look_direction = 1;
 
@@ -28,8 +30,20 @@ public class CellEntity : MonoBehaviour
     {
         grid_config = (GridConfig)Resources.Load("GridSettings");
         transform.position = new float3(cell.x * grid_config.cell_size, cell.y * grid_config.cell_size, 0);
+
+        if (!enter_audio_event.IsNull)
+        {
+            enter_audio_instance = FMODUnity.RuntimeManager.CreateInstance(enter_audio_event);
+            RegisterEnterCoroutine(PlaySoundCoroutine());
+        }
         if(!move_audio_event.IsNull)
             move_audio_instance = FMODUnity.RuntimeManager.CreateInstance(move_audio_event);
+    }
+
+    private IEnumerator PlaySoundCoroutine()
+    {
+        enter_audio_instance.start();
+        yield return null;
     }
     
     #if UNITY_EDITOR
@@ -47,7 +61,6 @@ public class CellEntity : MonoBehaviour
             serialized_object.FindProperty("cell").FindPropertyRelative("x").intValue = (int)(transform.position.x / grid_config.cell_size);
             serialized_object.FindProperty("cell").FindPropertyRelative("y").intValue = (int)(transform.position.y / grid_config.cell_size);
             serialized_object.ApplyModifiedPropertiesWithoutUndo();
-
         }
         #endif
     }

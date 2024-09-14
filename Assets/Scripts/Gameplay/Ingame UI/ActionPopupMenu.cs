@@ -48,12 +48,13 @@ public class ActionPopupMenu : MonoBehaviour
         });
     }
 
-    public IEnumerator ShowActionCoroutine(Sprite sprite, ResourceStock[] requirements)
+    public IEnumerator ShowActionCoroutine(Sprite sprite, EventReference action_sound, ResourceStock[] requirements)
     {
         open_event_instance.start();
         confirm_button.interactable = true;
         current_requirements = requirements;
         confirm = false;
+        
         foreach (var requirement in requirements)
         {
             if (PlayerResourceStock.instance.GetStock(requirement.resource) < requirement.stock)
@@ -72,6 +73,7 @@ public class ActionPopupMenu : MonoBehaviour
         while (!answer_selected)
             yield return null;
 
+        FMODUnity.RuntimeManager.CreateInstance(action_sound).start();
         open_event_instance.start();
         for (float time = 0; time < appear_duration; time += Time.deltaTime)
         {

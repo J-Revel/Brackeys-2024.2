@@ -101,6 +101,14 @@ MonoBehaviour:
   cell:
     x: 0
     y: -1
+  move_audio_event:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  look_direction: 1
 --- !u!114 &1733776904542060255
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -113,4 +121,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f64be7b138900ae43a2969283e42ba42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cost: []
   action_icon: {fileID: 21300000, guid: af0fb9ac731fcd64ca8bd0652371753f, type: 3}
+  action_sound:
+    Guid:
+      Data1: 304309816
+      Data2: 1270154892
+      Data3: -771013991
+      Data4: 279154595
+    Path: event:/SFX/tuile/CAVE

@@ -109,6 +109,13 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  enter_audio_event:
+    Guid:
+      Data1: 970566253
+      Data2: 1103848504
+      Data3: 1757124523
+      Data4: 786880528
+    Path: event:/SFX/tuile/Loot
   look_direction: 1
 --- !u!114 &99109768649928713
 MonoBehaviour:

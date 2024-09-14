@@ -362,18 +362,18 @@ MonoBehaviour:
     Path: event:/SFX/tuile/Apparition Papier Event
   card_flip_sound:
     Guid:
-      Data1: -1556226110
-      Data2: 1162947841
-      Data3: -238881114
-      Data4: -654659470
-    Path: event:/SFX/tuile/Apparition Papier Event
+      Data1: -734128714
+      Data2: 1302455509
+      Data3: -396043856
+      Data4: 1986269652
+    Path: event:/SFX/tuile/Event-Choisis
   card_disappear_sound:
     Guid:
-      Data1: -1556226110
-      Data2: 1162947841
-      Data3: -238881114
-      Data4: -654659470
-    Path: event:/SFX/tuile/Apparition Papier Event
+      Data1: -734128714
+      Data2: 1302455509
+      Data3: -396043856
+      Data4: 1986269652
+    Path: event:/SFX/tuile/Event-Choisis
 --- !u!114 &7707418517307900064
 MonoBehaviour:
   m_ObjectHideFlags: 0

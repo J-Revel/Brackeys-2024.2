@@ -1,4 +1,6 @@
 using System.Collections;
+using FMOD.Studio;
+using FMODUnity;
 using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.UI;
@@ -14,6 +16,8 @@ public class ActionPopupMenu : MonoBehaviour
     public bool confirm;
     private float3 target_scale;
     private ResourceStock[] current_requirements;
+    public EventReference open_event;
+    private EventInstance open_event_instance;
 
     private void Awake()
     {
@@ -22,6 +26,8 @@ public class ActionPopupMenu : MonoBehaviour
 
     public void Start()
     {
+        if(!open_event.IsNull)
+            open_event_instance = FMODUnity.RuntimeManager.CreateInstance(open_event);
         target_scale = transform.localScale;
         transform.localScale = Vector3.zero;
         confirm_button.onClick.AddListener(() =>
@@ -44,6 +50,7 @@ public class ActionPopupMenu : MonoBehaviour
 
     public IEnumerator ShowActionCoroutine(Sprite sprite, ResourceStock[] requirements)
     {
+        open_event_instance.start();
         confirm_button.interactable = true;
         current_requirements = requirements;
         confirm = false;
@@ -65,6 +72,7 @@ public class ActionPopupMenu : MonoBehaviour
         while (!answer_selected)
             yield return null;
 
+        open_event_instance.start();
         for (float time = 0; time < appear_duration; time += Time.deltaTime)
         {
             transform.localScale = target_scale * (1 - time / appear_duration);

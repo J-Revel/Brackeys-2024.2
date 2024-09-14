@@ -102,6 +102,14 @@ MonoBehaviour:
   cell:
     x: 4
     y: 0
+  move_audio_event:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  look_direction: 0
 --- !u!114 &99109768649928713
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -127,5 +135,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 211a9977d9839b6478476b47cd04aeac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resource: 1
-  quantity: 5
+  resource: 2
+  quantity: 1

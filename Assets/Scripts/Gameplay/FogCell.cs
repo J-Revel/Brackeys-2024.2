@@ -14,7 +14,7 @@ public class FogCell : MonoBehaviour
     {
         foreach (ParticleSystem particle_system in particle_systems)
         {
-            particle_system.customData.SetColor(ParticleSystemCustomData.Custom1, new Color(1, 1, 1, alpha));
+            particle_system.customData.SetColor(ParticleSystemCustomData.Custom1, new Color(1, 1, 1, alpha * alpha * alpha));
         }
     }
 }

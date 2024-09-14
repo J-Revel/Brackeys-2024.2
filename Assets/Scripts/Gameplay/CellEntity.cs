@@ -19,13 +19,17 @@ public class CellEntity : MonoBehaviour
     private GridConfig grid_config;
     public List<IEnumerator> enter_coroutines = new List<IEnumerator>();
     public EventReference move_audio_event;
+    private EventInstance move_audio_instance;
     [HideInInspector]
     public int look_direction = 1;
+
 
     private void Start()
     {
         grid_config = (GridConfig)Resources.Load("GridSettings");
         transform.position = new float3(cell.x * grid_config.cell_size, cell.y * grid_config.cell_size, 0);
+        if(!move_audio_event.IsNull)
+            move_audio_instance = FMODUnity.RuntimeManager.CreateInstance(move_audio_event);
     }
     
     #if UNITY_EDITOR
@@ -82,8 +86,7 @@ public class CellEntity : MonoBehaviour
         }
         if (!move_audio_event.IsNull)
         {
-            EventInstance move_event_state = FMODUnity.RuntimeManager.CreateInstance(move_audio_event);
-            move_event_state.start();
+            move_audio_instance.start();
         }
         CellContent start_cell_content = GridInstance.instance.GetCellContent(cell);
         float distance = math.distance((float2)target_cell, (float2)cell);
@@ -102,7 +105,7 @@ public class CellEntity : MonoBehaviour
         if (activate_cells)
         {
             List<Coroutine> coroutines = new List<Coroutine>();
-            foreach(IEnumerator enumerator in GridInstance.instance.GetCellContent(start_cell).leave_coroutines)
+            foreach(IEnumerator enumerator in start_cell_content.leave_coroutines)
             {
                 coroutines.Add(StartCoroutine(enumerator));
             }
@@ -115,6 +118,7 @@ public class CellEntity : MonoBehaviour
         foreach (IEnumerator coroutine in enter_coroutines)
         {
             target_cell_content.enter_coroutines.Add(coroutine);
+            start_cell_content.enter_coroutines.Remove(coroutine);
         }
     }
 

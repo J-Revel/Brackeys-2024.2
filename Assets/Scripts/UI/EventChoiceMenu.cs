@@ -1,6 +1,8 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using FMOD.Studio;
+using FMODUnity;
 using UI;
 using UnityEngine;
 using UnityEngine.Localization;
@@ -44,9 +46,18 @@ public class EventChoiceMenu : MonoBehaviour
     private List<EventChoiceButton> choice_buttons = new List<EventChoiceButton>();
     public CanvasGroup background_canvas_group;
     public float appear_anim_duration = 1;
+    public EventReference card_appear_sound;
+    private EventInstance card_appear_instance;
+    public EventReference card_flip_sound;
+    private EventInstance card_flip_instance;
+    public EventReference card_disappear_sound;
+    private EventInstance card_disappear_instance;
 
     IEnumerator Start()
     {
+        card_appear_instance = FMODUnity.RuntimeManager.CreateInstance(card_appear_sound);
+        card_disappear_instance = FMODUnity.RuntimeManager.CreateInstance(card_disappear_sound);
+        card_flip_instance = FMODUnity.RuntimeManager.CreateInstance(card_flip_sound);
         StartCoroutine(AppearCoroutine());
         EventConfigAsset selected_event = config.event_config[Random.Range(0, config.event_config.Length)];
         yield return ShowEventCoroutine(selected_event);
@@ -54,6 +65,7 @@ public class EventChoiceMenu : MonoBehaviour
 
     IEnumerator AppearCoroutine()
     {
+        card_appear_instance.start();
         for (float time = 0; time < appear_anim_duration; time += Time.deltaTime)
         {
             background_canvas_group.alpha = time / appear_anim_duration;
@@ -65,6 +77,7 @@ public class EventChoiceMenu : MonoBehaviour
     
     IEnumerator DisappearCoroutine()
     {
+        card_disappear_instance.start();
         for (float time = 0; time < appear_anim_duration; time += Time.deltaTime)
         {
             background_canvas_group.alpha = 1 - time / appear_anim_duration;
@@ -130,6 +143,7 @@ public class EventChoiceMenu : MonoBehaviour
         for (int i = 0; i < choice_buttons.Count; i++)
         {
             AnimatedPaperWidget paper_widget = choice_buttons[i].paper_animations;
+            card_flip_instance.start();
             if (i == option_index)
                 coroutines.Add(StartCoroutine(paper_widget.FlipAnimCoroutine(choice)));
             else 

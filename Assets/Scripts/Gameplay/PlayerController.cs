@@ -28,7 +28,6 @@ public class PlayerController : MonoBehaviour
     private int temporary_action_bonus;
     private int permanent_action_bonus;
 
-    public EventReference test_event;
     public Transform display;
 
     public void Awake()
@@ -38,6 +37,7 @@ public class PlayerController : MonoBehaviour
     
     public IEnumerator Start()
     {
+        GameState.instance.phase_reset_delegate += OnStormEnd;
         movement_actions = range + temporary_action_bonus + permanent_action_bonus;
         temporary_action_bonus = 0;
         while (true)

@@ -28,6 +28,9 @@ public class PlayerController : MonoBehaviour
     private int temporary_action_bonus;
     private int permanent_action_bonus;
 
+    public EventReference[] wind_push_sounds;
+    private EventInstance[] wind_push_sound_instances;
+
     public Transform display;
 
     public void Awake()
@@ -40,6 +43,11 @@ public class PlayerController : MonoBehaviour
         GameState.instance.phase_reset_delegate += OnStormEnd;
         movement_actions = range + temporary_action_bonus + permanent_action_bonus;
         temporary_action_bonus = 0;
+        wind_push_sound_instances = new EventInstance[wind_push_sounds.Length];
+        for (int i = 0; i < wind_push_sounds.Length; i++)
+        {
+            wind_push_sound_instances[i] = FMODUnity.RuntimeManager.CreateInstance(wind_push_sounds[i]);   
+        }
         while (true)
         {
             Plane plane = new Plane(Vector3.forward, Vector3.zero);
@@ -128,6 +136,7 @@ public class PlayerController : MonoBehaviour
 
     public IEnumerator ApplyWind(CardinalDirection direction, int strength)
     {
+        wind_push_sound_instances[strength - 1].start();
         Coroutine[] coroutines = new Coroutine[wind_targets.Count];
         for(int i=0; i<wind_targets.Count; i++)
         {

@@ -7315,6 +7315,7 @@ MonoBehaviour:
       Data3: 477728407
       Data4: -307430803
     Path: event:/Ambiance/Amb-Wave
+  music_eq_transition_duration: 0.5
 --- !u!1001 &611647066
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15505,6 +15506,13 @@ MonoBehaviour:
       Data3: -1556852601
       Data4: 1283858793
     Path: event:/SFX/basique/Move
+  enter_audio_event:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
   look_direction: 1
 --- !u!114 &1090059732
 MonoBehaviour:
@@ -15533,6 +15541,25 @@ MonoBehaviour:
     y: 0
   look_direction_default_scale: -1
   movement_actions: 0
+  wind_push_sounds:
+  - Guid:
+      Data1: -118946954
+      Data2: 1244188738
+      Data3: -1849806208
+      Data4: -62802085
+    Path: event:/SFX/Wind Puissance/Wind Puissance 1
+  - Guid:
+      Data1: 1289937434
+      Data2: 1078320512
+      Data3: -402232419
+      Data4: -946932737
+    Path: event:/SFX/Wind Puissance/Wind Puissance 2
+  - Guid:
+      Data1: 822155228
+      Data2: 1268335462
+      Data3: -155010908
+      Data4: 605649950
+    Path: event:/SFX/Wind Puissance/Wind Puissance 3
   display: {fileID: 838976330}
 --- !u!4 &1090059734
 Transform:

@@ -136,4 +136,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resource: 0
-  quantity: 1
+  quantity_range:
+    x: 3
+    y: 5

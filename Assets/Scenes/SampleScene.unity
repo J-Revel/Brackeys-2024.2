@@ -7857,6 +7857,7 @@ MonoBehaviour:
     color_filter: {r: 1, g: 1, b: 1, a: 1}
     saturation: 0
     grain: 0
+    sound_param_label: Leger
   cloudy_phase:
     fog_bottom_color: {r: 0.20392157, g: 0.27177858, b: 0.28235295, a: 1}
     fog_middle_color: {r: 0.3019608, g: 0.3882428, b: 0.40392157, a: 0.7529412}
@@ -7874,6 +7875,7 @@ MonoBehaviour:
     color_filter: {r: 1, g: 1, b: 1, a: 1}
     saturation: 20
     grain: 0.3
+    sound_param_label: Moyen
   stormy_phase:
     fog_bottom_color: {r: 0.16078432, g: 0.20038782, b: 0.20784314, a: 0.8862745}
     fog_middle_color: {r: 0.21568628, g: 0.28109786, b: 0.29411766, a: 0.77254903}
@@ -7891,6 +7893,7 @@ MonoBehaviour:
     color_filter: {r: 1, g: 1, b: 1, a: 1}
     saturation: 43
     grain: 1
+    sound_param_label: Fort
   death_fade_duration: 1
   death_canvas_group: {fileID: 1069951249}
   current_wind_intensity: 0
@@ -7906,6 +7909,13 @@ MonoBehaviour:
   - {fileID: 446898639}
   post_process_profile: {fileID: 11400000, guid: a6560a915ef98420e9faacc1c7438823,
     type: 2}
+  ambience_event:
+    Guid:
+      Data1: 1814309383
+      Data2: 1083517798
+      Data3: -456043620
+      Data4: 1100553208
+    Path: event:/Ambiance/amb orage
 --- !u!1001 &693436196
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15522,6 +15532,7 @@ MonoBehaviour:
     x: 0
     y: 0
   look_direction_default_scale: -1
+  movement_actions: 0
   display: {fileID: 838976330}
 --- !u!4 &1090059734
 Transform:

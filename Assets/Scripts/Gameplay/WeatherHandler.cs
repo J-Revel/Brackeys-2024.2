@@ -1,5 +1,7 @@
 using System;
 using System.Collections;
+using FMOD.Studio;
+using FMODUnity;
 using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.Rendering;
@@ -30,6 +32,7 @@ public struct WeatherPhaseConfig
     public Color color_filter;
     public float saturation;
     public float grain;
+    public string sound_param_label;
 }
 public class WeatherHandler : MonoBehaviour
 {
@@ -74,7 +77,10 @@ public class WeatherHandler : MonoBehaviour
     private FilmGrain film_grain;
 
     public System.Action weather_change_delegate;
+    public EventReference ambience_event;
+    public EventInstance ambience_audio_instance;
 
+    
     private void Awake()
     {
         instance = this;
@@ -82,6 +88,8 @@ public class WeatherHandler : MonoBehaviour
 
     void Start()
     {
+        ambience_audio_instance = FMODUnity.RuntimeManager.CreateInstance(ambience_event);
+        ambience_audio_instance.start();
         RandomizePhaseDurations();
         GameState.instance.phase_reset_delegate += () =>
         {
@@ -178,6 +186,7 @@ public class WeatherHandler : MonoBehaviour
         color_adjustments.postExposure.value = target_phase.post_exposure;
         color_adjustments.colorFilter.value = target_phase.color_filter;
         film_grain.intensity.value = target_phase.grain;
+        ambience_audio_instance.setParameterByNameWithLabel("Storm Power", target_phase.sound_param_label);
     }
 
     IEnumerator FogTransitionCoroutine(WeatherPhaseConfig start_phase, WeatherPhaseConfig target_phase)

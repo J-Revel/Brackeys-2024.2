@@ -13,6 +13,5 @@ public class ActionStockWidget : MonoBehaviour
 
     void Update()
     {
-        PlayerController.instance.movement_actions;
     }
 }

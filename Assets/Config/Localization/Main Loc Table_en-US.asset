@@ -622,6 +622,22 @@ MonoBehaviour:
     m_Localized: You stay in your shelter until the storm finishes...
     m_Metadata:
       m_Items: []
+  - m_Id: 1640906582536192
+    m_Localized: You are
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1642675513470976
+    m_Localized: 'The storm is getting closer, and the wind keeps intensifying !
+
+      You
+      must find a shelter immediately !'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1648751533240320
+    m_Localized: "You found a shelter!\r They come in 3 different kinds :\r\n\nCavern
+      isles are free to use\r\n"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

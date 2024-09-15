@@ -629,6 +629,24 @@ MonoBehaviour:
     m_Localized: Tu t'abrites en attendant que l'orage passe...
     m_Metadata:
       m_Items: []
+  - m_Id: 1640906582536192
+    m_Localized: "Le temps se d\xE9grade, l'orage approche ! \nLe vent devient plus
+      fort, il te repoussera \xE0 la fin de chaque tour."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1642675513470976
+    m_Localized: "L'orage est presque l\xE0, et le vent s'intensifie encore ! \nSi
+      tu ne trouves pas un abri rapidement, tu vas te retrouver coinc\xE9 dans la
+      temp\xEAte !"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1648751533240320
+    m_Localized: "Tu as trouv\xE9 un abri ! Il y en a plusieurs types :\n\nLes \xEEles
+      avec une caverne peuvent servir d'abri gratuitement\n\nLes \xEEles vierges
+      n\xE9cessitent de construire l'abri avec du bois et des cordes\n\nLes pirates
+      peuvent vous h\xE9berger si vous leur offrez suffisamment \xE0 manger"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

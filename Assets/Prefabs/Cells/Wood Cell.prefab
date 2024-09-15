@@ -143,6 +143,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resource: 0
+  collect_display_prefab: {fileID: 4873305689460667617, guid: 27e1d8493cac7714d81e5d76cbe793ac,
+    type: 3}
   quantity_range:
     x: 3
     y: 5

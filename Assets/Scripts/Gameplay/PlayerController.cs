@@ -39,6 +39,7 @@ public class PlayerController : MonoBehaviour
     
     public IEnumerator Start()
     {
+        yield return TutoHandler.instance.OnEvent(TutoEvent.Intro);
         GameState.instance.phase_reset_delegate += OnStormEnd;
         movement_actions = range + permanent_action_bonus;
         wind_push_sound_instances = new EventInstance[wind_push_sounds.Length];

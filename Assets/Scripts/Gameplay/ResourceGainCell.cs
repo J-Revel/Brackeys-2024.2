@@ -8,6 +8,7 @@ using Random = UnityEngine.Random;
 public class ResourceGainCell : MonoBehaviour
 {
     public ResourceType resource;
+    public ResourceCollectDisplay collect_display_prefab;
     public int2 quantity_range= 1;
     private CellEntity cell_entity;
     private IEnumerator enter_cell_coroutine;
@@ -30,6 +31,9 @@ public class ResourceGainCell : MonoBehaviour
         int quantity = Random.Range(quantity_range.x, quantity_range.y+1);
         PlayerResourceStock.instance.AddStock(resource, quantity);
         Destroy(gameObject);
+        var bonus_display = Instantiate(collect_display_prefab, transform.position, Quaternion.identity);
+        bonus_display.quantity = quantity;
+        bonus_display.resource = resource;
         yield return null;
     }
 }

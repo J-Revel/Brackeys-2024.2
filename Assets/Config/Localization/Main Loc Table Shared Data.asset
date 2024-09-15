@@ -587,6 +587,18 @@ MonoBehaviour:
     m_Key: ui.shelter_description
     m_Metadata:
       m_Items: []
+  - m_Id: 1640906582536192
+    m_Key: tuto.storm1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1642675513470976
+    m_Key: tuto.storm
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1648751533240320
+    m_Key: tuto.shelter
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

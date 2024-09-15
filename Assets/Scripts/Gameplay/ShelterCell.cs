@@ -17,11 +17,17 @@ public class ShelterCell : MonoBehaviour
     {
         cell_entity = GetComponent<CellEntity>();
         CellContent cell_content = GridInstance.instance.GetCellContent(cell_entity.cell);
-        cell_content.enter_coroutines.Add(ActionPopupMenu.instance.ShowActionCoroutine(action_icon, action_sound, cost));
+        cell_content.enter_coroutines.Add(MainCoroutine());
         cell_content.enter_coroutines_finished += () =>
         {
-            cell_content.enter_coroutines.Add(ActionPopupMenu.instance.ShowActionCoroutine(action_icon, action_sound, cost));
+            cell_content.enter_coroutines.Add(MainCoroutine());
         };
         
+    }
+
+    public IEnumerator MainCoroutine()
+    {
+        yield return TutoHandler.instance.OnEvent(TutoEvent.Shelter);
+        yield return ActionPopupMenu.instance.ShowActionCoroutine(action_icon, action_sound, cost);
     }
 }

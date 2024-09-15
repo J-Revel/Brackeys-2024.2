@@ -87,6 +87,9 @@ public class WeatherHandler : MonoBehaviour
 
     public GameoverMenu gameover_menu_prefab;
     public GameoverMenu shelter_menu_prefab;
+
+    public GameoverMenu[] tuto_weather;
+    public bool[] tuto_weather_played;
     
     private void Awake()
     {
@@ -95,6 +98,7 @@ public class WeatherHandler : MonoBehaviour
 
     void Start()
     {
+        tuto_weather_played = new bool[tuto_weather.Length];
         ambience_audio_instance = FMODUnity.RuntimeManager.CreateInstance(ambience_event);
         ambience_audio_instance.start();
         storm_sheltered_instance = FMODUnity.RuntimeManager.CreateInstance(storm_sheltered_sound);
@@ -244,6 +248,7 @@ public class WeatherHandler : MonoBehaviour
             active_phase_config = cloudy_phase;
             if (active_phase_index < 1)
             {
+                TutoHandler.instance.OnEvent(TutoEvent.Storm1);
                 active_phase_index = 1;
                 RandomizeWind();
                 StartCoroutine(FogTransitionCoroutine(calm_phase, cloudy_phase));
@@ -254,7 +259,7 @@ public class WeatherHandler : MonoBehaviour
             active_phase_config = stormy_phase;
             if (active_phase_index < 2)
             {
-                active_phase_index = 2;
+                TutoHandler.instance.OnEvent(TutoEvent.Storm2);
                 RandomizeWind();
                 StartCoroutine(FogTransitionCoroutine(cloudy_phase, stormy_phase));
             }

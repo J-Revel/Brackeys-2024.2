@@ -494,8 +494,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 726761675304988
-    m_Localized: "Il est rempli d'or ! mais il prend beaucoup de place sur le bateau
-      et toutes ces pi\xE8ces ne semble pas tr\xE8s utiles."
+    m_Localized: "Il est rempli d'or ! Mais il prend beaucoup de place sur le bateau
+      et toutes ces pi\xE8ces ne semblent pas tr\xE8s utiles."
     m_Metadata:
       m_Items: []
   - m_Id: 726761675304989
@@ -511,12 +511,12 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 726761679499266
-    m_Localized: "Ils envoient un bateau le chercher au plus vite ! ils nous donnent
+    m_Localized: "Ils envoient un bateau le chercher au plus vite ! Ils te donnent
       une orange en \xE9change."
     m_Metadata:
       m_Items: []
   - m_Id: 726761679499267
-    m_Localized: Un poisson-clown vient nous faire une blague " Quelle monnaie utilisent
+    m_Localized: Un poisson-clown vient te faire une blague " Quelle monnaie utilisent
       les poissons ? "
     m_Metadata:
       m_Items: []
@@ -558,8 +558,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1466188063715330
-    m_Localized: "Tu te peignes les cheveux avec. Pas tr\xE8s utile, mais \xE7a fait
-      du bien."
+    m_Localized: "Tu te peignes avec. Pas tr\xE8s utile, mais \xE7a fait du bien."
     m_Metadata:
       m_Items: []
   - m_Id: 1466188063715331
@@ -603,7 +602,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1466188063715340
-    m_Localized: "\"Non! Il n'y a pas d'ours par ici! Bonne chance \xE0 vous!\""
+    m_Localized: "\"Non! Il n'y a pas d'ours par ici!  Bonne chance \xE0 vous !\""
     m_Metadata:
       m_Items: []
   - m_Id: 1466188063715341
@@ -613,8 +612,21 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1466188063715342
-    m_Localized: '"Merci merci merci!". Ils partent tellement vite que tu n''as pas
-      le temps de dire au revoir.'
+    m_Localized: '"Merci merci merci !". Ils partent tellement vite que tu n''as
+      pas le temps de dire au revoir.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1631544648544256
+    m_Localized: "On non, la temp\xEAte est l\xE0 !\nTon bateau est repouss\xE9 sur
+      l'\xEEle la plus proche..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1631867664478208
+    m_Localized: Cliquer pour continuer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1632158212304896
+    m_Localized: Tu t'abrites en attendant que l'orage passe...
     m_Metadata:
       m_Items: []
   references:

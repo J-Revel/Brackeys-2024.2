@@ -36,7 +36,7 @@ public class CellEntity : MonoBehaviour
             enter_audio_instance = FMODUnity.RuntimeManager.CreateInstance(enter_audio_event);
             RegisterEnterCoroutine(PlaySoundCoroutine());
         }
-        if(!move_audio_event.IsNull && Application.IsPlaying(this))
+        if(!move_audio_event.IsNull && Application.IsPlaying(gameObject))
             move_audio_instance = FMODUnity.RuntimeManager.CreateInstance(move_audio_event);
     }
 

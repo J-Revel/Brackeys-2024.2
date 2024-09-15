@@ -575,6 +575,18 @@ MonoBehaviour:
     m_Key: evt23_answer02_result
     m_Metadata:
       m_Items: []
+  - m_Id: 1631544648544256
+    m_Key: ui.gameover_description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1631867664478208
+    m_Key: ui.click_to_continue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1632158212304896
+    m_Key: ui.shelter_description
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

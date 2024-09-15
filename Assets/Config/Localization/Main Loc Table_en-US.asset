@@ -331,7 +331,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 690879190675478
-    m_Localized: Flee !
+    m_Localized: Flee!
     m_Metadata:
       m_Items: []
   - m_Id: 690879190675479
@@ -499,16 +499,16 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 726761679499265
-    m_Localized: Prevent the nearest hackers
+    m_Localized: Prevent the nearest pirates
     m_Metadata:
       m_Items: []
   - m_Id: 726761679499266
     m_Localized: They're sending a boat to pick him up as quickly as possible! They
-      give us an orange in exchange.
+      give you an orange in exchange.
     m_Metadata:
       m_Items: []
   - m_Id: 726761679499267
-    m_Localized: "A clown fish comes to tell us a joke: \u201CWhat is shark's favourite
+    m_Localized: "A clown fish comes to tell you a joke: \u201CWhat is shark's favourite
       dessert?\u201D"
     m_Metadata:
       m_Items: []
@@ -605,6 +605,21 @@ MonoBehaviour:
   - m_Id: 1466188063715342
     m_Localized: '"Tanhkyou thankyou thankyou!" They run so fast you don''t even
       have time to say goodbye.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1631544648544256
+    m_Localized: 'Oh no the storm is here !
+
+      Your boat is pushed back to the
+      nearest island...'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1631867664478208
+    m_Localized: Click to continue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1632158212304896
+    m_Localized: You stay in your shelter until the storm finishes...
     m_Metadata:
       m_Items: []
   references:

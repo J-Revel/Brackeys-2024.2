@@ -25,7 +25,6 @@ public class PlayerController : MonoBehaviour
     public float look_direction_default_scale = -1;
     
     public float movement_actions;
-    private int temporary_action_bonus;
     private int permanent_action_bonus;
 
     public EventReference[] wind_push_sounds;
@@ -41,8 +40,7 @@ public class PlayerController : MonoBehaviour
     public IEnumerator Start()
     {
         GameState.instance.phase_reset_delegate += OnStormEnd;
-        movement_actions = range + temporary_action_bonus + permanent_action_bonus;
-        temporary_action_bonus = 0;
+        movement_actions = range + permanent_action_bonus;
         wind_push_sound_instances = new EventInstance[wind_push_sounds.Length];
         for (int i = 0; i < wind_push_sounds.Length; i++)
         {
@@ -78,8 +76,7 @@ public class PlayerController : MonoBehaviour
             {
                 if(WeatherHandler.instance.current_wind_intensity > 0 )
                     yield return ApplyWind(WeatherHandler.instance.current_wind_direction, WeatherHandler.instance.current_wind_intensity);
-                movement_actions = range + temporary_action_bonus + permanent_action_bonus;
-                temporary_action_bonus = 0;
+                movement_actions = range + permanent_action_bonus;
                 skip = false;
                 yield return GameState.instance.FinishTurnCoroutine();
             }
@@ -95,9 +92,9 @@ public class PlayerController : MonoBehaviour
                     {
                         cell.SetActive(false);
                     }
+                    movement_actions -= length;
                     yield return player.FollowPathCoroutine(path, movement_speed, true, true);
                     current_cell = GridInstance.instance.PosToCell(transform.position);
-                    movement_actions -= length;
                     if (movement_actions <= 0)
                     {
                         int2 start_cell = current_cell;
@@ -113,8 +110,7 @@ public class PlayerController : MonoBehaviour
                         }
 
                         yield return GameState.instance.FinishTurnCoroutine();
-                        movement_actions = range + temporary_action_bonus + permanent_action_bonus;
-                        temporary_action_bonus = 0;
+                        movement_actions = range + permanent_action_bonus;
                     }
                 }
             }
@@ -157,7 +153,7 @@ public class PlayerController : MonoBehaviour
 
     public void ReceiveTemporaryMovementBonus(int quantity)
     {
-        temporary_action_bonus += quantity;
+        movement_actions += quantity;
     }
     
     public void ReceivePermanentMovementBonus(int quantity)

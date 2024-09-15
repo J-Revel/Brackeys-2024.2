@@ -27,7 +27,7 @@ public class UIMainConfig : ScriptableObject
     public Sprite GetEffectIcon(ChoiceEffectType effect, ResourceType resource)
     {
         if (effect == ChoiceEffectType.Resource)
-            GetResourceIcon(resource);
+            return GetResourceIcon(resource);
         foreach (ResourceIcon resource_icon in resource_icons)
         {
             if (resource_icon.effect_type == effect)

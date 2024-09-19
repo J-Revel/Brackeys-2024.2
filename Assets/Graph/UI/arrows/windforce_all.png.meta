@@ -1,0 +1,1170 @@
+fileFormatVersion: 2
+guid: c7800a3f7618dcd47bb5039a50926d8c
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: windforce_all_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1254
+        width: 416.1111
+        height: 418
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f757e14b810ac31469376eab1d119560
+      internalID: 596912628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: windforce_all_1
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 1254
+        width: 416.1111
+        height: 418
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39634fc094f7bb24b85c3efcb1fc9cde
+      internalID: 1338283474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: windforce_all_2
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 1254
+        width: 416.1111
+        height: 418
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e14845d2984f1a439a6c9e9ed9ba326
+      internalID: -1988741529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: windforce_all_3
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 1254
+        width: 416.1111
+        height: 418
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d013c3a1db3bb047a042c72fdbbd979
+      internalID: 785503786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: windforce_all_4
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 1254
+        width: 416.1111
+        height: 418
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f12d97531dc4be44be0a59f5b779365
+      internalID: -663254077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: windforce_all_5
+      rect:
+        serializedVersion: 2
+        x: 2080
+        y: 1254
+        width: 416.1111
+        height: 418
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75350f0c14b1265429866d8ab35a80b8
+      internalID: -1336973749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: windforce_all_6
+      rect:
+        serializedVersion: 2
+        x: 2496
+        y: 1254
+        width: 416.1111
+        height: 418
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dbed4ae413a06b439e4c9ec4505f1f4
+      internalID: 765379234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: windforce_all_7
+      rect:
+        serializedVersion: 2
+        x: 2912
+        y: 1254
+        width: 416.1111
+        height: 418
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 483537aecf976844b8c8519a89aab556
+      internalID: -217786913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: windforce_all_8
+      rect:
+        serializedVersion: 2
+        x: 3328
+        y: 1254
+        width: 416.1111
+        height: 418
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59bbf6ae32d67f44c83d7ddf42cd1e35
+      internalID: -1976266646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: windforce_all_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 836
+        width: 416.1111
+        height: 418
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4fc339e3c88ab147b4eea4371a26358
+      internalID: 2050725955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: windforce_all_10
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 836
+        width: 416.1111
+        height: 418
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b772875bdd467d146852fab83d7bba17
+      internalID: -82442593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: windforce_all_11
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 836
+        width: 416.1111
+        height: 418
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebff88a631f04d8489976eb3f4fca669
+      internalID: 294555098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: windforce_all_12
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 836
+        width: 416.1111
+        height: 418
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3345b74a49b243843ad450d32674e27f
+      internalID: 1770202582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: windforce_all_13
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 836
+        width: 416.1111
+        height: 418
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 152fba9d58032374da8df859acabc658
+      internalID: 703075803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: windforce_all_14
+      rect:
+        serializedVersion: 2
+        x: 2080
+        y: 836
+        width: 416.1111
+        height: 418
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b879f3931264fc4cbadccdec23f7a5a
+      internalID: -1811789101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: windforce_all_15
+      rect:
+        serializedVersion: 2
+        x: 2496
+        y: 836
+        width: 416.1111
+        height: 418
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04166293a6960b047bf4518dea8b0f6c
+      internalID: -412023617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: windforce_all_16
+      rect:
+        serializedVersion: 2
+        x: 2912
+        y: 836
+        width: 416.1111
+        height: 418
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c8cea4ddb5947245abae02752b3613f
+      internalID: 313117488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: windforce_all_17
+      rect:
+        serializedVersion: 2
+        x: 3328
+        y: 836
+        width: 416.1111
+        height: 418
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d02797014644d545ab1697cfcaeed73
+      internalID: -23548265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: windforce_all_18
+      rect:
+        serializedVersion: 2
+        x: 3744
+        y: 836
+        width: 416.1111
+        height: 418
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 989afbb75d9995741badffa515333fff
+      internalID: 371038604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: windforce_all_19
+      rect:
+        serializedVersion: 2
+        x: 4160
+        y: 836
+        width: 416.1111
+        height: 418
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e69879a3aa090c4c8d829af9291d31c
+      internalID: 1909892552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: windforce_all_20
+      rect:
+        serializedVersion: 2
+        x: 4576
+        y: 836
+        width: 416.1111
+        height: 418
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1ee7747be2b38949807dccd0d7079dd
+      internalID: -2042914419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: windforce_all_21
+      rect:
+        serializedVersion: 2
+        x: 4992
+        y: 836
+        width: 416.1111
+        height: 418
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8c1037318b34b64e8a52c287a436e80
+      internalID: 520490089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: windforce_all_22
+      rect:
+        serializedVersion: 2
+        x: 5408
+        y: 836
+        width: 416.1111
+        height: 418
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc478e31199b8eb4a9db7a30278cc894
+      internalID: -1722372827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: windforce_all_23
+      rect:
+        serializedVersion: 2
+        x: 5824
+        y: 836
+        width: 416.1111
+        height: 418
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faf8e2737f41fae4fb6acd18df81e17c
+      internalID: -278645630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: windforce_all_24
+      rect:
+        serializedVersion: 2
+        x: 6240
+        y: 836
+        width: 416.1111
+        height: 418
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c1251eb18a3d3e428d01b14f410f9f3
+      internalID: -633797940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: windforce_all_25
+      rect:
+        serializedVersion: 2
+        x: 6656
+        y: 836
+        width: 416.1111
+        height: 418
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 169b16d002d3c0a4f8536df6071cb580
+      internalID: 1586566622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: windforce_all_26
+      rect:
+        serializedVersion: 2
+        x: 7072
+        y: 836
+        width: 416.1111
+        height: 418
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 174b408590f1a1040bcccbb7aba901af
+      internalID: -1524275778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: windforce_all_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 418
+        width: 416.1111
+        height: 418
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99707ac6b99a12040be8d5f859eb553a
+      internalID: -827493653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: windforce_all_28
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 418
+        width: 416.1111
+        height: 418
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d212027db9f457b4ea1d8ebe4f0baa03
+      internalID: -1523371712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: windforce_all_29
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 418
+        width: 416.1111
+        height: 418
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4598593c976b2fa41acae20dcbb0a9ff
+      internalID: -1217545628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: windforce_all_30
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 418
+        width: 416.1111
+        height: 418
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b15fafe7d4f3f14ba45f9afbd1ea446
+      internalID: 1067529774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: windforce_all_31
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 418
+        width: 416.1111
+        height: 418
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa0b6a9b4c55eba44ba3532db66a0676
+      internalID: -648491335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: windforce_all_32
+      rect:
+        serializedVersion: 2
+        x: 2080
+        y: 418
+        width: 416.1111
+        height: 418
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daf0490419d8c6c4caf1597222c2518e
+      internalID: -1406017178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: windforce_all_33
+      rect:
+        serializedVersion: 2
+        x: 2496
+        y: 418
+        width: 416.1111
+        height: 418
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89533e9bf71f790469b47591a3f30a83
+      internalID: -460083949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: windforce_all_34
+      rect:
+        serializedVersion: 2
+        x: 2912
+        y: 418
+        width: 416.1111
+        height: 418
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13c397888c7359b40a5945710ae0af03
+      internalID: -2005019267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: windforce_all_35
+      rect:
+        serializedVersion: 2
+        x: 3328
+        y: 418
+        width: 416.1111
+        height: 418
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c88699444fda7904cabe5e5787b23d5e
+      internalID: 1729611884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: windforce_all_36
+      rect:
+        serializedVersion: 2
+        x: 3744
+        y: 418
+        width: 416.1111
+        height: 418
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d2b029d9eb589043bc3216cfd62953a
+      internalID: 1305186268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: windforce_all_37
+      rect:
+        serializedVersion: 2
+        x: 4160
+        y: 418
+        width: 416.1111
+        height: 418
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfaa1a94a40a01b488b1b87f0482271a
+      internalID: -1887922381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: windforce_all_38
+      rect:
+        serializedVersion: 2
+        x: 4576
+        y: 418
+        width: 416.1111
+        height: 418
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ef8facb63037044a96ea8dc6333fcd0
+      internalID: -804876778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: windforce_all_39
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 416.1111
+        height: 418
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 364448c0715a50a428604f460c31c71f
+      internalID: 1528537450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: windforce_all_40
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 0
+        width: 416.1111
+        height: 418
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbf0bd6e010517345b260096a765c99c
+      internalID: -459004545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: windforce_all_41
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 0
+        width: 416.1111
+        height: 418
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0f9e325516b3204fbf521a40e263131
+      internalID: -1641786249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: windforce_all_42
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 0
+        width: 416.1111
+        height: 418
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e396b3a7739e9604795f5c96da2031d5
+      internalID: 1821430511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: windforce_all_43
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 0
+        width: 416.1111
+        height: 418
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecc703c25e2b928468ddda6a08392365
+      internalID: -977185859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: windforce_all_44
+      rect:
+        serializedVersion: 2
+        x: 2080
+        y: 0
+        width: 416.1111
+        height: 418
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94e39965e24ccd64aae22c19a553e441
+      internalID: 1597316651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: windforce_all_45
+      rect:
+        serializedVersion: 2
+        x: 2496
+        y: 0
+        width: 416.1111
+        height: 418
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf09e75cea7f3cd449957232e4a40bd2
+      internalID: 1058761176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: windforce_all_46
+      rect:
+        serializedVersion: 2
+        x: 2912
+        y: 0
+        width: 416.1111
+        height: 418
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b87ed19628ed4e4a9dc808dc92a27ac
+      internalID: 1049857703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: windforce_all_47
+      rect:
+        serializedVersion: 2
+        x: 3328
+        y: 0
+        width: 416.1111
+        height: 418
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7033cdc59bc14ef4cafdd5eec1759e9a
+      internalID: -2092990654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 1a24454aaa7dfc4438c46440e8b6e22b
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      windforce_all_0: 596912628
+      windforce_all_1: 1338283474
+      windforce_all_10: -82442593
+      windforce_all_11: 294555098
+      windforce_all_12: 1770202582
+      windforce_all_13: 703075803
+      windforce_all_14: -1811789101
+      windforce_all_15: -412023617
+      windforce_all_16: 313117488
+      windforce_all_17: -23548265
+      windforce_all_18: 371038604
+      windforce_all_19: 1909892552
+      windforce_all_2: -1988741529
+      windforce_all_20: -2042914419
+      windforce_all_21: 520490089
+      windforce_all_22: -1722372827
+      windforce_all_23: -278645630
+      windforce_all_24: -633797940
+      windforce_all_25: 1586566622
+      windforce_all_26: -1524275778
+      windforce_all_27: -827493653
+      windforce_all_28: -1523371712
+      windforce_all_29: -1217545628
+      windforce_all_3: 785503786
+      windforce_all_30: 1067529774
+      windforce_all_31: -648491335
+      windforce_all_32: -1406017178
+      windforce_all_33: -460083949
+      windforce_all_34: -2005019267
+      windforce_all_35: 1729611884
+      windforce_all_36: 1305186268
+      windforce_all_37: -1887922381
+      windforce_all_38: -804876778
+      windforce_all_39: 1528537450
+      windforce_all_4: -663254077
+      windforce_all_40: -459004545
+      windforce_all_41: -1641786249
+      windforce_all_42: 1821430511
+      windforce_all_43: -977185859
+      windforce_all_44: 1597316651
+      windforce_all_45: 1058761176
+      windforce_all_46: 1049857703
+      windforce_all_47: -2092990654
+      windforce_all_5: -1336973749
+      windforce_all_6: 765379234
+      windforce_all_7: -217786913
+      windforce_all_8: -1976266646
+      windforce_all_9: 2050725955
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

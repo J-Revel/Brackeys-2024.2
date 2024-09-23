@@ -65,7 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 2326e1b217cfe4d40817c61bde62033e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5a8f25aedaf583f429c9bda8011e6cc0, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -182,25 +182,25 @@ MonoBehaviour:
   wind_direction_sprites:
   - direction: 2
     sprites:
-    - {fileID: 21300000, guid: 2326e1b217cfe4d40817c61bde62033e, type: 3}
+    - {fileID: 21300000, guid: 5a8f25aedaf583f429c9bda8011e6cc0, type: 3}
     - {fileID: 21300000, guid: 3f557fd3e65bd4044b89bbc1b4e554b5, type: 3}
     - {fileID: 21300000, guid: 5e599d3c1e021b74187961af85992ad8, type: 3}
     - {fileID: 21300000, guid: 1d96ad35fd2cca84ea5b4e5df4dd66b9, type: 3}
   - direction: 0
     sprites:
-    - {fileID: 21300000, guid: 2326e1b217cfe4d40817c61bde62033e, type: 3}
+    - {fileID: 21300000, guid: 5a8f25aedaf583f429c9bda8011e6cc0, type: 3}
     - {fileID: 21300000, guid: abdfc028bb5a8884b8a549e262e1e134, type: 3}
     - {fileID: 21300000, guid: 3f3b051cd5741a640aebeb689253a55f, type: 3}
     - {fileID: 21300000, guid: 52f20759612e5ef4fa9d1b7baf02c153, type: 3}
   - direction: 1
     sprites:
-    - {fileID: 21300000, guid: 2326e1b217cfe4d40817c61bde62033e, type: 3}
+    - {fileID: 21300000, guid: 5a8f25aedaf583f429c9bda8011e6cc0, type: 3}
     - {fileID: 21300000, guid: d9f0dd67522d6664ab269613cc4cb090, type: 3}
     - {fileID: 21300000, guid: 13a3a9dc1a7d5d64fbd3cfcd93e1d7e1, type: 3}
     - {fileID: 21300000, guid: c0fab48ff5dda994b83d5155c412ad69, type: 3}
   - direction: 3
     sprites:
-    - {fileID: 21300000, guid: 2326e1b217cfe4d40817c61bde62033e, type: 3}
+    - {fileID: 21300000, guid: 5a8f25aedaf583f429c9bda8011e6cc0, type: 3}
     - {fileID: 21300000, guid: 6b236f6e8fdc3544eb35f6b0c3c06477, type: 3}
     - {fileID: 21300000, guid: a693b960bbb0b614dadb3ac1fbd7c291, type: 3}
     - {fileID: 21300000, guid: 348d7f23594907542a0cfdb075144e2f, type: 3}

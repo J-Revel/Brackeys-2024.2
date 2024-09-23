@@ -20,7 +20,6 @@ public struct TutoMenuConfig
 
 public class TutoHandler : MonoBehaviour
 {
-    
     public static TutoHandler instance;
     public TutoMenuConfig[] config;
     private bool[] menu_shown;

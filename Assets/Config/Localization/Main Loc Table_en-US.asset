@@ -623,7 +623,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1640906582536192
-    m_Localized: You are
+    m_Localized: "The sky is getting darker, the storm is coming ! \nWind gusts will
+      push you at the end of every turn ! "
     m_Metadata:
       m_Items: []
   - m_Id: 1642675513470976
@@ -634,8 +635,27 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1648751533240320
-    m_Localized: "You found a shelter!\r They come in 3 different kinds :\r\n\nCavern
-      isles are free to use\r\n"
+    m_Localized: 'You found a shelter! They come in 3 different kinds :
+
+
+      Cavern
+      isles are free to use
+
+
+      In Virgin islands you need to use wood and rope
+      to craft a temporary shelter.
+
+
+      Pirates are friendly and can offer their
+      hospitality if you feed them. '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1652081848365056
+    m_Localized: "Time to go to bed, my little one \nCome to me so we can be reunited
+      among the sky\nYou know the stars will guide you into my arms\n\nBrave your
+      fear, the storm can't hurt you if you take cover \nTake your time, make new
+      friends on the way, \nAnd watch out for the growling winds \n\nYour mother
+      is waiting patiently for you"
     m_Metadata:
       m_Items: []
   references:

@@ -31,13 +31,16 @@ public class CellEntity : MonoBehaviour
         grid_config = (GridConfig)Resources.Load("GridSettings");
         transform.position = new float3(cell.x * grid_config.cell_size, cell.y * grid_config.cell_size, 0);
 
-        if (!enter_audio_event.IsNull)
+        if(Application.IsPlaying(gameObject))
         {
-            enter_audio_instance = FMODUnity.RuntimeManager.CreateInstance(enter_audio_event);
-            RegisterEnterCoroutine(PlaySoundCoroutine());
+            if (!enter_audio_event.IsNull)
+            {
+                enter_audio_instance = FMODUnity.RuntimeManager.CreateInstance(enter_audio_event);
+                RegisterEnterCoroutine(PlaySoundCoroutine());
+            }
+            if(!move_audio_event.IsNull)
+                move_audio_instance = FMODUnity.RuntimeManager.CreateInstance(move_audio_event);
         }
-        if(!move_audio_event.IsNull && Application.IsPlaying(gameObject))
-            move_audio_instance = FMODUnity.RuntimeManager.CreateInstance(move_audio_event);
     }
 
     private IEnumerator PlaySoundCoroutine()

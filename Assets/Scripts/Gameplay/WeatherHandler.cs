@@ -157,16 +157,17 @@ public class WeatherHandler : MonoBehaviour
         storm_sheltered_instance.start();
         active_phase_index = 0;
         active_phase_config = calm_phase;
+        current_turn = 0;
 
         GameoverMenu shelter_menu = MenuSystem.instance.OpenMenu(shelter_menu_prefab);
         while (!shelter_menu.closed)
             yield return null;
         ApplyWeatherPhase(calm_phase);
+        current_wind_intensity = 0;
         weather_change_delegate?.Invoke();
 
         PlayerController.instance.checkpoint = PlayerController.instance.current_cell;
         RandomizePhaseDurations();
-        current_turn = 0;
         PlayerController.instance.OnStormEnd();
     }
 
@@ -248,7 +249,7 @@ public class WeatherHandler : MonoBehaviour
             active_phase_config = cloudy_phase;
             if (active_phase_index < 1)
             {
-                TutoHandler.instance.OnEvent(TutoEvent.Storm1);
+                yield return TutoHandler.instance.OnEvent(TutoEvent.Storm1);
                 active_phase_index = 1;
                 RandomizeWind();
                 StartCoroutine(FogTransitionCoroutine(calm_phase, cloudy_phase));
@@ -259,7 +260,8 @@ public class WeatherHandler : MonoBehaviour
             active_phase_config = stormy_phase;
             if (active_phase_index < 2)
             {
-                TutoHandler.instance.OnEvent(TutoEvent.Storm2);
+                yield return TutoHandler.instance.OnEvent(TutoEvent.Storm2);
+                active_phase_index = 2;
                 RandomizeWind();
                 StartCoroutine(FogTransitionCoroutine(cloudy_phase, stormy_phase));
             }
@@ -272,6 +274,9 @@ public class WeatherHandler : MonoBehaviour
             while (!gameover_menu.closed)
                 yield return null;
 
+            active_phase_index = 0;
+            active_phase_config = calm_phase;
+            RandomizeWind();
             PlayerController.instance.TeleportToCheckpoint();
             GameState.instance.phase_reset_delegate?.Invoke();
             

@@ -12,6 +12,7 @@ public class ShelterCell : MonoBehaviour
     public ResourceStock[] cost;
     public Sprite action_icon;
     public EventReference action_sound;
+    public int display_index;
     
     public void Start()
     {
@@ -28,6 +29,6 @@ public class ShelterCell : MonoBehaviour
     public IEnumerator MainCoroutine()
     {
         yield return TutoHandler.instance.OnEvent(TutoEvent.Shelter);
-        yield return ActionPopupMenu.instance.ShowActionCoroutine(action_icon, action_sound, cost);
+        yield return ActionPopupMenu.instance.ShowActionCoroutine(action_icon, action_sound, cost, display_index);
     }
 }

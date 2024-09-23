@@ -12,8 +12,10 @@ public class WaitLocalizationLoaded : MonoBehaviour
     {
         GetComponent<Button>().onClick.AddListener(() => { StartCoroutine(LoadGameScene());});
     }
+
     IEnumerator LoadGameScene()
     {
+        #if UNITY_WEBGL
         yield return LocalizationSettings.InitializationOperation;
         while (!FMODUnity.RuntimeManager.HasBankLoaded("Master"))
         {
@@ -35,6 +37,8 @@ public class WaitLocalizationLoaded : MonoBehaviour
         {
             yield return null;
         }
+        #endif
+        yield return null;
         SceneManager.LoadScene(scene);
     }
 }

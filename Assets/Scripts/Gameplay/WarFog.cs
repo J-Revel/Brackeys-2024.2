@@ -344,20 +344,19 @@ public class WarFog : MonoBehaviour
 
                 cell_states[cell] = new CellDisplayData { state = new_state, game_object = visible_element };
             }
-
-            SpriteRenderer right_big_tile = Instantiate(sprite_cell_prefab, GridInstance.instance.CellToPos(player_cell + new int2(fog_cell_size * 2, 0)), Quaternion.identity);
-            right_big_tile.transform.localScale = Vector3.one * (fog_cell_size * 2);
-            temporary_sprite_cells.Add(right_big_tile);
-            SpriteRenderer left_big_tile = Instantiate(sprite_cell_prefab, GridInstance.instance.CellToPos(player_cell - new int2(fog_cell_size * 2, 0)), Quaternion.identity);
-            left_big_tile.transform.localScale = Vector3.one * (fog_cell_size * 2);
-            temporary_sprite_cells.Add(left_big_tile);
-            SpriteRenderer top_big_tile = Instantiate(sprite_cell_prefab, GridInstance.instance.CellToPos(player_cell + new int2(0, fog_cell_size * 2)), Quaternion.identity);
-            top_big_tile.transform.localScale = Vector3.one * (fog_cell_size * 2);
-            temporary_sprite_cells.Add(top_big_tile);
-            SpriteRenderer bottom_big_tile = Instantiate(sprite_cell_prefab, GridInstance.instance.CellToPos(player_cell - new int2(0, fog_cell_size * 2)), Quaternion.identity);
-            bottom_big_tile.transform.localScale = Vector3.one * (fog_cell_size * 2);
-            temporary_sprite_cells.Add(bottom_big_tile);
         }
+        SpriteRenderer right_big_tile = Instantiate(sprite_cell_prefab, GridInstance.instance.CellToPos(player_cell + new int2(fog_cell_size * 2, 0)), Quaternion.identity);
+        right_big_tile.transform.localScale = Vector3.one * (fog_cell_size * 2);
+        temporary_sprite_cells.Add(right_big_tile);
+        SpriteRenderer left_big_tile = Instantiate(sprite_cell_prefab, GridInstance.instance.CellToPos(player_cell - new int2(fog_cell_size * 2, 0)), Quaternion.identity);
+        left_big_tile.transform.localScale = Vector3.one * (fog_cell_size * 2);
+        temporary_sprite_cells.Add(left_big_tile);
+        SpriteRenderer top_big_tile = Instantiate(sprite_cell_prefab, GridInstance.instance.CellToPos(player_cell + new int2(0, fog_cell_size * 2)), Quaternion.identity);
+        top_big_tile.transform.localScale = Vector3.one * (fog_cell_size * 2);
+        temporary_sprite_cells.Add(top_big_tile);
+        SpriteRenderer bottom_big_tile = Instantiate(sprite_cell_prefab, GridInstance.instance.CellToPos(player_cell - new int2(0, fog_cell_size * 2)), Quaternion.identity);
+        bottom_big_tile.transform.localScale = Vector3.one * (fog_cell_size * 2);
+        temporary_sprite_cells.Add(bottom_big_tile);
 
         StartCoroutine(PlayTransition(cell_command_states));
         yield return null;

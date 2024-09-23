@@ -18,6 +18,7 @@ public class ActionPopupMenu : MonoBehaviour
     private ResourceStock[] current_requirements;
     public EventReference open_event;
     private EventInstance open_event_instance;
+    public GameObject[] to_activate;
 
     private void Awake()
     {
@@ -48,8 +49,12 @@ public class ActionPopupMenu : MonoBehaviour
         });
     }
 
-    public IEnumerator ShowActionCoroutine(Sprite sprite, EventReference action_sound, ResourceStock[] requirements)
+    public IEnumerator ShowActionCoroutine(Sprite sprite, EventReference action_sound, ResourceStock[] requirements, int display_index)
     {
+        for (int i = 0; i < to_activate.Length; i++)
+        {
+            to_activate[i].SetActive(i == display_index);
+        }
         open_event_instance.start();
         confirm_button.interactable = true;
         current_requirements = requirements;

@@ -647,6 +647,12 @@ MonoBehaviour:
       peuvent vous h\xE9berger si vous leur offrez suffisamment \xE0 manger"
     m_Metadata:
       m_Items: []
+  - m_Id: 1652081848365056
+    m_Localized: "Il est temps d'aller te coucher, ma ch\xE9rie\nViens dans mes bras,
+      dans le ciel qui nous abrite\nTu sais que les \xE9toiles te guideront \xE0
+      moi\n"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

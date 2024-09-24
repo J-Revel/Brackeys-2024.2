@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Background Cell Material
-  m_Shader: {fileID: -6465566751694194690, guid: 71421e4244b14aa4eb10aedcbbdad10b,
+  m_Name: Background Cell Outline Material
+  m_Shader: {fileID: -6465566751694194690, guid: 716d6452e955b9e4592d6522297c30ad,
     type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -25,7 +25,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _Background_A:
-        m_Texture: {fileID: 2800000, guid: 6ed70a813c8e24b41a1da797160c8f3b, type: 3}
+        m_Texture: {fileID: 2800000, guid: 6b92f599e9612cf4aa0ea164c5a18987, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Background_B:

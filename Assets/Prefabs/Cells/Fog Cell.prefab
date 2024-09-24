@@ -54,6 +54,8 @@ MonoBehaviour:
   - {fileID: 9025733671962207245}
   - {fileID: 1814938615070139007}
   - {fileID: 7267810318449947061}
+  sprite_renderers:
+  - {fileID: 7449466000849526411}
   alpha: 0
 --- !u!198 &1919425891366193308
 ParticleSystem:
@@ -9744,7 +9746,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 5e4b63beea239534592b54b7ea612219, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

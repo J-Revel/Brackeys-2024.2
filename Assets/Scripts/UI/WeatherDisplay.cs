@@ -5,6 +5,18 @@ using UnityEngine;
 using UnityEngine.UI;
 
 [Serializable]
+public struct SpriteAnimConfig
+{
+    public Sprite[] sprites;
+    public float frame_per_second;
+
+    public Sprite GetSprite(float time)
+    {
+        return sprites[Mathf.RoundToInt(frame_per_second * time) % sprites.Length];
+    }
+}
+
+[Serializable]
 public struct DirectionSprite
 {
     public CardinalDirection direction;
@@ -17,14 +29,16 @@ public class WeatherDisplay : MonoBehaviour
     public CardinalDirection wind_direction;
     public Image image;
     public Image wind_direction_image;
-    public Sprite[] weather_sprites;
+    public SpriteAnimConfig[] weather_anims;
     public Image background_image;
     public Sprite[] background_sprites;
     public DirectionSprite[] wind_direction_sprites;
+    private float time = 0;
 
     void Update()
     {
-        image.sprite = weather_sprites[weather_phase];
+        time += Time.deltaTime;
+        image.sprite = weather_anims[weather_phase].GetSprite(time);
         background_image.sprite = background_sprites[weather_phase];
         for (int i = 0; i < wind_direction_sprites.Length; i++)
         {
